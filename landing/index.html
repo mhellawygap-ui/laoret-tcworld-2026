@@ -134,12 +134,43 @@ section{padding:96px 0}
 .meet-grid .meet-card:nth-child(3) .ico{background:var(--navy-50);color:var(--navy)}
 .card h3{font-size:19px;margin-bottom:8px}
 .card p{font-size:15.5px}
+/* Why Meet: illustrated cards (Elementor: Grid container 3 cols, gap 28) */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.why-card{--acc:var(--teal);position:relative;background:#fff;border:1px solid var(--line);border-radius:22px;padding:12px;overflow:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.why-card[data-accent="coral"]{--acc:var(--coral)}
+.why-card[data-accent="navy"]{--acc:var(--navy)}
+.why-card::after{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:var(--acc);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.why-card:hover{transform:translateY(-8px);box-shadow:0 26px 50px rgba(11,35,63,.12);border-color:transparent}
+.why-card:hover::after{width:100%}
+.why-visual{border-radius:16px;background:#F6F9FB;aspect-ratio:5/4;overflow:hidden;display:grid;place-items:center}
+.why-visual img{width:100%;height:100%;object-fit:contain;animation:whyFloat 6s ease-in-out infinite;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.why-card:nth-child(2n) .why-visual img{animation-delay:-2s}
+.why-card:nth-child(3n) .why-visual img{animation-delay:-4s}
+.why-card:hover .why-visual img{transform:scale(1.07)}
+@keyframes whyFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.why-body{padding:22px 16px 18px}
+.why-num{display:inline-block;font-family:var(--h);font-size:13px;font-weight:600;color:var(--acc);margin-bottom:8px}
+.why-body h3{font-size:20px;margin-bottom:8px}
+.why-body p{font-size:15.5px}
+.why-card.reveal{transition:opacity .7s ease var(--d,0ms),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0ms),box-shadow .35s,border-color .35s}
+.why-card.reveal.in:hover{transition-delay:0s;transform:translateY(-8px)}
+.why-hint{display:none;text-align:center;font-size:13px;color:var(--muted);margin-top:4px}
 .why-foot{margin-top:48px;text-align:center}
 .why-foot p{font-family:var(--h);font-size:19px;color:var(--navy);font-weight:500;max-width:680px;margin:0 auto 22px}
 
-.svc{display:flex;gap:18px;align-items:flex-start}
-.svc .ico{margin:0}
-.svc-tag{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--teal-d)}
+/* What We Help With: scannable numbered list (Elementor: Grid container 2 cols, column gap 72) */
+.help-list{display:grid;grid-template-columns:1fr 1fr;column-gap:72px;max-width:1080px;margin:0 auto}
+.help-item{position:relative;display:grid;grid-template-columns:56px 1fr;gap:6px;padding:30px 0;border-top:1px solid var(--line)}
+.help-item::before{content:"";position:absolute;left:0;top:-1px;height:2px;width:0;background:var(--teal);transition:width .45s cubic-bezier(.2,.7,.2,1)}
+.help-item:hover::before{width:100%}
+.help-item:nth-child(4n+2)::before,.help-item:nth-child(4n+3)::before{background:var(--coral)}
+.help-num{font-family:var(--h);font-size:15px;font-weight:600;color:var(--teal-d);padding-top:4px}
+.help-item:nth-child(4n+2) .help-num,.help-item:nth-child(4n+3) .help-num{color:var(--coral)}
+.help-item h3{font-size:22px;font-weight:600;line-height:1.3;margin-bottom:8px;transition:color .2s}
+.help-item:hover h3{color:var(--teal-d)}
+.help-item p{font-size:16px;max-width:440px}
+.help-item:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+.help-item.reveal{transition:opacity .6s ease var(--d,0ms),transform .6s ease var(--d,0ms)}
 
 /* For you */
 .foryou{background:var(--navy);color:#C9D5E1;position:relative;overflow:hidden}
@@ -256,7 +287,7 @@ footer.site a:hover{color:var(--teal)}
 /* Reveal */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
 .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.why-visual img{animation:none}}
 
 /* Responsive */
 @media (max-width:1060px){
@@ -267,7 +298,8 @@ footer.site a:hover{color:var(--teal)}
   .event-bar{grid-template-columns:repeat(2,1fr);transform:translateY(40%)}
   .event-bar div:nth-child(3){border-left:0}
   .event-bar div:nth-child(n+3){border-top:1px solid var(--line)}
-  .grid-3,.meet-grid,.quotes{grid-template-columns:repeat(2,1fr)}
+  .grid-3,.meet-grid,.quotes,.why-grid{grid-template-columns:repeat(2,1fr)}
+  .help-list{column-gap:48px}
   .stats{grid-template-columns:repeat(2,1fr)}
   .logos{grid-template-columns:repeat(4,1fr);gap:28px 48px}
   .wael-photo{max-width:420px}
@@ -285,7 +317,12 @@ footer.site a:hover{color:var(--teal)}
   .event-bar div+div{border-left:0;border-top:1px solid var(--line)}
   .trust-strip{padding:48px 0 40px}
   .certs img{height:46px}
-  .grid-3,.meet-grid,.quotes,.check-grid,.f-grid{grid-template-columns:1fr}
+  .grid-3,.meet-grid,.quotes,.check-grid,.f-grid,.why-grid,.help-list{grid-template-columns:1fr}
+  .why-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -18px;padding:6px 18px 18px;scrollbar-width:none}
+  .why-grid::-webkit-scrollbar{display:none}
+  .why-card{flex:0 0 82%;scroll-snap-align:center}
+  .why-hint{display:block}
+  .help-item{padding:24px 0;grid-template-columns:44px 1fr}.help-item:nth-last-child(2){border-bottom:0}.help-item h3{font-size:19px}
   .stats{grid-template-columns:1fr 1fr;gap:14px}
   .stat b{font-size:28px}
   form.lead{padding:26px 20px}
@@ -401,26 +438,46 @@ footer.site a:hover{color:var(--teal)}
 </section>
 
 <!-- ================= 3. WHY MEET ================= -->
+<!-- Elementor: Container (boxed 1180) > Heading block + Container (Grid 3×2) of 6 card containers -->
 <section id="why" class="soft" aria-labelledby="why-title">
   <div class="wrap">
     <div class="sec-head reveal">
       <h2 id="why-title">Why Meet Laoret at tcworld?</h2>
       <p>Six reasons the conversation at our booth is worth fifteen minutes of your fair.</p>
     </div>
-    <div class="grid-3">
-      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M7.5 6H14a3 3 0 013 3v0a3 3 0 01-3 3h-4a3 3 0 00-3 3v0a3 3 0 003 3h6.5"/></svg></span>
-        <h3>Workflow-first thinking</h3><p>We map your process before suggesting anything, then design localization to slot into it.</p></article>
-      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
-        <h3>Human-governed AI</h3><p>Machine speed where it’s safe, human review where it matters, with clear rules for which is which.</p></article>
-      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M7 16v-4M12 16V8M17 16V4"/></svg></span>
-        <h3>Scalable quality</h3><p>Defined LQA, managed terminology and measurable scoring that holds up as volume grows.</p></article>
-      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 4v5h-5"/></svg></span>
-        <h3>Flexible support</h3><p>Full projects, overflow capacity or a single workstream. Scope it the way your team needs.</p></article>
-      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9.5" r="2.5"/><path d="M2.5 20a6.5 6.5 0 0113 0M15 14.5a5 5 0 016.5 4.8"/></svg></span>
-        <h3>Easy collaboration</h3><p>Responsive people, transparent communication and no unnecessary layers between you and the work.</p></article>
-      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h12M9 3v2M5 5c0 4 3 7 7 8M13 5c0 3-2.5 6.5-8 9"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg></span>
-        <h3>Practical localization expertise</h3><p>Hands-on experience with technical, regulated and product content across 120+ languages.</p></article>
+    <div class="why-grid">
+      <!-- Elementor: Container (card) · Entrance: Fade In Up, delay 0ms -->
+      <article class="why-card reveal" data-accent="teal" style="--d:0ms">
+        <div class="why-visual"><img src="assets/why-workflow.webp" alt="" width="405" height="396" loading="lazy"></div>
+        <div class="why-body"><span class="why-num">01</span><h3>Workflow-first thinking</h3><p>We map your process before suggesting anything, then design localization to slot into it.</p></div>
+      </article>
+      <!-- Elementor: Container (card) · Entrance: Fade In Up, delay 120ms -->
+      <article class="why-card reveal" data-accent="coral" style="--d:120ms">
+        <div class="why-visual"><img src="assets/why-human-ai.webp" alt="" width="405" height="396" loading="lazy"></div>
+        <div class="why-body"><span class="why-num">02</span><h3>Human-governed AI</h3><p>Machine speed where it’s safe, human review where it matters, with clear rules for which is which.</p></div>
+      </article>
+      <!-- Elementor: Container (card) · Entrance: Fade In Up, delay 240ms -->
+      <article class="why-card reveal" data-accent="navy" style="--d:240ms">
+        <div class="why-visual"><img src="assets/why-quality.webp" alt="" width="405" height="396" loading="lazy"></div>
+        <div class="why-body"><span class="why-num">03</span><h3>Scalable quality</h3><p>Defined LQA, managed terminology and measurable scoring that holds up as volume grows.</p></div>
+      </article>
+      <!-- Elementor: Container (card) · Entrance: Fade In Up, delay 360ms -->
+      <article class="why-card reveal" data-accent="teal" style="--d:360ms">
+        <div class="why-visual"><img src="assets/why-flexible.webp" alt="" width="405" height="396" loading="lazy"></div>
+        <div class="why-body"><span class="why-num">04</span><h3>Flexible support</h3><p>Full projects, overflow capacity or a single workstream. Scope it the way your team needs.</p></div>
+      </article>
+      <!-- Elementor: Container (card) · Entrance: Fade In Up, delay 480ms -->
+      <article class="why-card reveal" data-accent="coral" style="--d:480ms">
+        <div class="why-visual"><img src="assets/why-collaboration.webp" alt="" width="405" height="396" loading="lazy"></div>
+        <div class="why-body"><span class="why-num">05</span><h3>Easy collaboration</h3><p>Responsive people, transparent communication and no unnecessary layers between you and the work.</p></div>
+      </article>
+      <!-- Elementor: Container (card) · Entrance: Fade In Up, delay 600ms -->
+      <article class="why-card reveal" data-accent="navy" style="--d:600ms">
+        <div class="why-visual"><img src="assets/why-expertise.webp" alt="" width="405" height="396" loading="lazy"></div>
+        <div class="why-body"><span class="why-num">06</span><h3>Practical localization expertise</h3><p>Hands-on experience with technical, regulated and product content across 120+ languages.</p></div>
+      </article>
     </div>
+    <p class="why-hint" aria-hidden="true">← Swipe to see all six →</p>
     <div class="why-foot reveal">
       <p>If your team wants to improve localization efficiency without losing quality or control, this is the conversation to have at tcworld.</p>
       <a href="#book" class="btn btn-primary">Book a Meeting</a>
@@ -429,25 +486,20 @@ footer.site a:hover{color:var(--teal)}
 </section>
 
 <!-- ================= 4. WHAT WE HELP WITH ================= -->
+<!-- Elementor: Container (boxed 1180) > Heading block + Container (Grid 2 cols) of 6 row containers (number + heading + text) -->
 <section id="services" aria-labelledby="svc-title">
   <div class="wrap">
     <div class="sec-head reveal">
       <h2 id="svc-title">What We Help With</h2>
       <p>Built around the challenges localization and documentation teams bring to us most often.</p>
     </div>
-    <div class="grid-3">
-      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 013 3V14"/></svg></span>
-        <div><h3>Localization workflow design</h3><p>When handoffs are manual, tools don’t talk to each other or turnaround keeps slipping.</p></div></article>
-      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>
-        <div><h3>MTPE &amp; AI-supported workflows</h3><p>When you want AI’s speed with ISO 18587-aligned post-editing and clear quality thresholds.</p></div></article>
-      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z"/><path d="M4 7v5c0 1.7 3.6 3 8 3s8-1.3 8-3V7M4 12v5c0 1.7 3.6 3 8 3s8-1.3 8-3v-5"/></svg></span>
-        <div><h3>Multilingual content operations</h3><p>When volume, languages and channels grow faster than your team can coordinate them.</p></div></article>
-      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5M8 11l2 2 4-4"/></svg></span>
-        <div><h3>Quality assurance &amp; LQA</h3><p>When you need quality you can measure, report on and improve, not just “check”.</p></div></article>
-      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
-        <div><h3>Technical &amp; regulated content</h3><p>Manuals, safety, compliance and life-sciences content where accuracy carries real risk.</p></div></article>
-      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12l3 3 5-5"/><path d="M12 21a9 9 0 100-18 9 9 0 000 18z"/></svg></span>
-        <div><h3>Support for teams &amp; language partners</h3><p>Extra capacity for in-house teams, and a dependable production partner for MLVs and LSPs.</p></div></article>
+    <div class="help-list">
+      <article class="help-item reveal" style="--d:0ms"><span class="help-num">01</span><div><h3>Localization workflow design</h3><p>When handoffs are manual, tools don’t talk to each other or turnaround keeps slipping.</p></div></article>
+      <article class="help-item reveal" style="--d:100ms"><span class="help-num">02</span><div><h3>MTPE &amp; AI-supported workflows</h3><p>When you want AI’s speed with ISO 18587-aligned post-editing and clear quality thresholds.</p></div></article>
+      <article class="help-item reveal" style="--d:0ms"><span class="help-num">03</span><div><h3>Multilingual content operations</h3><p>When volume, languages and channels grow faster than your team can coordinate them.</p></div></article>
+      <article class="help-item reveal" style="--d:100ms"><span class="help-num">04</span><div><h3>Quality assurance &amp; LQA</h3><p>When you need quality you can measure, report on and improve, not just “check”.</p></div></article>
+      <article class="help-item reveal" style="--d:0ms"><span class="help-num">05</span><div><h3>Technical &amp; regulated content</h3><p>Manuals, safety, compliance and life-sciences content where accuracy carries real risk.</p></div></article>
+      <article class="help-item reveal" style="--d:100ms"><span class="help-num">06</span><div><h3>Support for teams &amp; language partners</h3><p>Extra capacity for in-house teams, and a dependable production partner for MLVs and LSPs.</p></div></article>
     </div>
   </div>
 </section>

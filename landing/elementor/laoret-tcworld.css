@@ -1,0 +1,69 @@
+/* =====================================================================
+   Laoret × tcworld 2026 — custom CSS for the Elementor Pro build
+   Paste once into: Site Settings → Custom CSS  (or a page's Page Settings → Custom CSS)
+   Every rule targets a CSS class you add in  Advanced → CSS Classes  on a container/widget.
+   ===================================================================== */
+
+:root{
+  --lt-navy:#0B233F; --lt-teal:#37C1CC; --lt-teal-d:#2299A3; --lt-coral:#F05A5C;
+  --lt-line:#E3EAF0; --lt-soft:#F6F9FB;
+}
+
+/* ---------- Hero info bar (container class: lt-event-bar) ----------
+   Sits half over the hero: give the container Margin Top = -60px and Z-Index = 2 in Elementor. */
+.lt-event-bar{box-shadow:0 10px 30px rgba(11,35,63,.07)}
+
+/* ---------- WHY MEET: illustrated cards ----------
+   Card container class: lt-why-card   (+ lt-acc-coral / lt-acc-navy on cards 2,5 / 3,6)
+   Image widget class:  lt-why-visual */
+.lt-why-card{--acc:var(--lt-teal);position:relative;overflow:hidden;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.lt-why-card.lt-acc-coral{--acc:var(--lt-coral)}
+.lt-why-card.lt-acc-navy{--acc:var(--lt-navy)}
+.lt-why-card::after{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:var(--acc);
+  transition:width .5s cubic-bezier(.2,.7,.2,1);z-index:2}
+.lt-why-card:hover{transform:translateY(-8px);box-shadow:0 26px 50px rgba(11,35,63,.12);border-color:transparent}
+.lt-why-card:hover::after{width:100%}
+.lt-why-visual img{animation:ltFloat 6s ease-in-out infinite;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.lt-why-card:nth-child(2n) .lt-why-visual img{animation-delay:-2s}
+.lt-why-card:nth-child(3n) .lt-why-visual img{animation-delay:-4s}
+.lt-why-card:hover .lt-why-visual img{transform:scale(1.07)}
+@keyframes ltFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+
+/* ---------- WHAT WE HELP WITH: numbered list ----------
+   Row container class: lt-help-item   (+ lt-acc-coral on rows 2,3,6) */
+.lt-help-item{position:relative}
+.lt-help-item::before{content:"";position:absolute;left:0;top:-1px;height:2px;width:0;background:var(--lt-teal);
+  transition:width .45s cubic-bezier(.2,.7,.2,1)}
+.lt-help-item.lt-acc-coral::before{background:var(--lt-coral)}
+.lt-help-item:hover::before{width:100%}
+.lt-help-item .elementor-heading-title{transition:color .2s}
+.lt-help-item:hover .elementor-heading-title{color:var(--lt-teal-d)}
+
+/* ---------- Client logos (Image widget class: lt-logo) ---------- */
+.lt-logo img{mix-blend-mode:multiply;transition:transform .2s}
+.lt-logo img:hover{transform:scale(1.05)}
+
+/* ---------- Form: chip-style checkboxes & radios (Form widget class: lt-form) ---------- */
+.lt-form .elementor-field-type-checkbox .elementor-field-subgroup,
+.lt-form .elementor-field-type-radio .elementor-field-subgroup{display:flex;flex-wrap:wrap;gap:10px}
+.lt-form .elementor-field-option{margin:0!important}
+.lt-form .elementor-field-option input{position:absolute;opacity:0;width:1px;height:1px}
+.lt-form .elementor-field-option label{display:inline-block;padding:9px 16px;border-radius:999px;border:1.5px solid var(--lt-line);
+  font-size:14px;font-weight:500;color:var(--lt-navy);cursor:pointer;transition:all .15s;background:#FBFDFE}
+.lt-form .elementor-field-option label:hover{border-color:var(--lt-teal)}
+.lt-form .elementor-field-type-checkbox input:checked+label{background:var(--lt-navy);border-color:var(--lt-navy);color:#fff}
+.lt-form .elementor-field-type-radio input:checked+label{background:var(--lt-teal);border-color:var(--lt-teal)}
+.lt-form .elementor-field-option input:focus-visible+label{outline:3px solid var(--lt-coral);outline-offset:2px}
+
+/* ---------- Mobile: Why cards as swipe row if you keep a Grid instead of the Nested Carousel ---------- */
+@media (max-width:767px){
+  .lt-why-grid{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;scrollbar-width:none}
+  .lt-why-grid::-webkit-scrollbar{display:none}
+  .lt-why-grid>.lt-why-card{flex:0 0 82%!important;scroll-snap-align:center}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .lt-why-visual img{animation:none}
+  .lt-why-card,.lt-why-card:hover{transform:none}
+}

@@ -63,7 +63,7 @@ Everything below uses **Elementor Pro with Flexbox/Grid Containers** only. No ex
 ## 2. Hero
 `Container` Boxed, padding 72/0 px, background gradient (white → `#F7FBFC`).
 - `Container` **Grid 2 columns** (1.1fr / 0.9fr), gap 56, align center. Tablet & Mobile: 1 column.
-  - Left `Container` Column: H1 "Your Workflow." + line break + "Our Localization." (wrap line 2 in a `<span>` coloured **Coral #F05A5C**; line 1 Navy, matching the booth) · Text Editor subtitle "We fit localization into the way your team already works, not the other way around." (Lexend 500, 21 px Navy) · `Container` Row wrap gap 10 with 3 pill Buttons/Headings: Localization support · Human-governed AI · Quality built to scale (white, 1.5 px border `#D2F0F2`, middle pill `#F9D3D4`, radius 999, padding 8/16, Lexend 14.5 Navy) · `Container` Row gap 14: Button Primary "Book a Meeting" → `#book`, Button Outline "Visit Us at the Booth" → `#booth`.
+  - Left `Container` Column: H1 "Your Workflow." + line break + "Our Localization." (wrap line 2 in a `<span>` coloured **Coral #F05A5C**; line 1 Navy, matching the booth) · Text Editor subtitle "We fit localization into the way your team already works, not the other way around." (Lexend 500, 21 px Navy) · `Container` Row gap 14: Button Primary "Book a Meeting" → `#book`, Button Outline "Visit Us at the Booth" → `#booth`.
   - Right `Container` (position relative): Image key visual (radius 22, shadow) · floating `Container` "Meet Wael Makram" card. **Advanced → Position: Absolute**, left -28, bottom 36, white, radius 14, shadow. Mobile: Position Default.
 - **Info bar:** `Container` **Grid 4 columns** (Tablet 2, Mobile 1), white, border 1 px Line, radius 16, CSS class **`lt-event-bar`**, **Margin Top -60 px, Z-Index 2**. 4 × `Icon Box` (icon tile 42 px). Icon colours: Teal / Coral / Navy / Teal. Content: Dates · Venue "ICS Stuttgart, Germany" · Find us "Booth 2F27" · Talk to "Wael Makram".
 
@@ -75,7 +75,8 @@ Everything below uses **Elementor Pro with Flexbox/Grid Containers** only. No ex
 
 ## 4. This Page Is For You If… (dark): relevance check
 `Container` background Navy, padding 96. Optional decorative glow: Background Overlay radial gradient Teal 22 %.
-- Heading pattern with **`dots-light.svg`**, H2 white, Text `#AFC0D0`.
+- `Container` Row, centred, wrap, gap 10: 3 pills (Headings or Buttons without links) "Localization support" · "Human-governed AI" · "Quality built to scale". White text Lexend 500 14.5 px, background white 6 %, border 1.5 px Teal at 55 % (middle pill Coral at 60 %), radius 999, padding 8/16.
+- H2 white "This Page Is For You If…" directly under the pills (no dots, no description), margin-bottom 44.
 - `Container` **Grid 2 columns**, gap 16, max-width 980. 6 × `Icon Box` (inline icon left) or `Container` Row: background white 5 %, border white 10 %, radius 16, padding 22/24. Check icon Teal (odd) / Coral (even).
 - Button Primary "That's us. Let's talk" → `#book`.
 

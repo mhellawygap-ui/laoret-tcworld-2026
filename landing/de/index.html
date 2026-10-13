@@ -77,10 +77,13 @@ section{padding:96px 0}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
 .hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:700;letter-spacing:-.01em;margin-bottom:18px}
 .hero h1 span{display:block;color:var(--coral)}
-.hero .lead{font-family:var(--h);font-size:clamp(18px,1.7vw,21px);font-weight:500;line-height:1.5;color:var(--navy);max-width:540px;margin-bottom:22px}
-.pillars{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin-bottom:34px}
-.pillars li{font-family:var(--h);font-size:14.5px;font-weight:500;color:var(--navy);background:#fff;border:1.5px solid var(--teal-100);border-radius:999px;padding:8px 16px;box-shadow:0 4px 14px rgba(11,35,63,.05)}
-.pillars li:nth-child(2){border-color:#F9D3D4}
+.hero .lead{font-family:var(--h);font-size:clamp(18px,1.7vw,21px);font-weight:500;line-height:1.5;color:var(--navy);max-width:540px;margin-bottom:34px}
+/* Pillar pills above the "This Page Is For You If" title (dark section) */
+.pillars{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none;margin-bottom:22px}
+.pillars li{font-family:var(--h);font-size:14.5px;font-weight:500;color:#fff;background:rgba(255,255,255,.06);border:1.5px solid rgba(55,193,204,.55);border-radius:999px;padding:8px 16px}
+.pillars li:nth-child(2){border-color:rgba(240,90,92,.6)}
+.foryou .sec-head::before{display:none}
+.foryou .sec-head{margin-bottom:44px}
 .closing h2 span{color:var(--coral)}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px}
 .hero-visual{position:relative}
@@ -386,7 +389,6 @@ footer.site a:hover{color:var(--teal)}
       <div>
         <h1 id="hero-title">Ihr Workflow. <span>Unsere Lokalisierung.</span></h1>
         <p class="lead">Wir fügen Lokalisierung in die Arbeitsweise Ihres Teams ein, nicht umgekehrt.</p>
-        <ul class="pillars" aria-label="Unser Ansatz"><li>Lokalisierungssupport</li><li>KI unter menschlicher Kontrolle</li><li>Qualität, die mitwächst</li></ul>
         <div class="cta-row">
           <a href="#book" class="btn btn-primary">Termin vereinbaren
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -450,8 +452,8 @@ footer.site a:hover{color:var(--teal)}
 <section class="foryou" aria-labelledby="fy-title">
   <div class="wrap">
     <div class="sec-head reveal">
+      <ul class="pillars" aria-label="Unser Ansatz"><li>Lokalisierungssupport</li><li>KI unter menschlicher Kontrolle</li><li>Qualität, die mitwächst</li></ul>
       <h2 id="fy-title">Diese Seite ist für Sie, wenn …</h2>
-      <p>Für Unternehmen, Lokalisierungs- und Content-Verantwortliche, Operations-Teams und Sprachdienstleister gleichermaßen.</p>
     </div>
     <ul class="check-grid" role="list">
       <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Sie einen Lokalisierungs-Workflow suchen, der zu Ihren internen Prozessen passt</li>

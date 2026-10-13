@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laoret auf der tcworld conference &amp; tekom fair 2026 | Stuttgart</title>
+<meta name="description" content="Treffen Sie Laoret auf der tcworld conference & tekom fair 2026 in Stuttgart. Lokalisierung, die zu Ihrem Workflow passt: KI unter menschlicher Kontrolle und Qualität, die mitwächst. Vereinbaren Sie einen Termin mit Wael Makram.">
+<link rel="alternate" hreflang="en" href="https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/">
+<link rel="alternate" hreflang="de" href="https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/de/">
+<link rel="alternate" hreflang="x-default" href="https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!--
+  INTERNAL NOTES
+  - Brand tokens taken from the Laoret logo + laoret.com: navy #011B33, teal #20C1CB, coral #FF4049.
+  - Fonts: Lexend (headings) + Inter (body) as stand-ins. Swap to the exact laoret.com theme fonts when moving into Elementor.
+  - Replace before launch: booth/hall number ([TBC]), form action endpoint.
+  - Laoret logo, tekom key visual and Wael's photo are bundled locally; tcworld/tekom logos, ISO badges and client logos load from laoret.com / tekom.de.
+-->
+<style>
+:root{
+  --navy:#011B33; --navy-2:#0B2A47; --teal:#20C1CB; --teal-d:#119BA4; --teal-50:#E9F8F9; --teal-100:#D3F2F4;
+  --coral:#FF4049; --ink:#011B33; --body:#4A5B6D; --muted:#7A8898; --line:#E3EAF0; --bg-soft:#F5F9FB; --white:#fff;
+  --radius:16px; --radius-sm:10px; --shadow:0 10px 30px rgba(1,27,51,.07); --shadow-lg:0 24px 60px rgba(1,27,51,.12);
+  --h:'Lexend',system-ui,sans-serif; --b:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--b);color:var(--body);background:var(--white);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--h);color:var(--ink);line-height:1.2;font-weight:600}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.eyebrow{display:inline-block;font-family:var(--h);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-d);margin-bottom:14px}
+.sec-head{max-width:720px;margin:0 auto 56px;text-align:center}
+.sec-head h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:14px}
+.sec-head p{font-size:18px}
+.soft{background:var(--bg-soft)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:600;font-size:15px;padding:15px 28px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap}
+.btn-primary{background:var(--teal);color:var(--navy)}
+.btn-primary:hover{background:var(--teal-d);color:#fff;transform:translateY(-1px);box-shadow:0 8px 20px rgba(32,193,203,.35)}
+.btn-outline{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-outline:hover{background:var(--navy);color:#fff}
+.btn-light{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-light:hover{background:#fff;color:var(--navy)}
+.btn svg{width:18px;height:18px}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.chip input:focus-visible+span{outline:3px solid var(--coral);outline-offset:2px}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .logo{height:30px;width:auto}
+.brand .x{color:var(--muted);font-size:18px}
+.brand .event-logo{height:32px;width:auto}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-family:var(--h);font-size:14.5px;font-weight:500;color:var(--navy);position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--teal);transition:width .2s}
+.nav-links a:hover::after{width:100%}
+.nav .btn{padding:11px 22px;font-size:14px}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.lang{display:flex;gap:2px;border:1px solid var(--line);border-radius:999px;padding:3px;font-family:var(--h);font-size:13px;font-weight:600;background:#fff}
+.lang a{padding:5px 11px;border-radius:999px;color:var(--muted);transition:color .2s}
+.lang a:hover{color:var(--navy)}
+.lang a[aria-current]{background:var(--navy);color:#fff}
+:lang(de) h1,:lang(de) h2,:lang(de) h3{-webkit-hyphens:auto;hyphens:auto}
+
+/* Hero */
+.hero{padding:72px 0 0;background:radial-gradient(900px 500px at 85% 10%,var(--teal-50),transparent 70%),linear-gradient(180deg,#fff, #F7FBFC);position:relative}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 16px 7px 10px;font-size:13.5px;font-weight:500;color:var(--navy);box-shadow:0 4px 14px rgba(1,27,51,.05);margin-bottom:26px}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 4px rgba(255,64,73,.15)}
+.hero h1{font-size:clamp(34px,4.6vw,56px);font-weight:700;letter-spacing:-.01em;margin-bottom:18px}
+.hero h1 span{color:var(--teal-d)}
+.hero .sub{font-family:var(--h);font-size:clamp(17px,1.6vw,20px);font-weight:500;color:var(--navy);margin-bottom:18px}
+.hero .sub i{font-style:normal;color:var(--teal)}
+.hero .lead{font-size:17.5px;max-width:560px;margin-bottom:32px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.hero-visual{position:relative}
+.kv{border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/3.3;background:var(--navy)}
+.kv img{width:100%;height:100%;object-fit:cover;object-position:30% center}
+.kv-badge{position:absolute;left:-28px;bottom:36px;background:#fff;border-radius:14px;box-shadow:var(--shadow-lg);padding:14px 18px 14px 14px;display:flex;align-items:center;gap:12px;max-width:290px}
+.avatar{width:52px;height:52px;border-radius:50%;overflow:hidden;background:linear-gradient(135deg,var(--teal),var(--navy));color:#fff;font-family:var(--h);font-weight:600;display:grid;place-items:center;flex:none}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.kv-badge strong{display:block;font-family:var(--h);color:var(--navy);font-size:15px;line-height:1.3}
+.kv-badge span{font-size:13px;color:var(--muted)}
+.kv-logos{position:absolute;top:18px;right:18px;background:#fff;border-radius:12px;padding:10px 14px;display:flex;gap:12px;align-items:center;box-shadow:var(--shadow)}
+.kv-logos img{height:26px;width:auto}
+
+.event-bar{margin-top:64px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);position:relative;z-index:2;transform:translateY(50%)}
+.event-bar div{padding:22px 26px;display:flex;gap:14px;align-items:flex-start}
+.event-bar div+div{border-left:1px solid var(--line)}
+.ico{width:42px;height:42px;border-radius:12px;background:var(--teal-50);color:var(--teal-d);display:grid;place-items:center;flex:none}
+.ico svg{width:21px;height:21px}
+.event-bar small{display:block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.event-bar strong{font-family:var(--h);color:var(--navy);font-size:15.5px;font-weight:600}
+
+/* Trust strip */
+.trust-strip{padding:110px 0 48px;border-bottom:1px solid var(--line)}
+.trust-strip .wrap{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-strip p{font-family:var(--h);font-size:14px;font-weight:500;color:var(--muted)}
+.certs{display:flex;gap:22px;align-items:center;flex-wrap:wrap;justify-content:center}
+.certs img{height:58px;width:auto}
+
+/* Who we are */
+.who-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.who-intro h2{font-size:clamp(30px,3.4vw,42px);margin-bottom:18px}
+.who-intro p{font-size:18px;margin-bottom:28px}
+.who-intro .note{border-left:3px solid var(--teal);padding:4px 0 4px 18px;font-family:var(--h);font-weight:500;color:var(--navy);font-size:17px}
+.points{list-style:none;display:grid;gap:14px}
+.points li{display:flex;gap:20px;align-items:flex-start;padding:22px 24px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;transition:border-color .2s, box-shadow .2s}
+.points li:hover{border-color:var(--teal-100);box-shadow:var(--shadow)}
+.num{font-family:var(--h);font-weight:600;font-size:14px;color:var(--teal-d);background:var(--teal-50);width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:none}
+.points strong{display:block;font-family:var(--h);font-size:18px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.points span{font-size:15px}
+
+/* Cards */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;transition:transform .2s, box-shadow .2s, border-color .2s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--teal-100)}
+.card .ico{margin-bottom:20px;width:50px;height:50px;border-radius:14px}
+.card .ico svg{width:24px;height:24px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{font-size:15.5px}
+.why-foot{margin-top:48px;text-align:center}
+.why-foot p{font-family:var(--h);font-size:19px;color:var(--navy);font-weight:500;max-width:680px;margin:0 auto 22px}
+
+.svc{display:flex;gap:18px;align-items:flex-start}
+.svc .ico{margin:0}
+.svc-tag{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--teal-d)}
+
+/* For you */
+.foryou{background:var(--navy);color:#C9D5E1;position:relative;overflow:hidden}
+.foryou::before{content:"";position:absolute;width:520px;height:520px;right:-160px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(32,193,203,.22),transparent 70%)}
+.foryou h2{color:#fff}
+.foryou .eyebrow{color:var(--teal)}
+.foryou .sec-head p{color:#AFC0D0}
+.check-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:980px;margin:0 auto;position:relative}
+.check{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:22px 24px;color:#E6EEF5;font-size:16.5px;line-height:1.5}
+.check svg{width:24px;height:24px;flex:none;color:var(--teal);margin-top:1px}
+.foryou .center{text-align:center;margin-top:44px;position:relative}
+
+/* Wael */
+.wael{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.wael-photo{position:relative}
+.wael-photo .frame{border-radius:24px;overflow:hidden;aspect-ratio:1/1;background:linear-gradient(160deg,var(--teal-50),#fff);border:1px solid var(--line);box-shadow:var(--shadow-lg);display:grid;place-items:center}
+.wael-photo .frame img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.wael-photo .frame .fallback{font-family:var(--h);font-size:72px;font-weight:700;color:var(--teal-d)}
+.wael-photo .tag{position:absolute;right:-18px;bottom:28px;background:var(--navy);color:#fff;border-radius:14px;padding:14px 18px;box-shadow:var(--shadow-lg)}
+.wael-photo .tag small{display:block;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:600}
+.wael-photo .tag strong{font-family:var(--h);font-size:15px}
+.deco{position:absolute;width:90px;height:90px;left:-24px;top:-24px;border-radius:50%;border:10px solid var(--coral);opacity:.15;z-index:-1}
+.wael-copy h2{font-size:clamp(28px,3.2vw,40px);margin-bottom:6px}
+.wael-copy .role{font-family:var(--h);font-weight:500;color:var(--teal-d);margin-bottom:18px}
+.wael-copy > p{font-size:17px;margin-bottom:26px}
+.talk h4{font-size:15px;margin-bottom:12px;color:var(--navy)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.tags span{background:var(--teal-50);color:var(--navy);border:1px solid var(--teal-100);font-size:14px;font-weight:500;padding:8px 15px;border-radius:999px}
+
+/* Trust */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:64px}
+.stat{text-align:center;padding:30px 20px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+.stat b{display:block;font-family:var(--h);font-size:34px;font-weight:700;color:var(--navy);line-height:1.1;margin-bottom:8px}
+.stat b em{font-style:normal;color:var(--teal)}
+.stat span{font-size:14.5px}
+.logos-title{text-align:center;font-family:var(--h);font-size:14px;font-weight:500;color:var(--muted);margin-bottom:26px}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:22px 48px;margin-bottom:72px}
+.logos img{height:34px;width:auto;filter:grayscale(1);opacity:.65;transition:all .2s}
+.logos img:hover{filter:none;opacity:1}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;display:flex;flex-direction:column}
+.stars{color:#F5B301;letter-spacing:2px;margin-bottom:14px;font-size:15px}
+.quote p{font-size:15.5px;color:var(--navy);flex:1;margin-bottom:22px}
+.quote footer strong{display:block;font-family:var(--h);color:var(--navy);font-size:15px}
+.quote footer span{font-size:13.5px;color:var(--muted)}
+
+/* Let's meet */
+.meet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.meet-card{border-radius:var(--radius);padding:32px 28px;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
+.meet-card.featured{background:var(--teal-50);border-color:var(--teal-100)}
+.meet-card h3{font-size:20px;margin:18px 0 8px}
+.meet-card p{font-size:15.5px;flex:1;margin-bottom:20px}
+.meet-card a.link{font-family:var(--h);font-weight:600;font-size:15px;color:var(--teal-d);display:inline-flex;gap:6px;align-items:center}
+.meet-card a.link:hover{color:var(--navy)}
+
+/* Form */
+.book{background:linear-gradient(180deg,var(--bg-soft),#fff)}
+.book-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.book-side h2{font-size:clamp(28px,3.2vw,40px);margin-bottom:16px}
+.book-side > p{font-size:17px;margin-bottom:28px}
+.benefits{list-style:none;display:grid;gap:14px;margin-bottom:32px}
+.benefits li{display:flex;gap:12px;align-items:flex-start;color:var(--navy);font-weight:500}
+.benefits svg{width:22px;height:22px;color:var(--teal);flex:none;margin-top:1px}
+.contact-mini{display:flex;gap:14px;align-items:center;padding:18px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+.contact-mini strong{display:block;font-family:var(--h);color:var(--navy);font-size:15px}
+.contact-mini span{font-size:13.5px;color:var(--muted)}
+form.lead{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-lg);padding:40px}
+.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+label,.legend{font-size:14px;font-weight:600;color:var(--navy)}
+label .opt{font-weight:400;color:var(--muted)}
+.req{color:var(--coral)}
+input,select,textarea{font:inherit;font-size:15px;color:var(--navy);border:1.5px solid var(--line);border-radius:var(--radius-sm);padding:12px 14px;background:#FBFDFE;transition:border-color .2s, box-shadow .2s;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 4px rgba(32,193,203,.15);background:#fff}
+input.invalid,select.invalid{border-color:var(--coral)}
+fieldset{border:0}
+.legend{display:block;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-block;padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);font-size:14px;font-weight:500;color:var(--navy);cursor:pointer;transition:all .15s;background:#FBFDFE}
+.chip span:hover{border-color:var(--teal)}
+.chip input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.seg .chip span{display:block;text-align:center}
+.seg .chip input:checked+span{background:var(--teal);border-color:var(--teal);color:var(--navy)}
+.err{font-size:13px;color:var(--coral);display:none}
+.field.has-err .err{display:block}
+.submit-row{margin-top:26px}
+.submit-row .btn{width:100%;padding:17px;font-size:16px}
+.privacy{display:flex;gap:8px;justify-content:center;align-items:center;font-size:13.5px;color:var(--muted);margin-top:14px;text-align:center}
+.privacy svg{width:16px;height:16px;flex:none}
+.success{display:none;text-align:center;padding:40px 10px}
+.success .ico{margin:0 auto 18px;width:64px;height:64px;border-radius:50%}
+.success h3{font-size:24px;margin-bottom:8px}
+
+/* Closing */
+.closing{background:var(--navy);color:#C9D5E1;text-align:center;padding:88px 0;position:relative;overflow:hidden}
+.closing::after{content:"";position:absolute;width:600px;height:600px;left:50%;top:-340px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(32,193,203,.25),transparent 70%)}
+.closing .wrap{position:relative;z-index:1}
+.closing h2{color:#fff;font-size:clamp(30px,3.8vw,46px);margin-bottom:14px}
+.closing p{font-size:18px;margin-bottom:30px}
+footer.site{background:#00111F;color:#8FA2B5;padding:32px 0;font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer.site img{height:24px;filter:brightness(0) invert(1)}
+footer.site a{color:#fff}
+footer.site a:hover{color:var(--teal)}
+
+/* Mobile sticky CTA */
+.mobile-cta{display:none}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* Responsive */
+@media (max-width:1060px){
+  .nav-links{display:none}
+  .hero-grid,.who-grid,.wael,.book-grid{grid-template-columns:1fr;gap:48px}
+  .hero-visual{max-width:620px}
+  .kv-badge{left:16px}
+  .event-bar{grid-template-columns:repeat(2,1fr);transform:translateY(40%)}
+  .event-bar div:nth-child(3){border-left:0}
+  .event-bar div:nth-child(n+3){border-top:1px solid var(--line)}
+  .grid-3,.meet-grid,.quotes{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .wael-photo{max-width:420px}
+}
+@media (max-width:680px){
+  section{padding:72px 0}
+  .wrap{padding:0 18px}
+  .brand .logo{height:24px}.brand .event-logo{height:26px}
+  .nav .btn{display:none}
+  .hero{padding-top:48px}
+  .cta-row .btn{flex:1 1 100%}
+  .kv-badge{position:relative;left:auto;bottom:auto;margin:-36px 16px 0;max-width:none}
+  .kv-logos{display:none}
+  .event-bar{grid-template-columns:1fr;transform:none;margin-top:40px}
+  .event-bar div+div{border-left:0;border-top:1px solid var(--line)}
+  .trust-strip{padding:48px 0 40px}
+  .certs img{height:46px}
+  .grid-3,.meet-grid,.quotes,.check-grid,.f-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr;gap:14px}
+  .stat b{font-size:28px}
+  form.lead{padding:26px 20px}
+  .seg{grid-template-columns:1fr}
+  .wael-photo .tag{right:12px}
+  .logos{gap:18px 30px}.logos img{height:26px}
+  .mobile-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:var(--navy);border-radius:999px;padding:8px 8px 8px 20px;align-items:center;justify-content:space-between;box-shadow:var(--shadow-lg);transform:translateY(140%);transition:transform .3s}
+  .mobile-cta.show{transform:none}
+  .mobile-cta span{color:#fff;font-family:var(--h);font-size:14px;font-weight:500}
+  .mobile-cta .btn{padding:11px 18px;font-size:14px}
+  footer.site{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="https://laoret.com" class="brand" aria-label="Laoret Startseite">
+      <img class="logo" src="../assets/laoret-logo.png" alt="Laoret">
+      <span class="x" aria-hidden="true">×</span>
+      <img class="event-logo" src="https://tcworldconference.tekom.de/fileadmin/tagungen.tekom.de/H26/Logos_Banner_Keyvisual/Logos_Banner_Tagung/Logos_pur/tcworld-conference_Vektordatei.svg" alt="tcworld conference">
+    </a>
+    <nav aria-label="Seitenbereiche">
+      <ul class="nav-links">
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#why">Warum Laoret</a></li>
+        <li><a href="#services">Leistungen</a></li>
+        <li><a href="#wael">Wael treffen</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang" role="navigation" aria-label="Sprache"><a href="../" lang="en" hreflang="en">EN</a><a href="./" aria-current="page" lang="de">DE</a></div>
+      <a href="#book" class="btn btn-primary">Termin vereinbaren</a>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- ================= 1. HERO ================= -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="pill"><span class="dot" aria-hidden="true"></span>Aussteller · tcworld conference &amp; tekom fair 2026</span>
+        <h1 id="hero-title">Lokalisierung, die zu Ihrem Workflow passt. <span>Nicht umgekehrt.</span></h1>
+        <p class="sub">Lokalisierungssupport <i>·</i> KI unter menschlicher Kontrolle <i>·</i> Qualität, die mitwächst</p>
+        <p class="lead">Treffen Sie Laoret in Stuttgart und entdecken Sie einen flexibleren Ansatz für Lokalisierung: Workflow-Know-how, praxisnahe KI und menschliche Qualitätskontrolle für mehrsprachiges Wachstum, das skaliert.</p>
+        <div class="cta-row">
+          <a href="#book" class="btn btn-primary">Termin vereinbaren
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#meet" class="btn btn-outline">Besuchen Sie unseren Stand</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="kv">
+          <img src="../assets/tekom-2026-keyvisual.jpg" alt="tekom 2026 Key Visual: fließende Farblinien">
+        </div>
+        <div class="kv-logos">
+          <img src="https://jahrestagung.tekom.de/fileadmin/tagungen.tekom.de/H26/Logos_Banner_Keyvisual/Logos_Banner_Tagung/Logos_pur/tekom-jahrestagung_transparent.svg" alt="tekom Jahrestagung">
+        </div>
+        <div class="kv-badge">
+          <div class="avatar"><img src="../wael-makram.jpg" alt="Wael Makram"></div>
+          <div><strong>Treffen Sie Wael Makram</strong><span>Localization &amp; Operations Director, am Laoret-Stand</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-bar" role="list" aria-label="Veranstaltungsdetails">
+      <div role="listitem"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></span>
+        <p><small>Datum</small><strong>10.–12. November 2026</strong></p></div>
+      <div role="listitem"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+        <p><small>Ort</small><strong>Stuttgart, Deutschland</strong></p></div>
+      <div role="listitem"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V9l9-5 9 5v12"/><path d="M9 21v-7h6v7"/></svg></span>
+        <p><small>Sie finden uns</small><strong>Halle [TBC] · Stand [TBC]</strong></p></div>
+      <div role="listitem"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 01-11.6 7.1L4 20.5l1.4-5A8 8 0 1121 12z"/></svg></span>
+        <p><small>Ansprechpartner</small><strong>Wael Makram</strong></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<div class="trust-strip">
+  <div class="wrap">
+    <p>ISO-zertifizierte Qualität · 120+ Sprachen · ATA-Mitglied</p>
+    <div class="certs">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/17100-1.png" alt="ISO 17100 zertifiziert">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/18587-1.png" alt="ISO 18587 zertifiziert">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/9001.png" alt="ISO 9001 zertifiziert">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/ata.png" alt="Mitglied der American Translators Association">
+    </div>
+  </div>
+</div>
+
+<!-- ================= 2. WHO WE ARE ================= -->
+<section id="about" aria-labelledby="about-title">
+  <div class="wrap who-grid">
+    <div class="who-intro reveal">
+      <span class="eyebrow">Über uns</span>
+      <h2 id="about-title">Wer wir sind</h2>
+      <p>Bei Laoret unterstützen wir Unternehmen dabei, Lokalisierungs-Workflows aufzubauen, die praxisnah, skalierbar und an echten geschäftlichen Anforderungen ausgerichtet sind.</p>
+      <p class="note">Ein Boutique-Lokalisierungspartner, der Prozess-Know-how, die passende Technologie und menschliches Urteilsvermögen mitbringt und alles an Ihre Abläufe anpasst.</p>
+    </div>
+    <ol class="points reveal">
+      <li><span class="num">01</span><div><strong>Wir bauen keine Workflows von der Stange.</strong><span>Jedes Projekt beginnt damit, wie Ihr Team, Ihre Tools und Ihre Inhalte heute schon arbeiten.</span></div></li>
+      <li><span class="num">02</span><div><strong>Wir verkaufen keine Technologie.</strong><span>Wir sind an keine Plattform gebunden. Unsere Empfehlungen richten sich allein danach, was Ihren Inhalten dient.</span></div></li>
+      <li><span class="num">03</span><div><strong>Wir verstehen Technologie und KI gut genug, um den richtigen Workflow um Sie herum aufzubauen.</strong><span>MT, LLMs, TMS und CAT-Tools: ausgewählt und konfiguriert für Ihre Inhaltstypen.</span></div></li>
+      <li><span class="num">04</span><div><strong>Wir sind ein Boutique-Anbieter: flexibel und unkompliziert in der Zusammenarbeit.</strong><span>Direkter Draht zu Entscheidern, schnelle Antworten und Spielraum für Anpassungen im laufenden Projekt.</span></div></li>
+      <li><span class="num">05</span><div><strong>Qualität und menschliche Kontrolle bleiben zentral.</strong><span>KI beschleunigt. Qualifizierte Fachübersetzer entscheiden, was ausgeliefert wird.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 3. WHY MEET ================= -->
+<section id="why" class="soft" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Warum Laoret</span>
+      <h2 id="why-title">Warum Laoret auf der tcworld treffen?</h2>
+      <p>Sechs Gründe, warum sich 15 Minuten an unserem Stand für Sie lohnen.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M7.5 6H14a3 3 0 013 3v0a3 3 0 01-3 3h-4a3 3 0 00-3 3v0a3 3 0 003 3h6.5"/></svg></span>
+        <h3>Workflow zuerst</h3><p>Wir verstehen zuerst Ihren Prozess und gestalten die Lokalisierung dann so, dass sie sich nahtlos einfügt.</p></article>
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h3>KI unter menschlicher Kontrolle</h3><p>Maschinelles Tempo, wo es sicher ist, menschliche Prüfung, wo es darauf ankommt – mit klaren Regeln für beides.</p></article>
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M7 16v-4M12 16V8M17 16V4"/></svg></span>
+        <h3>Skalierbare Qualität</h3><p>Definierte LQA, gepflegte Terminologie und messbare Bewertung, die auch bei wachsendem Volumen trägt.</p></article>
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 4v5h-5"/></svg></span>
+        <h3>Flexible Unterstützung</h3><p>Komplette Projekte, Zusatzkapazitäten oder ein einzelner Workstream – ganz so, wie Ihr Team es braucht.</p></article>
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9.5" r="2.5"/><path d="M2.5 20a6.5 6.5 0 0113 0M15 14.5a5 5 0 016.5 4.8"/></svg></span>
+        <h3>Unkomplizierte Zusammenarbeit</h3><p>Ansprechbare Menschen, transparente Kommunikation und keine unnötigen Ebenen zwischen Ihnen und der Arbeit.</p></article>
+      <article class="card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h12M9 3v2M5 5c0 4 3 7 7 8M13 5c0 3-2.5 6.5-8 9"/><path d="M13 21l4-9 4 9M14.5 18h5"/></svg></span>
+        <h3>Praxisnahe Lokalisierungsexpertise</h3><p>Erfahrung mit technischen, regulierten und Produktinhalten in über 120 Sprachen.</p></article>
+    </div>
+    <div class="why-foot reveal">
+      <p>Wenn Ihr Team die Effizienz in der Lokalisierung steigern möchte, ohne Qualität oder Kontrolle aufzugeben, ist das genau das richtige Gespräch auf der tcworld.</p>
+      <a href="#book" class="btn btn-primary">Termin vereinbaren</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. WHAT WE HELP WITH ================= -->
+<section id="services" aria-labelledby="svc-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Leistungen</span>
+      <h2 id="svc-title">Wobei wir unterstützen</h2>
+      <p>Ausgerichtet auf die Herausforderungen, mit denen Lokalisierungs- und Dokumentationsteams am häufigsten zu uns kommen.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 013 3V14"/></svg></span>
+        <div><h3>Design von Lokalisierungs-Workflows</h3><p>Wenn Übergaben manuell laufen, Tools nicht miteinander sprechen oder Termine immer wieder rutschen.</p></div></article>
+      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>
+        <div><h3>MTPE &amp; KI-gestützte Workflows</h3><p>Wenn Sie das Tempo von KI mit Post-Editing nach ISO 18587 und klaren Qualitätsschwellen verbinden möchten.</p></div></article>
+      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z"/><path d="M4 7v5c0 1.7 3.6 3 8 3s8-1.3 8-3V7M4 12v5c0 1.7 3.6 3 8 3s8-1.3 8-3v-5"/></svg></span>
+        <div><h3>Mehrsprachige Content-Operations</h3><p>Wenn Volumen, Sprachen und Kanäle schneller wachsen, als Ihr Team sie koordinieren kann.</p></div></article>
+      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5M8 11l2 2 4-4"/></svg></span>
+        <div><h3>Qualitätssicherung &amp; LQA</h3><p>Wenn Sie Qualität messen, berichten und verbessern wollen, statt sie nur zu „prüfen“.</p></div></article>
+      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+        <div><h3>Technische &amp; regulierte Inhalte</h3><p>Handbücher, Sicherheits-, Compliance- und Life-Sciences-Inhalte, bei denen Genauigkeit über echte Risiken entscheidet.</p></div></article>
+      <article class="card svc reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12l3 3 5-5"/><path d="M12 21a9 9 0 100-18 9 9 0 000 18z"/></svg></span>
+        <div><h3>Unterstützung für Teams &amp; Sprachdienstleister</h3><p>Zusätzliche Kapazität für interne Teams und ein verlässlicher Produktionspartner für MLVs und LSPs.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. FOR YOU IF ================= -->
+<section class="foryou" aria-labelledby="fy-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Für wen wir da sind</span>
+      <h2 id="fy-title">Diese Seite ist für Sie, wenn …</h2>
+      <p>Für Unternehmen, Lokalisierungs- und Content-Verantwortliche, Operations-Teams und Sprachdienstleister gleichermaßen.</p>
+    </div>
+    <ul class="check-grid" role="list">
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Sie einen Lokalisierungs-Workflow suchen, der zu Ihren internen Prozessen passt</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Sie KI nutzen möchten, ohne die menschliche Qualitätskontrolle aufzugeben</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Sie einen flexiblen Lokalisierungspartner brauchen, keine starre Produktionsmaschine</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Sie mehrsprachige Inhalte in großem Umfang verantworten</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Sie als MLV oder LSP einen kompetenten, unkomplizierten Partner suchen</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Sie ein praxisnahes Gespräch suchen, keinen Technologie-Pitch</li>
+    </ul>
+    <div class="center reveal"><a href="#book" class="btn btn-primary">Das sind wir. Lassen Sie uns sprechen</a></div>
+  </div>
+</section>
+
+<!-- ================= 6. MEET WAEL ================= -->
+<section id="wael" aria-labelledby="wael-title">
+  <div class="wrap wael">
+    <div class="wael-photo reveal">
+      <span class="deco" aria-hidden="true"></span>
+      <div class="frame">
+                <img src="../wael-makram.jpg" alt="Wael Makram, Localization &amp; Operations Director bei Laoret" width="900" height="900">
+      </div>
+      <div class="tag"><small>Am Stand</small><strong>10.–12. Nov. · Stuttgart</strong></div>
+    </div>
+    <div class="wael-copy reveal">
+      <span class="eyebrow">Ihr Ansprechpartner auf der tcworld</span>
+      <h2 id="wael-title">Treffen Sie Wael Makram an unserem Stand</h2>
+      <p class="role">Localization &amp; Operations Director, Laoret</p>
+      <p>Wael vertritt Laoret auf der tcworld und steht für Gespräche rund um Lokalisierungs-Workflows, KI-gestützte Umsetzung, mehrsprachige Abläufe und praktische Wege zur Skalierung von Qualität ohne unnötige Komplexität zur Verfügung.</p>
+      <div class="talk">
+        <h4>Sprechen wir über …</h4>
+        <div class="tags">
+          <span>Optimierung von Lokalisierungs-Workflows</span><span>KI in der Lokalisierung</span><span>MTPE &amp; menschliches Review</span>
+          <span>Mehrsprachige Content-Operations</span><span>Qualität im großen Maßstab</span><span>Flexible Kooperationsmodelle</span>
+        </div>
+      </div>
+      <a href="#book" class="btn btn-primary">Termin mit Wael vereinbaren
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7 + 8. TRUST & TESTIMONIALS ================= -->
+<section id="trust" class="soft" aria-labelledby="trust-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Vertrauen</span>
+      <h2 id="trust-title">Warum Unternehmen Laoret vertrauen</h2>
+      <p>Menschliche Expertise und smarte Technologie, abgesichert durch zertifizierte Prozesse.</p>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b>ISO<em>×3</em></b><span>Zertifiziert nach ISO 17100, ISO 18587 &amp; ISO 9001</span></div>
+      <div class="stat reveal"><b>120<em>+</em></b><span>Sprachen, abgedeckt durch muttersprachliche Linguisten</span></div>
+      <div class="stat reveal"><b>Human<em>+</em>AI</b><span>Smarte Technologie, menschlich kontrollierte Ergebnisse</span></div>
+      <div class="stat reveal"><b>24<em>/</em>7</b><span>Erreichbar über Branchen und Zeitzonen hinweg</span></div>
+    </div>
+
+    <p class="logos-title">Unternehmen, die mit uns arbeiten</p>
+    <div class="logos reveal">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/samsung.png" alt="Samsung">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/microsoft.png" alt="Microsoft">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/amazon.png" alt="Amazon">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/Abbott.png" alt="Abbott">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/xerox.png" alt="Xerox">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/htc.png" alt="HTC">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/manpower.png" alt="ManpowerGroup">
+    </div>
+
+    <!-- Testimonials from laoret.com, translated from English -->
+    <div class="quotes">
+      <blockquote class="quote reveal"><div class="stars" aria-label="5 Sterne">★★★★★</div>
+        <p>„Die Entscheidung für Laorets Full Post-Editing war ein zentraler Erfolgsfaktor beim Launch unseres deutschen Produkthandbuchs. Sie haben nicht nur die Sprache korrigiert, sondern den gesamten Textfluss muttersprachlich angepasst.“</p>
+        <footer><strong>Andreas Vogel</strong><span>Content Strategist, Industrieautomation</span></footer></blockquote>
+      <blockquote class="quote reveal"><div class="stars" aria-label="5 Sterne">★★★★★</div>
+        <p>„Wir brauchten schnelle Durchlaufzeiten für Hunderte technischer Dokumente. Das Team weiß genau, wie man Qualität und Effizienz in Balance hält.“</p>
+        <footer><strong>Hiroshi Sato</strong><span>Technischer Redakteur, Elektronik</span></footer></blockquote>
+      <blockquote class="quote reveal"><div class="stars" aria-label="5 Sterne">★★★★★</div>
+        <p>„Das gründliche Lektorat und die Fachexpertise des Teams stellen sicher, dass unsere Übersetzungen strenge regulatorische Anforderungen kompromisslos erfüllen.“</p>
+        <footer><strong>Layla Hassan</strong><span>Senior Project Manager, Gesundheitswesen</span></footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 9. LET'S MEET ================= -->
+<section id="meet" aria-labelledby="meet-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Auf der Messe</span>
+      <h2 id="meet-title">Treffen wir uns auf der tcworld</h2>
+      <p>Ob Sie einen besseren Lokalisierungs-Workflow suchen, einen verlässlichen Sprachpartner brauchen oder darüber sprechen möchten, wie KI und menschliche Expertise besser zusammenwirken – wir freuen uns auf Sie.</p>
+    </div>
+    <div class="meet-grid">
+      <div class="meet-card featured reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M9 15l2 2 4-4"/></svg></span>
+        <h3>Termin vereinbaren</h3><p>Reservieren Sie eine feste Zeit mit Wael, damit Ihr Gespräch nicht zwischen zwei Standbesuchen untergeht.</p>
+        <a href="#book" class="link">Zeitfenster reservieren →</a></div>
+      <div class="meet-card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+        <h3>Am Stand vorbeikommen</h3><p>Sie finden uns in Halle [TBC], Stand [TBC], vom 10. bis 12. November. Spontane Besuche sind jederzeit willkommen.</p>
+        <a href="#book" class="link">Besuch ankündigen →</a></div>
+      <div class="meet-card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6 8.5-6"/></svg></span>
+        <h3>Kontaktdaten senden</h3><p>Sie schaffen es nicht nach Stuttgart? Dann melden wir uns direkt nach der Messe.</p>
+        <a href="#book" class="link">Kontaktdaten teilen →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 10. FORM ================= -->
+<section id="book" class="book" aria-labelledby="book-title">
+  <div class="wrap book-grid">
+    <div class="book-side reveal">
+      <span class="eyebrow">Termin vereinbaren</span>
+      <h2 id="book-title">Vereinbaren Sie einen Termin mit Laoret auf der tcworld</h2>
+      <p>Hinterlassen Sie Ihre Daten. Unser Team meldet sich, um einen Termin während der Messe zu vereinbaren oder direkt danach nachzufassen.</p>
+      <ul class="benefits">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Ein fokussiertes Gespräch über Ihren Workflow, keine Produktdemo</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Ein fester Termin am Stand, ganz ohne Wartezeit</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Konkrete nächste Schritte, die Sie mit in Ihr Team nehmen</li>
+      </ul>
+      <div class="contact-mini">
+        <div class="avatar"><img src="../wael-makram.jpg" alt="Wael Makram"></div>
+        <div><strong>Wael Makram</strong><span>Ihr Ansprechpartner auf der tcworld 2026</span></div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <!-- Connect action to the CRM / form endpoint before launch -->
+      <form class="lead" id="leadForm" action="#" method="post" novalidate>
+        <div id="formBody">
+          <input type="hidden" name="page_language" value="de">
+          <div class="f-grid">
+            <div class="field"><label for="name">Vollständiger Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="name" name="full_name" type="text" autocomplete="name" required><span class="err">Bitte geben Sie Ihren Namen ein.</span></div>
+            <div class="field"><label for="email">Geschäftliche E-Mail <span class="req" aria-hidden="true">*</span></label>
+              <input id="email" name="work_email" type="email" autocomplete="email" required><span class="err">Bitte geben Sie eine gültige geschäftliche E-Mail-Adresse ein.</span></div>
+            <div class="field"><label for="company">Unternehmen <span class="req" aria-hidden="true">*</span></label>
+              <input id="company" name="company" type="text" autocomplete="organization" required><span class="err">Bitte geben Sie Ihr Unternehmen an.</span></div>
+            <div class="field"><label for="title">Position <span class="req" aria-hidden="true">*</span></label>
+              <input id="title" name="job_title" type="text" autocomplete="organization-title" required><span class="err">Bitte geben Sie Ihre Position an.</span></div>
+            <div class="field"><label for="phone">Telefonnummer <span class="opt">(optional)</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field"><label for="country">Land <span class="req" aria-hidden="true">*</span></label>
+              <select id="country" name="country" autocomplete="country-name" required>
+                <option value="">Land auswählen</option>
+                <option>Deutschland</option><option>Österreich</option><option>Schweiz</option><option>Vereinigtes Königreich</option>
+                <option>Frankreich</option><option>Niederlande</option><option>Belgien</option><option>Italien</option><option>Spanien</option>
+                <option>Polen</option><option>Schweden</option><option>Dänemark</option><option>USA</option><option>Kanada</option>
+                <option>Saudi-Arabien</option><option>Vereinigte Arabische Emirate</option><option>Ägypten</option><option>Andere</option>
+              </select><span class="err">Bitte wählen Sie Ihr Land aus.</span></div>
+
+            <fieldset class="field full">
+              <legend class="legend">Worüber möchten Sie sprechen?</legend>
+              <div class="chips">
+                <label class="chip"><input type="checkbox" name="topics" value="Workflow design"><span>Workflow-Design</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="AI-supported localization"><span>KI-gestützte Lokalisierung</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="MTPE"><span>MTPE</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="Quality / LQA"><span>Qualität / LQA</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="Multilingual content"><span>Mehrsprachige Inhalte</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="Partnership opportunity"><span>Partnerschaft</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="Other"><span>Sonstiges</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="field full">
+              <legend class="legend">Bevorzugter Zeitpunkt</legend>
+              <div class="seg">
+                <label class="chip"><input type="radio" name="timing" value="During the event" checked><span>Während der Messe</span></label>
+                <label class="chip"><input type="radio" name="timing" value="After the event"><span>Nach der Messe</span></label>
+                <label class="chip"><input type="radio" name="timing" value="Either works"><span>Beides passt</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field full"><label for="msg">Nachricht / Anmerkungen <span class="opt">(optional)</span></label>
+              <textarea id="msg" name="message" placeholder="Erzählen Sie uns kurz von Ihren Inhalten, Sprachen oder Ihrem aktuellen Workflow."></textarea></div>
+          </div>
+          <div class="submit-row">
+            <button type="submit" class="btn btn-primary">Meinen Termin buchen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <p class="privacy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>Wir verwenden Ihre Daten ausschließlich, um auf Ihre Anfrage zu antworten und ein passendes Folgegespräch abzustimmen.</p>
+          </div>
+        </div>
+        <div class="success" id="formSuccess" role="status" aria-live="polite">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+          <h3>Vielen Dank, Ihre Anfrage ist eingegangen.</h3>
+          <p>Unser Team meldet sich in Kürze, um Ihren Termin mit Wael zu bestätigen. Wir sehen uns in Stuttgart.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11. CLOSING ================= -->
+<section class="closing" aria-labelledby="close-title">
+  <div class="wrap">
+    <h2 id="close-title">Lassen Sie uns über Ihren Workflow sprechen.</h2>
+    <p>Treffen Sie Laoret auf der tcworld conference &amp; tekom fair, 10.–12. November 2026 in Stuttgart.</p>
+    <div class="cta-row" style="justify-content:center">
+      <a href="#book" class="btn btn-primary">Kontakt mit Laoret aufnehmen</a>
+      <a href="https://laoret.com" class="btn btn-light">laoret.com entdecken</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <img src="../assets/laoret-logo.png" alt="Laoret">
+    <span><a href="tel:+18572087276">+1 857-208-7276</a> · Mo–Fr, 9–18 Uhr · <a href="https://laoret.com/contact/">Kontakt</a></span>
+    <span>© 2026 Laoret. Alle Rechte vorbehalten.</span>
+  </div>
+</footer>
+
+<div class="mobile-cta" id="mobileCta" aria-hidden="true">
+  <span>Auf der tcworld</span>
+  <a href="#book" class="btn btn-primary" tabindex="-1">Termin vereinbaren</a>
+</div>
+
+<script>
+(function(){
+  // Reveal on scroll
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+  } else { els.forEach(function(el){el.classList.add('in')}); }
+
+  // Mobile sticky CTA: show after hero, hide while the form is on screen
+  var cta=document.getElementById('mobileCta'),hero=document.querySelector('.hero'),book=document.getElementById('book');
+  var pastHero=false,atForm=false;
+  function upd(){cta.classList.toggle('show',pastHero&&!atForm)}
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){pastHero=!e[0].isIntersecting;upd()}).observe(hero);
+    new IntersectionObserver(function(e){atForm=e[0].isIntersecting;upd()}).observe(book);
+  }
+
+  // Form validation (prototype; replace submit handler with real endpoint)
+  var form=document.getElementById('leadForm');
+  form.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var ok=true,first=null;
+    form.querySelectorAll('[required]').forEach(function(f){
+      var v=f.value.trim(),bad=!v||(f.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+      f.classList.toggle('invalid',bad);f.setAttribute('aria-invalid',bad);
+      f.closest('.field').classList.toggle('has-err',bad);
+      if(bad){ok=false;if(!first)first=f;}
+    });
+    if(!ok){first.focus();return;}
+    document.getElementById('formBody').style.display='none';
+    document.getElementById('formSuccess').style.display='block';
+  });
+  form.querySelectorAll('[required]').forEach(function(f){
+    f.addEventListener('input',function(){if(f.classList.contains('invalid')&&f.value.trim()){f.classList.remove('invalid');f.closest('.field').classList.remove('has-err');f.setAttribute('aria-invalid','false');}});
+  });
+})();
+</script>
+</body>
+</html>

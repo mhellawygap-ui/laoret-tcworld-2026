@@ -104,7 +104,7 @@ section{padding:96px 0}
 
 /* Trust strip */
 .trust-strip{padding:110px 0 48px;border-bottom:1px solid var(--line)}
-.trust-strip .wrap{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-strip:not(.proof-strip) .wrap{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
 .trust-strip p{font-family:var(--h);font-size:14px;font-weight:500;color:var(--muted)}
 .certs{display:flex;gap:22px;align-items:center;flex-wrap:wrap;justify-content:center}
 .certs img{height:58px;width:auto}
@@ -155,6 +155,19 @@ section{padding:96px 0}
 .why-card.reveal{transition:opacity .7s ease var(--d,0ms),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0ms),box-shadow .35s,border-color .35s}
 .why-card.reveal.in:hover{transition-delay:0s;transform:translateY(-8px)}
 .why-hint{display:none;text-align:center;font-size:13px;color:var(--muted);margin-top:4px}
+/* Proof strip: client logos + certifications directly under the hero */
+.proof-strip .logos{margin-bottom:36px}
+.proof-strip .logos-title{margin-bottom:22px}
+.certs-row{display:flex;align-items:center;justify-content:center;gap:28px 40px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--line)}
+.certs-row p{font-family:var(--h);font-size:14px;font-weight:500;color:var(--muted)}
+/* Ways to meet (inside the form section) */
+.ways{list-style:none;display:grid;gap:12px;margin-bottom:28px}
+.ways li{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+.ways .ico{width:40px;height:40px;border-radius:12px}
+.ways li:first-child .ico{background:var(--coral-50);color:var(--coral)}
+.ways li:last-child .ico{background:var(--navy-50);color:var(--navy)}
+.ways strong{display:block;font-family:var(--h);color:var(--navy);font-size:15.5px}
+.ways span{font-size:14.5px}
 .why-foot{margin-top:48px;text-align:center}
 .why-foot p{font-family:var(--h);font-size:19px;color:var(--navy);font-weight:500;max-width:680px;margin:0 auto 22px}
 
@@ -350,8 +363,8 @@ footer.site a:hover{color:var(--teal)}
     <nav aria-label="Page sections">
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#why">Why Laoret</a></li>
         <li><a href="#services">What We Help With</a></li>
+        <li><a href="#why">Why Laoret</a></li>
         <li><a href="#wael">Meet Wael</a></li>
       </ul>
     </nav>
@@ -375,7 +388,7 @@ footer.site a:hover{color:var(--teal)}
         <div class="cta-row">
           <a href="#book" class="btn btn-primary">Book a Meeting
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="#meet" class="btn btn-outline">Visit Us at the Booth</a>
+          <a href="#booth" class="btn btn-outline">Visit Us at the Booth</a>
         </div>
       </div>
 
@@ -406,20 +419,51 @@ footer.site a:hover{color:var(--teal)}
   </div>
 </section>
 
-<!-- Trust strip -->
-<div class="trust-strip">
+<!-- ================= 2. PROOF STRIP (client logos + certifications) ================= -->
+<div class="trust-strip proof-strip">
   <div class="wrap">
-    <p>ISO-certified quality · 120+ languages · ATA member</p>
-    <div class="certs">
+    <p class="logos-title">Proud to work with</p>
+    <div class="logos reveal">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/samsung.png" alt="Samsung">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/microsoft.png" alt="Microsoft">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/amazon.png" alt="Amazon">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/Abbott.png" alt="Abbott">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/xerox.png" alt="Xerox">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/htc.png" alt="HTC">
+      <img src="https://laoret.com/wp-content/uploads/2025/04/manpower.png" alt="ManpowerGroup">
+    </div>
+    <div class="certs-row reveal">
+      <p>ISO-certified quality · 120+ languages · ATA member</p>
+      <div class="certs">
       <img src="https://laoret.com/wp-content/uploads/2025/04/17100-1.png" alt="ISO 17100 certified">
       <img src="https://laoret.com/wp-content/uploads/2025/04/18587-1.png" alt="ISO 18587 certified">
       <img src="https://laoret.com/wp-content/uploads/2025/04/9001.png" alt="ISO 9001 certified">
       <img src="https://laoret.com/wp-content/uploads/2025/04/ata.png" alt="American Translators Association member">
     </div>
+    </div>
   </div>
 </div>
 
-<!-- ================= 2. WHO WE ARE ================= -->
+<!-- ================= 3. FOR YOU IF ================= -->
+<section class="foryou" aria-labelledby="fy-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="fy-title">This Page Is For You If…</h2>
+      <p>Enterprise buyers, localization and content leaders, operations teams and language partners alike.</p>
+    </div>
+    <ul class="check-grid" role="list">
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You want a localization workflow that fits your internal process</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You want to use AI without losing human quality control</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You need a flexible localization partner, not a rigid production machine</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You manage multilingual content at scale</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You’re an MLV or LSP looking for a capable, easy-to-work-with partner</li>
+      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You want a practical conversation, not a technology sales pitch</li>
+    </ul>
+    <div class="center reveal"><a href="#book" class="btn btn-primary">That’s us. Let’s talk</a></div>
+  </div>
+</section>
+
+<!-- ================= 4. WHO WE ARE ================= -->
 <section id="about" aria-labelledby="about-title">
   <div class="wrap who-grid">
     <div class="who-intro reveal">
@@ -437,9 +481,28 @@ footer.site a:hover{color:var(--teal)}
   </div>
 </section>
 
-<!-- ================= 3. WHY MEET ================= -->
+<!-- ================= 5. WHAT WE HELP WITH ================= -->
+<!-- Elementor: Container (boxed 1180) > Heading block + Container (Grid 2 cols) of 6 row containers (number + heading + text) -->
+<section id="services" class="soft" aria-labelledby="svc-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="svc-title">What We Help With</h2>
+      <p>Built around the challenges localization and documentation teams bring to us most often.</p>
+    </div>
+    <div class="help-list">
+      <article class="help-item reveal" style="--d:0ms"><span class="help-num">01</span><div><h3>Localization workflow design</h3><p>When handoffs are manual, tools don’t talk to each other or turnaround keeps slipping.</p></div></article>
+      <article class="help-item reveal" style="--d:100ms"><span class="help-num">02</span><div><h3>MTPE &amp; AI-supported workflows</h3><p>When you want AI’s speed with ISO 18587-aligned post-editing and clear quality thresholds.</p></div></article>
+      <article class="help-item reveal" style="--d:0ms"><span class="help-num">03</span><div><h3>Multilingual content operations</h3><p>When volume, languages and channels grow faster than your team can coordinate them.</p></div></article>
+      <article class="help-item reveal" style="--d:100ms"><span class="help-num">04</span><div><h3>Quality assurance &amp; LQA</h3><p>When you need quality you can measure, report on and improve, not just “check”.</p></div></article>
+      <article class="help-item reveal" style="--d:0ms"><span class="help-num">05</span><div><h3>Technical &amp; regulated content</h3><p>Manuals, safety, compliance and life-sciences content where accuracy carries real risk.</p></div></article>
+      <article class="help-item reveal" style="--d:100ms"><span class="help-num">06</span><div><h3>Support for teams &amp; language partners</h3><p>Extra capacity for in-house teams, and a dependable production partner for MLVs and LSPs.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. WHY MEET ================= -->
 <!-- Elementor: Container (boxed 1180) > Heading block + Container (Grid 3×2) of 6 card containers -->
-<section id="why" class="soft" aria-labelledby="why-title">
+<section id="why" aria-labelledby="why-title">
   <div class="wrap">
     <div class="sec-head reveal">
       <h2 id="why-title">Why Meet Laoret at tcworld?</h2>
@@ -485,45 +548,37 @@ footer.site a:hover{color:var(--teal)}
   </div>
 </section>
 
-<!-- ================= 4. WHAT WE HELP WITH ================= -->
-<!-- Elementor: Container (boxed 1180) > Heading block + Container (Grid 2 cols) of 6 row containers (number + heading + text) -->
-<section id="services" aria-labelledby="svc-title">
+<!-- ================= 7. TRUST: STATS & TESTIMONIALS ================= -->
+<section id="trust" class="soft" aria-labelledby="trust-title">
   <div class="wrap">
     <div class="sec-head reveal">
-      <h2 id="svc-title">What We Help With</h2>
-      <p>Built around the challenges localization and documentation teams bring to us most often.</p>
+      <h2 id="trust-title">Why Companies Trust Laoret</h2>
+      <p>Human expertise and smart technology, backed by certified processes.</p>
     </div>
-    <div class="help-list">
-      <article class="help-item reveal" style="--d:0ms"><span class="help-num">01</span><div><h3>Localization workflow design</h3><p>When handoffs are manual, tools don’t talk to each other or turnaround keeps slipping.</p></div></article>
-      <article class="help-item reveal" style="--d:100ms"><span class="help-num">02</span><div><h3>MTPE &amp; AI-supported workflows</h3><p>When you want AI’s speed with ISO 18587-aligned post-editing and clear quality thresholds.</p></div></article>
-      <article class="help-item reveal" style="--d:0ms"><span class="help-num">03</span><div><h3>Multilingual content operations</h3><p>When volume, languages and channels grow faster than your team can coordinate them.</p></div></article>
-      <article class="help-item reveal" style="--d:100ms"><span class="help-num">04</span><div><h3>Quality assurance &amp; LQA</h3><p>When you need quality you can measure, report on and improve, not just “check”.</p></div></article>
-      <article class="help-item reveal" style="--d:0ms"><span class="help-num">05</span><div><h3>Technical &amp; regulated content</h3><p>Manuals, safety, compliance and life-sciences content where accuracy carries real risk.</p></div></article>
-      <article class="help-item reveal" style="--d:100ms"><span class="help-num">06</span><div><h3>Support for teams &amp; language partners</h3><p>Extra capacity for in-house teams, and a dependable production partner for MLVs and LSPs.</p></div></article>
+    <div class="stats">
+      <div class="stat reveal"><b>ISO<em>×3</em></b><span>Certified to ISO 17100, ISO 18587 &amp; ISO 9001</span></div>
+      <div class="stat reveal"><b>120<em>+</em></b><span>Languages covered by native linguists</span></div>
+      <div class="stat reveal"><b>Human<em>+</em>AI</b><span>Smart technology, human-governed output</span></div>
+      <div class="stat reveal"><b>24<em>/</em>7</b><span>Availability across industries and time zones</span></div>
+    </div>
+
+
+    <!-- Testimonials reused from laoret.com, chosen for tcworld relevance (technical docs, DACH, regulated content) -->
+    <div class="quotes">
+      <blockquote class="quote reveal"><div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>“Choosing Laoret for full post-editing was a key success factor in our German product manual launch. They didn’t just correct language, they adapted the entire flow to feel native.”</p>
+        <footer><strong>Andreas Vogel</strong><span>Content Strategist, Industrial Automation</span></footer></blockquote>
+      <blockquote class="quote reveal"><div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>“We needed fast turnaround on hundreds of technical documents. Their team clearly understands the balance between quality and efficiency.”</p>
+        <footer><strong>Hiroshi Sato</strong><span>Technical Writer, Electronics</span></footer></blockquote>
+      <blockquote class="quote reveal"><div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>“Their team’s thorough editing and domain expertise ensure our translations meet strict regulatory requirements without compromise.”</p>
+        <footer><strong>Layla Hassan</strong><span>Senior Project Manager, Healthcare</span></footer></blockquote>
     </div>
   </div>
 </section>
 
-<!-- ================= 5. FOR YOU IF ================= -->
-<section class="foryou" aria-labelledby="fy-title">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <h2 id="fy-title">This Page Is For You If…</h2>
-      <p>Enterprise buyers, localization and content leaders, operations teams and language partners alike.</p>
-    </div>
-    <ul class="check-grid" role="list">
-      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You want a localization workflow that fits your internal process</li>
-      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You want to use AI without losing human quality control</li>
-      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You need a flexible localization partner, not a rigid production machine</li>
-      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You manage multilingual content at scale</li>
-      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You’re an MLV or LSP looking for a capable, easy-to-work-with partner</li>
-      <li class="check reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>You want a practical conversation, not a technology sales pitch</li>
-    </ul>
-    <div class="center reveal"><a href="#book" class="btn btn-primary">That’s us. Let’s talk</a></div>
-  </div>
-</section>
-
-<!-- ================= 6. MEET WAEL ================= -->
+<!-- ================= 8. MEET WAEL ================= -->
 <section id="wael" aria-labelledby="wael-title">
   <div class="wrap wael">
     <div class="wael-photo reveal">
@@ -550,68 +605,7 @@ footer.site a:hover{color:var(--teal)}
   </div>
 </section>
 
-<!-- ================= 7 + 8. TRUST & TESTIMONIALS ================= -->
-<section id="trust" class="soft" aria-labelledby="trust-title">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <h2 id="trust-title">Why Companies Trust Laoret</h2>
-      <p>Human expertise and smart technology, backed by certified processes.</p>
-    </div>
-    <div class="stats">
-      <div class="stat reveal"><b>ISO<em>×3</em></b><span>Certified to ISO 17100, ISO 18587 &amp; ISO 9001</span></div>
-      <div class="stat reveal"><b>120<em>+</em></b><span>Languages covered by native linguists</span></div>
-      <div class="stat reveal"><b>Human<em>+</em>AI</b><span>Smart technology, human-governed output</span></div>
-      <div class="stat reveal"><b>24<em>/</em>7</b><span>Availability across industries and time zones</span></div>
-    </div>
-
-    <p class="logos-title">Proud to work with</p>
-    <div class="logos reveal">
-      <img src="https://laoret.com/wp-content/uploads/2025/04/samsung.png" alt="Samsung">
-      <img src="https://laoret.com/wp-content/uploads/2025/04/microsoft.png" alt="Microsoft">
-      <img src="https://laoret.com/wp-content/uploads/2025/04/amazon.png" alt="Amazon">
-      <img src="https://laoret.com/wp-content/uploads/2025/04/Abbott.png" alt="Abbott">
-      <img src="https://laoret.com/wp-content/uploads/2025/04/xerox.png" alt="Xerox">
-      <img src="https://laoret.com/wp-content/uploads/2025/04/htc.png" alt="HTC">
-      <img src="https://laoret.com/wp-content/uploads/2025/04/manpower.png" alt="ManpowerGroup">
-    </div>
-
-    <!-- Testimonials reused from laoret.com, chosen for tcworld relevance (technical docs, DACH, regulated content) -->
-    <div class="quotes">
-      <blockquote class="quote reveal"><div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“Choosing Laoret for full post-editing was a key success factor in our German product manual launch. They didn’t just correct language, they adapted the entire flow to feel native.”</p>
-        <footer><strong>Andreas Vogel</strong><span>Content Strategist, Industrial Automation</span></footer></blockquote>
-      <blockquote class="quote reveal"><div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“We needed fast turnaround on hundreds of technical documents. Their team clearly understands the balance between quality and efficiency.”</p>
-        <footer><strong>Hiroshi Sato</strong><span>Technical Writer, Electronics</span></footer></blockquote>
-      <blockquote class="quote reveal"><div class="stars" aria-label="5 stars">★★★★★</div>
-        <p>“Their team’s thorough editing and domain expertise ensure our translations meet strict regulatory requirements without compromise.”</p>
-        <footer><strong>Layla Hassan</strong><span>Senior Project Manager, Healthcare</span></footer></blockquote>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 9. LET'S MEET ================= -->
-<section id="meet" aria-labelledby="meet-title">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <h2 id="meet-title">Let’s Meet at tcworld</h2>
-      <p>Whether you’re exploring a better localization workflow, looking for a reliable language partner or want to discuss how AI and human expertise work better together, we’d love to meet you.</p>
-    </div>
-    <div class="meet-grid">
-      <div class="meet-card featured reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M9 15l2 2 4-4"/></svg></span>
-        <h3>Book a meeting</h3><p>Reserve a time with Wael so your conversation isn’t squeezed between booth visits.</p>
-        <a href="#book" class="link">Reserve a slot →</a></div>
-      <div class="meet-card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-        <h3>Stop by the booth</h3><p>Find us at Booth 2F27 in the ICS Stuttgart, 10–12 November. Walk-ins are always welcome.</p>
-        <a href="#book" class="link">Let us know you’re coming →</a></div>
-      <div class="meet-card reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6 8.5-6"/></svg></span>
-        <h3>Send your details</h3><p>Can’t make it to Stuttgart? We’ll follow up right after the event instead.</p>
-        <a href="#book" class="link">Share your details →</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 10. FORM ================= -->
+<!-- ================= 9. FORM (incl. booth / follow-up options) ================= -->
 <section id="book" class="book" aria-labelledby="book-title">
   <div class="wrap book-grid">
     <div class="book-side reveal">
@@ -621,6 +615,10 @@ footer.site a:hover{color:var(--teal)}
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>A focused conversation about your workflow, not a product demo</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>A confirmed time at the booth, so you skip the queue</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.7 2.7L16 10"/></svg>Practical next steps you can take back to your team</li>
+      </ul>
+      <ul class="ways" id="booth">
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><strong>Stop by Booth 2F27</strong><span>ICS Stuttgart, 10–12 November. Walk-ins are always welcome.</span></div></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6 8.5-6"/></svg></span><div><strong>Can’t make it to Stuttgart?</strong><span>Choose “After the event” in the form and we’ll follow up.</span></div></li>
       </ul>
       <div class="contact-mini">
         <div class="avatar"><img src="wael-makram.jpg" alt="Wael Makram"></div>
@@ -694,7 +692,7 @@ footer.site a:hover{color:var(--teal)}
   </div>
 </section>
 
-<!-- ================= 11. CLOSING ================= -->
+<!-- ================= 10. CLOSING ================= -->
 <section class="closing" aria-labelledby="close-title">
   <div class="wrap">
     <h2 id="close-title">Let’s talk about your workflow.</h2>

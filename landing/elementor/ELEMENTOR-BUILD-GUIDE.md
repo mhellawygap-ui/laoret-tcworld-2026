@@ -13,41 +13,55 @@ Everything below uses **Elementor Pro with Flexbox/Grid Containers** only. No ex
 
 | Name | Hex | Use |
 |---|---|---|
-| Laoret Navy | `#0B233F` | Headings, dark sections, outline buttons |
-| Laoret Teal | `#37C1CC` | Primary buttons, accents |
-| Teal Dark | `#2299A3` | Hover states, small teal text |
-| Laoret Coral | `#F05A5C` | Accents, stars, required marks |
+| Laoret Navy | `#0B233F` | Headings, line 1 of the headline, checkbox icons |
+| Brand Teal | `#00A2AE` | Primary buttons, links, active nav (homepage button colour) |
+| Teal Hover | `#008B96` | Primary button hover |
+| Icon Teal | `#1EC0CC` | All line icons |
+| Cyan | `#00C0CF` | Buttons and checks on dark sections |
+| Laoret Coral | `#F05A5C` | Line 2 of the headline, "tekom 2026", stars, stat accents, required marks |
+| Dark Band | `#000915` | "This Page Is For You If", closing band, booth tag, mobile CTA |
+| Aqua | `#E1F6F6` | Bottom of the hero gradient, number badges |
 | Body Text | `#4A5B6D` | Paragraphs |
-| Muted | `#7A8898` | Labels, captions |
-| Line | `#E3EAF0` | Borders, dividers |
-| Soft Background | `#F5F9FB` | Alternate section background |
-| Teal Tint | `#EBF8F9` | Icon tiles, chips |
-| Coral Tint | `#FDEEEE` | Icon tiles |
-| Navy Tint | `#E8ECF1` | Icon tiles |
+| Muted | `#7A8898` | Captions |
+| Line | `#E3EAF0` | Dividers, form field borders |
+| Soft Background | `#F5FAFB` | Alternate section background |
 
-**Site Settings → Global Fonts** (swap for laoret.com's theme fonts if they differ)
+**Site Settings → Global Fonts** (laoret.com type scale)
 
-| Name | Font | Weight | Size (desktop / mobile) |
+| Name | Font | Size / weight / letter-spacing | Used for |
 |---|---|---|---|
-| H1 | Lexend | 700 | 56 / 34 px, line-height 1.2 |
-| H2 | Lexend | 600 | 40 / 28 px |
-| H3 | Lexend | 600 | 20 / 19 px |
-| Body | Inter | 400 | 16 px, line-height 1.65 |
-| Button | Lexend | 600 | 15 px |
+| Display | Open Sans | 72 px / 700 / -0.02em (mobile 40) | Hero headline |
+| H1 | Open Sans | 48 px / 700 / -0.02em | (reserve) |
+| H2 | Open Sans | 36 px / 700 / -0.02em (mobile 28) | Section titles |
+| H3 | Open Sans | 24 px / 700 | What We Help With titles, form success |
+| H4 | Open Sans | 20 px / 700 | Why Meet card titles, Who We Are points |
+| H5 | Open Sans | 17 px / 700 | Info bar values, testimonial names, small card titles |
+| H6 | Open Sans | 15 px / 700 / 0.04em | "Let's talk about…", form labels |
+| Intro | Lato Light | 20 px / 300 | Hero subtitle, section descriptions |
+| Body Large | Lato | 18 px / 400 | Who We Are / Wael / form intro, benefits, closing text |
+| Body | Lato | 16 px / 400, line-height 1.7 | Default text |
+| Small | Lato | 14 px / 400 | Stat labels, job titles, privacy note, footer |
+| Caption | Open Sans | 12 px / 700 / uppercase, 0.08em | Info bar labels, "Proud to work with", certification line, card numbers |
+| Button | Open Sans | 15 px / 700 | All buttons |
 
 **Site Settings → Layout:** Content width **1180 px**, container padding 24 px (mobile 18 px).
 
 **Site Settings → Custom CSS:** paste all of `elementor/laoret-tcworld.css`. Every special effect on the page is a class from that file.
 
-**Media:** upload everything in `/landing/assets/` (logo, key visual, the six `why-*.webp` illustrations, `dots.svg`, `dots-light.svg`) and `wael-makram.jpg`.
+**Media:** upload everything in `/landing/assets/` (logo, key visual, the six `why-*.webp` illustrations) and `wael-makram.jpg`.
 
 **Page:** create the page → **Page Layout: Elementor Canvas** (no theme header/footer; the page has its own).
 
-**Buttons (global style):** border-radius 999 px, padding 15/28 px.
-- Primary: Teal background, Navy text. Hover: Teal Dark background, white text.
-- Outline: transparent background, 2 px Navy border. Hover: Navy background.
+**Buttons (global style, as on the laoret.com homepage):** border-radius 999 px, padding 14/30 px, Open Sans 700 15 px.
+- Primary: Brand Teal `#00A2AE` background, **white** text, CSS class **`lt-btn-glow`** (the soft teal glow). Hover: `#008B96`, Transform translateY -2 px.
+- Outline: white background, Brand Teal text, 1.5 px border rgba(0,162,174,.45), CSS class **`lt-btn-glow-soft`**. Hover: Brand Teal background, white text.
+- On dark bands: Primary uses Cyan `#00C0CF` with white text and CSS class **`lt-btn-glow-cyan`**; secondary is transparent with a white 60 % border and white text.
 
-**Section heading pattern** (used in every section): Image widget `dots.svg` (width 44 px, centred, margin-bottom 18 px) → Heading H2 → Text Editor (18 px, max-width 720 px).
+**Icons:** plain line icons in Icon Teal `#1EC0CC`, about 30 px, **no background tile** (Icon Box → View: Default). Checks on dark bands use Cyan; the form's benefit checks use Navy.
+
+**Cards:** white, no border, radius 12 px, Box Shadow 0 10 30 rgba(11,35,63,.07).
+
+**Section heading pattern** (used in every section): Heading H2 → Text Editor in the Intro style (Lato Light 20 px, max-width 720 px). No decorative dots or eyebrow labels.
 
 **Entrance animations:** Advanced → Motion Effects → Entrance Animation **Fade In Up**, Animation Duration **Normal**. Use the delays listed per section to stagger.
 
@@ -63,27 +77,27 @@ Everything below uses **Elementor Pro with Flexbox/Grid Containers** only. No ex
 ## 2. Hero
 `Container` Boxed, padding 72/0 px, background gradient (white → `#F7FBFC`).
 - `Container` **Grid 2 columns** (1.1fr / 0.9fr), gap 56, align center. Tablet & Mobile: 1 column.
-  - Left `Container` Column: H1 "Your Workflow." + line break + "Our Localization." (wrap line 2 in a `<span>` coloured **Coral #F05A5C**; line 1 Navy, matching the booth) · Text Editor subtitle "We fit localization into the way your team already works, not the other way around." (Lexend 500, 21 px Navy) · `Container` Row gap 14: Button Primary "Book a Meeting" → `#book`, Button Outline "Visit Us at the Booth" → `#booth`.
+  - Left `Container` Column: H1 "Your Workflow." + line break + "Our Localization." (wrap line 2 in a `<span>` coloured **Coral #F05A5C**; line 1 Navy, matching the booth) · Text Editor subtitle "We fit localization into the way your team already works, not the other way around." (Intro style: Lato Light 20 px, Navy) · `Container` Row gap 14: Button Primary "Book a Meeting" → `#book`, Button Outline "Visit Us at the Booth" → `#booth`.
   - Right `Container` (position relative): Image key visual (radius 22, shadow) · floating `Container` "Meet Wael Makram" card. **Advanced → Position: Absolute**, left -28, bottom 36, white, radius 14, shadow. Mobile: Position Default.
-- **Info bar:** `Container` **Grid 4 columns** (Tablet 2, Mobile 1), white, border 1 px Line, radius 16, CSS class **`lt-event-bar`**, **Margin Top -60 px, Z-Index 2**. 4 × `Icon Box` (icon tile 42 px). Icon colours: Teal / Coral / Navy / Teal. Content: Dates · Venue "ICS Stuttgart, Germany" · Find us "Booth 2F27" · Talk to "Wael Makram".
+- **Info bar:** `Container` **Grid 4 columns** (Tablet 2, Mobile 1), white, border 1 px Line, radius 16, CSS class **`lt-event-bar`**, **Margin Top -60 px, Z-Index 2**. 4 × `Icon Box` (icon left, 30 px line icon in Icon Teal, no tile). Label in the Caption style, value in H5. Content: Dates · Venue "ICS Stuttgart, Germany" · Find us "Booth 2F27" · Talk to "Wael Makram".
 
 ## 3. Proof strip: client logos + certifications
 `Container` Boxed, white, padding 110/48 (mobile 48/40; the top padding clears the overlapping info bar), bottom border 1 px Line.
-- Text "Proud to work with" (Lexend 14 px Muted, centred, margin-bottom 22).
+- Text "Proud to work with" (Caption style, Muted, centred, margin-bottom 22).
 - `Container` **Grid 7 columns** (Tablet 4, Mobile 2), **column gap 56 / row gap 28**, margin-bottom 36: 7 × Image (client logos) height 84 px, **Object Fit: Cover**, CSS class **`lt-logo`**, no border/background. Entrance: Fade In Up.
 - `Container` Row, centred, wrap, gap 28/40, padding-top 28, **Border Top 1 px Line**: Text "ISO-certified quality · 120+ languages · ATA member" + 4 Images (ISO badges, height 58).
 
 ## 4. This Page Is For You If… (dark): relevance check
-`Container` background Navy, padding 96. Optional decorative glow: Background Overlay radial gradient Teal 22 %.
-- `Container` Row, centred, wrap, gap 10: 3 pills (Headings or Buttons without links) "Localization support" · "Human-governed AI" · "Quality built to scale". White text Lexend 500 14.5 px, background white 6 %, border 1.5 px Teal at 55 % (middle pill Coral at 60 %), radius 999, padding 8/16.
-- H2 white "This Page Is For You If…" directly under the pills (no dots, no description), margin-bottom 44.
+`Container` background Dark Band `#000915`, padding 96, CSS class **`lt-dark-band`** (adds the homepage's decorative teal shape and blue ring automatically).
+- `Container` Row, centred, wrap, gap 10: 3 pills (Headings or Buttons without links) "Localization support" · "Human-governed AI" · "Quality built to scale". White text Lato 700 15 px, background white 6 %, border 1.5 px Teal at 55 % (middle pill Coral at 60 %), radius 999, padding 8/16.
+- H2 white "This Page Is For You If…" directly under the pills (no description), margin-bottom 44.
 - `Container` **Grid 2 columns**, gap 16, max-width 980. 6 × `Icon Box` (inline icon left) or `Container` Row: background white 5 %, border white 10 %, radius 16, padding 22/24. Check icon Teal (odd) / Coral (even).
 - Button Primary "That's us. Let's talk" → `#book`.
 
 ## 5. Who We Are (`#about`)
 `Container` **Grid 2 columns** (0.9fr / 1.1fr), gap 72. Mobile: 1 column.
-- Left: dots (left-aligned) · H2 · Text · Text Editor with left border 3 px Teal.
-- Right: `Container` Column gap 14 → 5 × `Container` Row cards (border Line, radius 16, padding 22/24). Each: number badge (Heading "01", 38 px circle, Teal Tint/Teal; even rows Coral Tint/Coral) + Heading H4 + Text.
+- Left: H2 · Text (Body Large) · Text Editor (Body Large) with left border 3 px Brand Teal.
+- Right: `Container` Column gap 14 → 5 × `Container` Row cards (white, no border, card shadow, radius 12, padding 22/24). Each: number badge (Heading "01", 38 px circle, Aqua background, Brand Teal text; even rows coral) + Heading H4 + Text (Body).
 - Entrance: Fade In Up, delays 0 / 100 / 200 / 300 / 400 ms.
 
 ## 6. What We Help With (`#services`): scannable list
@@ -91,8 +105,8 @@ Everything below uses **Elementor Pro with Flexbox/Grid Containers** only. No ex
 - Heading pattern (centred).
 - `Container` **Grid 2 columns**, column gap 72, row gap 0, max-width 1080, centred. Mobile: 1 column.
   - 6 × row `Container` **Grid 2 columns (56 px / 1fr)**, padding 30/0, **Border Top 1 px Line**, CSS class **`lt-help-item`** (+ **`lt-acc-coral`** on rows 2, 3, 6). Give the last row in each column a bottom border too.
-    - Heading "01" (15 px Lexend 600, Teal Dark; Coral on rows 2, 3, 6)
-    - `Container` Column: **Heading H3, 22 px Lexend 600 Navy** (the scannable title) + Text 16 px, max-width 440.
+    - Heading "01" (Caption style, Brand Teal; Coral on rows 2, 3, 6)
+    - `Container` Column: **Heading H3, Open Sans 24 px 700 Navy** (the scannable title) + Text 16 px, max-width 440.
   - Entrance: Fade In Up, delay 0 ms (left column) / 100 ms (right column).
   - Hover (from the class file): title turns Teal Dark, a 2 px brand line sweeps along the top.
 
@@ -102,11 +116,11 @@ Everything below uses **Elementor Pro with Flexbox/Grid Containers** only. No ex
 - `Container` **Grid 3 columns, gap 28** (Tablet 2 columns), CSS class **`lt-why-grid`**.
   - 6 × card `Container` Column: white, border 1 px Line, radius 22, padding 12. CSS class **`lt-why-card`**, plus **`lt-acc-coral`** on cards 2 & 5 and **`lt-acc-navy`** on cards 3 & 6.
     - `Image` (the illustration): background `#F6F9FB`, radius 16, **aspect ratio 5:4, Object Fit: Contain**, CSS class **`lt-why-visual`**.
-    - `Container` Column, padding 22/16/18: Heading "01" (13 px, Lexend 600; Teal / Coral / Navy by card) · Heading H3 · Text (15.5 px).
+    - `Container` Column, padding 22/16/18: Heading "01" (Caption style; Teal / Coral / Navy by card) · Heading H4 · Text (Body 16 px).
     - Entrance: **Fade In Up**, delays **0 / 120 / 240 / 360 / 480 / 600 ms**.
   - The class file adds the motion: gentle continuous float on each illustration (staggered), card lifts 8 px on hover, brand-colour top bar sweeps across, illustration zooms 7 %.
 - **Mobile:** either (a) replace the grid with **Nested Carousel** (Pro), slides per view 1.2, space between 14, no arrows, pagination dots, with the same 6 card containers inside; or (b) keep the grid. The `lt-why-grid` class turns it into a swipe row on phones. Add a small Text "← Swipe to see all six →" visible on Mobile only.
-- Below: Text (Lexend 19 px Navy, centred, max-width 680) + Button Primary "Book a Meeting".
+- Below: Text (Body Large 18 px Navy, centred, max-width 680) + Button Primary "Book a Meeting".
 
 | # | Illustration | Title | Accent |
 |---|---|---|---|
@@ -125,15 +139,15 @@ Everything below uses **Elementor Pro with Flexbox/Grid Containers** only. No ex
 
 ## 9. Meet Wael Makram (`#wael`)
 `Container` **Grid 2 columns** (0.8fr / 1.2fr), gap 64. Mobile: 1 column.
-- Left `Container` (relative): Image `wael-makram.jpg` (aspect 1:1, radius 24, shadow) + absolute `Container` tag (Navy, radius 14): "At the booth" (11.5 px uppercase Teal) / "Booth 2F27 · 10–12 Nov".
-- Right: dots (left) · H2 · Heading "Localization & Operations Director, Laoret" (Teal Dark) · Text · H4 "Let's talk about…" · 6 tags (Buttons styled as pills: Teal Tint background, Teal 100 border, Navy text, no link) · Button Primary "Schedule a Meeting with Wael".
+- Left `Container` (relative): Image `wael-makram.jpg` (aspect 1:1, radius 24, shadow) + absolute `Container` tag (Dark Band, radius 14): "At the booth" (Caption style, Cyan) / "Booth 2F27 · 10–12 Nov".
+- Right: H2 · Heading "Localization & Operations Director, Laoret" (Open Sans 600, Brand Teal) · Text · H6 "Let's talk about…" · 6 tags (Buttons styled as pills: `#EBF8F9` background, `#D2F0F2` border, Navy text, Lato 16 px, no link) · Button Primary "Schedule a Meeting with Wael".
 
 ## 10. Book a Meeting (`#book`): form + ways to meet
 `Container` **Grid 2 columns** (0.85fr / 1.15fr), gap 56, background gradient Soft → white.
-- Left: dots · H2 · Text · `Icon List` (3 benefits, Teal check icons) · small `Container` Row: Wael avatar Image (52 px circle) + name / "Your contact at Booth 2F27".
+- Left: H2 · Text (Body Large) · `Icon List` (3 benefits, Navy check icons, Body Large text) · small `Container` Row: Wael avatar Image (52 px circle) + name / "Your contact at Booth 2F27".
 - **Ways to meet** (replaces the old "Let's Meet" section), placed between the benefits list and the Wael card. `Container` Column, gap 12, **CSS ID `booth`** (the hero's "Visit Us at the Booth" button jumps here): 2 × `Icon Box` (icon left, 40 px tile; white card, border Line, radius 16, padding 16/18):
-  1. Map-pin icon on Coral Tint/Coral: **Stop by Booth 2F27**. "ICS Stuttgart, 10–12 November. Walk-ins are always welcome."
-  2. Mail icon on Navy Tint/Navy: **Can't make it to Stuttgart?** "Choose 'After the event' in the form and we'll follow up."
+  1. Map-pin line icon (Icon Teal, no tile): **Stop by Booth 2F27**. "ICS Stuttgart, 10–12 November. Walk-ins are always welcome."
+  2. Mail line icon (Icon Teal, no tile): **Can't make it to Stuttgart?** "Choose 'After the event' in the form and we'll follow up."
 - Right: **Form widget (Pro)**, white card, radius 22, padding 40, shadow. CSS class **`lt-form`**.
 
 | Field | Type | Width | Required |
@@ -153,10 +167,10 @@ Submit button "Book My Meeting", full width, Primary style. Actions After Submit
 The `lt-form` class turns the checkbox and radio options into the pill "chips" shown in the reference.
 
 ## 11. Closing band + footer
-- `Container` Navy, centred, padding 88: H2 white "Let's Connect at **tekom 2026**" ("tekom 2026" in Coral) · Text · Row: Button Primary "Connect with Laoret" → `#book`, Button outline white "Explore laoret.com".
-- Footer `Container` Row, background `#071A30`, space-between: logo (CSS filter brightness 0, invert 1) · phone + hours + Contact link · ©.
+- `Container` Dark Band `#000915`, centred, padding 88, CSS class **`lt-dark-band`**: H2 white "Let's Connect at **tekom 2026**" ("tekom 2026" in Coral) · Text · Row: Button Primary (Cyan) "Connect with Laoret" → `#book`, Button transparent with white border "Explore laoret.com".
+- footer `Container` Row, **white** background, top border 1 px Line, space-between: logo (normal colours) · phone + hours + Contact link · ©.
 
-**Mobile sticky CTA:** `Container` Row (Navy, radius 999, padding 8/8/8/20), **Motion Effects → Sticky: Bottom, offset 12**, **Responsive: hide on Desktop & Tablet**. Contents: Text "Meet us at tcworld" + Button "Book a Meeting" → `#book`.
+**Mobile sticky CTA:** `Container` Row (Dark Band, radius 999, padding 8/8/8/20), **Motion Effects → Sticky: Bottom, offset 12**, **Responsive: hide on Desktop & Tablet**. Contents: Text "Meet us at tcworld" + Button "Book a Meeting" → `#book`.
 
 ## 12. German page
 Duplicate the finished page (or use WPML/Polylang if installed) and replace the copy with `/landing/de/` text. Set the Hidden field `page_language` to `de`. Keep checkbox/radio *values* in English so CRM data stays consistent. Point the EN/DE buttons at each other.

@@ -5,8 +5,8 @@
    ===================================================================== */
 
 :root{
-  --lt-navy:#0B233F; --lt-teal:#37C1CC; --lt-teal-d:#2299A3; --lt-coral:#F05A5C;
-  --lt-line:#E3EAF0; --lt-soft:#F6F9FB;
+  --lt-navy:#0B233F; --lt-teal:#00A2AE; --lt-teal-d:#008B96; --lt-icon:#1EC0CC; --lt-cyan:#00C0CF;
+  --lt-coral:#F05A5C; --lt-dark:#000915; --lt-aqua:#E1F6F6; --lt-line:#E3EAF0; --lt-soft:#F6F9FB;
 }
 
 /* ---------- Hero info bar (container class: lt-event-bar) ----------
@@ -53,8 +53,22 @@
   font-size:14px;font-weight:500;color:var(--lt-navy);cursor:pointer;transition:all .15s;background:#FBFDFE}
 .lt-form .elementor-field-option label:hover{border-color:var(--lt-teal)}
 .lt-form .elementor-field-type-checkbox input:checked+label{background:var(--lt-navy);border-color:var(--lt-navy);color:#fff}
-.lt-form .elementor-field-type-radio input:checked+label{background:var(--lt-teal);border-color:var(--lt-teal)}
+.lt-form .elementor-field-type-radio input:checked+label{background:var(--lt-teal);border-color:var(--lt-teal);color:#fff}
 .lt-form .elementor-field-option input:focus-visible+label{outline:3px solid var(--lt-coral);outline-offset:2px}
+
+/* ---------- Homepage-style buttons (add class lt-btn-glow to any Button widget) ---------- */
+.lt-btn-glow .elementor-button{box-shadow:0 8px 22px rgba(0,162,174,.35);transition:transform .2s,box-shadow .2s,background-color .2s}
+.lt-btn-glow .elementor-button:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,162,174,.45)}
+.lt-btn-glow-soft .elementor-button{box-shadow:0 8px 22px rgba(0,162,174,.18)}
+.lt-btn-glow-cyan .elementor-button{box-shadow:0 8px 26px rgba(0,192,207,.4)}
+
+/* ---------- Dark bands (container class lt-dark-band): homepage shapes ---------- */
+.lt-dark-band{position:relative;overflow:hidden}
+.lt-dark-band::before{content:"";position:absolute;right:-90px;top:-120px;width:420px;height:360px;border-radius:90px;
+  background:linear-gradient(140deg,rgba(0,192,207,.18),rgba(0,192,207,0) 70%);pointer-events:none}
+.lt-dark-band::after{content:"";position:absolute;left:6%;bottom:-110px;width:190px;height:190px;border-radius:50%;
+  border:38px solid rgba(37,84,214,.22);pointer-events:none}
+.lt-dark-band>.e-con-inner,.lt-dark-band>.e-con{position:relative;z-index:1}
 
 /* ---------- Mobile: Why cards as swipe row if you keep a Grid instead of the Nested Carousel ---------- */
 @media (max-width:767px){

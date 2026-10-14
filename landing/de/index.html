@@ -10,11 +10,12 @@
 <link rel="alternate" hreflang="x-default" href="https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <!--
   INTERNAL NOTES
   - Brand tokens = laoret.com website logo colours: navy #0B233F, teal #37C1CC, coral #F05A5C.
-  - Fonts: Lexend (headings) + Inter (body) as stand-ins. Swap to the exact laoret.com theme fonts when moving into Elementor.
+  - Typography = laoret.com scale: Open Sans 700 headings (Display 72 / H1 48 / H2 36 / H3 24 / H4 20 / H5 17 / H6 15), Lato body (Intro 20/300, Body Large 18, Body 16, Small 14), Caption 12/700 caps Open Sans.
+  - Buttons, icons and backgrounds follow the laoret.com homepage (teal #00A2AE pill buttons with glow, #1EC0CC line icons, near-black #000915 dark bands).
   - Booth 2F27 per the tcworld exhibitor directory. Replace before launch: form action endpoint.
   - Laoret logo, tekom key visual and Wael's photo are bundled locally; tcworld/tekom logos, ISO badges and client logos load from laoret.com / tekom.de.
 -->
@@ -23,7 +24,7 @@
   --navy:#0B233F; --navy-2:#16314F; --teal:#37C1CC; --teal-d:#2299A3; --teal-50:#EBF8F9; --teal-100:#D2F0F2;
   --coral:#F05A5C; --coral-50:#FDEEEE; --navy-50:#E8ECF1; --ink:#0B233F; --body:#4A5B6D; --muted:#7A8898; --line:#E3EAF0; --bg-soft:#F5F9FB; --white:#fff;
   --radius:16px; --radius-sm:10px; --shadow:0 10px 30px rgba(11,35,63,.07); --shadow-lg:0 24px 60px rgba(11,35,63,.12);
-  --h:'Lexend',system-ui,sans-serif; --b:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --h:'Open Sans',system-ui,sans-serif; --b:'Lato',system-ui,-apple-system,'Segoe UI',sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
@@ -37,10 +38,6 @@ section{padding:96px 0}
 .sec-head h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:14px}
 .sec-head p{font-size:18px}
 .soft{background:var(--bg-soft)}
-/* Three-dot motif from the Laoret logo (teal · navy · coral) */
-.sec-head::before,.who-intro::before,.wael-copy::before,.book-side::before{content:"";display:block;width:44px;height:10px;margin:0 0 18px;background:radial-gradient(circle,var(--teal) 4.5px,transparent 5px) 0 0/14px 10px no-repeat,radial-gradient(circle,var(--dot-mid,var(--navy)) 4.5px,transparent 5px) 15px 0/14px 10px no-repeat,radial-gradient(circle,var(--coral) 4.5px,transparent 5px) 30px 0/14px 10px no-repeat}
-.sec-head::before{margin:0 auto 18px}
-.foryou{--dot-mid:#fff}
 
 /* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:600;font-size:15px;padding:15px 28px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap}
@@ -82,7 +79,6 @@ section{padding:96px 0}
 .pillars{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none;margin-bottom:22px}
 .pillars li{font-family:var(--h);font-size:14.5px;font-weight:500;color:#fff;background:rgba(255,255,255,.06);border:1.5px solid rgba(55,193,204,.55);border-radius:999px;padding:8px 16px}
 .pillars li:nth-child(2){border-color:rgba(240,90,92,.6)}
-.foryou .sec-head::before{display:none}
 .foryou .sec-head{margin-bottom:44px}
 .closing h2 span{color:var(--coral)}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px}
@@ -298,6 +294,95 @@ footer.site .wrap{display:flex;justify-content:space-between;align-items:center;
 footer.site img{height:24px;filter:brightness(0) invert(1)}
 footer.site a{color:#fff}
 footer.site a:hover{color:var(--teal)}
+
+/* =====================================================================
+   laoret.com homepage design system: typography, buttons, icons, backgrounds
+   ===================================================================== */
+:root{--brand:#00A2AE;--brand-d:#008B96;--cyan:#00C0CF;--icon:#1EC0CC;--dark:#000915;--aqua:#E1F6F6;--radius:12px;--shadow:0 10px 30px rgba(11,35,63,.07)}
+body{font-family:var(--b);font-size:16px;line-height:1.7}
+h1,h2,h3,h4,h5,h6{font-family:var(--h);font-weight:700;color:var(--ink)}
+/* Display 72/700/-0.02em */
+.hero h1{font-size:clamp(40px,5.6vw,72px);line-height:1.08;letter-spacing:-.02em}
+/* H2 36/700/-0.02em */
+.sec-head h2,.who-intro h2,.wael-copy h2,.book-side h2,.closing h2{font-size:clamp(28px,3vw,36px);line-height:1.22;letter-spacing:-.02em}
+/* H3 24/700 */
+.help-item h3,.success h3{font-size:24px;font-weight:700;line-height:1.3}
+/* H4 20/700 */
+.why-body h3,.points strong{font-size:20px;font-weight:700;line-height:1.35}
+/* H5 17/700 */
+.event-bar strong,.ways strong,.quote footer strong,.contact-mini strong,.kv-badge strong{font-size:17px;font-weight:700}
+/* H6 15/700/.04em */
+.talk h4,label,.legend{font-family:var(--h);font-size:15px;font-weight:700;letter-spacing:.04em}
+label .opt{letter-spacing:0;font-family:var(--b)}
+/* Intro 20/300 Lato Light */
+.hero .lead,.sec-head p{font-family:var(--b);font-size:20px;font-weight:300;line-height:1.6;color:var(--navy)}
+/* Body Large 18/400 Lato */
+.who-intro p,.wael-copy>p,.book-side>p,.closing p,.why-foot p,.benefits li{font-family:var(--b);font-size:18px;font-weight:400}
+.who-intro .note{font-family:var(--b);font-weight:400;border-left-color:var(--brand)}
+.why-foot p{color:var(--navy)}
+/* Body 16/400 Lato */
+.why-body p,.help-item p,.check,.quote p,.points span,.card p,.tags span,.chip span{font-size:16px}
+.pillars li{font-family:var(--b);font-size:15px;font-weight:700}
+/* Small 14/400 Lato */
+.stat span,.quote footer span,.contact-mini span,.ways span,.privacy,.kv-badge span,footer.site{font-size:14px}
+/* Caption 12/700 caps Open Sans */
+.event-bar small,.wael-photo .tag small,.logos-title,.certs-row p,.why-num,.help-num,.why-hint{font-family:var(--h);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.wael-copy .role{font-family:var(--h);font-weight:600;color:var(--brand)}
+.stat b{font-family:var(--h);font-weight:700;letter-spacing:-.02em}
+
+/* Nav */
+.nav-links a{font-family:var(--h);font-size:15px;font-weight:400}
+.nav-links a:hover{color:var(--brand)}
+.nav-links a::after{background:var(--brand)}
+.lang a[aria-current]{background:var(--brand)}
+
+/* Buttons: homepage pills with soft teal glow */
+.btn{font-family:var(--h);font-weight:700;font-size:15px;padding:14px 30px;border-width:1.5px}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 8px 22px rgba(0,162,174,.35)}
+.btn-primary:hover{background:var(--brand-d);color:#fff;transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,162,174,.45)}
+.btn-outline{background:#fff;color:var(--brand);border-color:rgba(0,162,174,.45);box-shadow:0 8px 22px rgba(0,162,174,.18)}
+.btn-outline:hover{background:var(--brand);color:#fff;border-color:var(--brand);transform:translateY(-2px)}
+.foryou .btn-primary,.closing .btn-primary,.mobile-cta .btn-primary{background:var(--cyan);color:#fff;box-shadow:0 8px 26px rgba(0,192,207,.4)}
+.foryou .btn-primary:hover,.closing .btn-primary:hover,.mobile-cta .btn-primary:hover{background:#00AAB8}
+.btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.6);box-shadow:0 0 20px rgba(0,192,207,.22)}
+.btn-light:hover{background:#fff;color:var(--dark)}
+
+/* Icons: plain teal line icons, no tiles */
+.ico,.event-bar div .ico,.ways li .ico,.ways li:first-child .ico,.ways li:last-child .ico{background:none;color:var(--icon);width:auto;height:auto;border-radius:0}
+.ico svg{width:30px;height:30px;stroke-width:1.6}
+.ways .ico svg{width:28px;height:28px}
+.check svg,.check:nth-child(even) svg{color:var(--cyan)}
+.benefits svg{color:var(--navy)}
+.success .ico{background:var(--aqua);color:var(--brand);width:64px;height:64px;border-radius:50%}
+.num{color:var(--brand);background:var(--aqua)}
+
+/* Cards: white, borderless, soft shadow */
+.points li,.why-card,.quote,.stat,.contact-mini,.ways li,.card{border-color:transparent;box-shadow:var(--shadow);border-radius:var(--radius)}
+.points li:hover{border-color:transparent;box-shadow:0 16px 36px rgba(11,35,63,.1)}
+.why-card{border-radius:14px}
+.why-visual{border-radius:10px}
+form.lead{border-color:transparent;border-radius:14px;box-shadow:0 18px 50px rgba(11,35,63,.1)}
+.help-item::before{background:var(--brand)}
+.help-item:hover h3{color:var(--brand)}
+input:focus,select:focus,textarea:focus{border-color:var(--brand);box-shadow:0 0 0 4px rgba(0,162,174,.14)}
+.seg .chip input:checked+span{background:var(--brand);border-color:var(--brand);color:#fff}
+.chip span:hover{border-color:var(--brand)}
+
+/* Backgrounds: white → aqua hero, near-black dark bands with homepage shapes */
+.hero{background:linear-gradient(180deg,#fff 0%,#fff 35%,var(--aqua) 100%)}
+.soft{background:#F5FAFB}
+.book{background:linear-gradient(180deg,#F5FAFB,#fff)}
+.foryou,.closing{background:var(--dark)}
+.foryou .wrap,.closing .wrap{position:relative;z-index:1}
+.foryou::before,.closing::before{content:"";position:absolute;right:-90px;top:-120px;width:420px;height:360px;border-radius:90px;background:linear-gradient(140deg,rgba(0,192,207,.18),rgba(0,192,207,0) 70%);transform:none}
+.foryou::after,.closing::after{content:"";position:absolute;left:6%;bottom:-110px;top:auto;width:190px;height:190px;border-radius:50%;border:38px solid rgba(37,84,214,.22);background:none;transform:none}
+.wael-photo .tag{background:var(--dark)}
+.wael-photo .tag small{color:var(--cyan)}
+.mobile-cta{background:var(--dark)}
+footer.site{background:#fff;color:var(--body);border-top:1px solid var(--line)}
+footer.site img{filter:none}
+footer.site a{color:var(--navy)}
+footer.site a:hover{color:var(--brand)}
 
 /* Mobile sticky CTA */
 .mobile-cta{display:none}

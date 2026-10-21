@@ -264,7 +264,7 @@
        "id": "8f5b3b4",
        "elType": "widget",
        "settings": {
-        "title": "Meet Wael",
+        "title": "Meet the Team",
         "header_size": "div",
         "title_color": "#0B233F",
         "typography_typography": "custom",
@@ -276,7 +276,7 @@
         },
         "typography_font_weight": "400",
         "link": {
-         "url": "#wael",
+         "url": "#team",
          "is_external": "",
          "nofollow": ""
         },
@@ -374,7 +374,7 @@
    "isInner": false
   },
   {
-   "id": "e8fb806",
+   "id": "5dc1f92",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -425,7 +425,7 @@
    },
    "elements": [
     {
-     "id": "63e12fb",
+     "id": "9d4ff51",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -706,7 +706,7 @@
        "isInner": true
       },
       {
-       "id": "0e4e3ec",
+       "id": "988c629",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -801,7 +801,7 @@
          "widgetType": "html"
         },
         {
-         "id": "98f89f4",
+         "id": "f5e277e",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -861,29 +861,78 @@
          },
          "elements": [
           {
-           "id": "d5be44a",
-           "elType": "widget",
+           "id": "9b899c7",
+           "elType": "container",
            "settings": {
-            "image": {
-             "url": "https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/wael-makram.jpg",
-             "id": "",
-             "alt": "Wael Makram",
-             "source": "library",
-             "size": ""
-            },
-            "image_size": "full",
-            "width": {
+            "content_width": "full",
+            "container_type": "flex",
+            "flex_direction": "row",
+            "padding": {
              "unit": "px",
-             "size": 52,
-             "sizes": []
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
             },
-            "_css_classes": "lt-avatar"
+            "flex_gap": {
+             "unit": "px",
+             "row": "0",
+             "column": "0",
+             "isLinked": true
+            },
+            "css_classes": "lt-avatars"
            },
-           "elements": [],
-           "widgetType": "image"
+           "elements": [
+            {
+             "id": "d5be44a",
+             "elType": "widget",
+             "settings": {
+              "image": {
+               "url": "https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/wael-makram.jpg",
+               "id": "",
+               "alt": "Wael Makram",
+               "source": "library",
+               "size": ""
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "px",
+               "size": 52,
+               "sizes": []
+              },
+              "_css_classes": "lt-avatar"
+             },
+             "elements": [],
+             "widgetType": "image"
+            },
+            {
+             "id": "3482e83",
+             "elType": "widget",
+             "settings": {
+              "image": {
+               "url": "https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/berk-cetiner.jpg",
+               "id": "",
+               "alt": "Berk Çetiner",
+               "source": "library",
+               "size": ""
+              },
+              "image_size": "full",
+              "width": {
+               "unit": "px",
+               "size": 52,
+               "sizes": []
+              },
+              "_css_classes": "lt-avatar lt-avatar-stack"
+             },
+             "elements": [],
+             "widgetType": "image"
+            }
+           ],
+           "isInner": true
           },
           {
-           "id": "93c2757",
+           "id": "0e4e3ec",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -906,10 +955,10 @@
            },
            "elements": [
             {
-             "id": "3482e83",
+             "id": "93c2757",
              "elType": "widget",
              "settings": {
-              "title": "Meet Wael Makram",
+              "title": "Meet Wael & Berk",
               "header_size": "div",
               "title_color": "#0B233F",
               "typography_typography": "custom",
@@ -930,10 +979,10 @@
              "widgetType": "heading"
             },
             {
-             "id": "9b899c7",
+             "id": "98f89f4",
              "elType": "widget",
              "settings": {
-              "editor": "<p>Localization & Operations Director, at Booth 2F27</p>",
+              "editor": "<p>At Booth 2F27</p>",
               "text_color": "#7A8898",
               "typography_typography": "custom",
               "typography_font_family": "Lato",
@@ -965,7 +1014,7 @@
      "isInner": true
     },
     {
-     "id": "c53c908",
+     "id": "e8fb806",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -1054,7 +1103,7 @@
      },
      "elements": [
       {
-       "id": "f5e277e",
+       "id": "bd265b6",
        "elType": "widget",
        "settings": {
         "selected_icon": {
@@ -1132,7 +1181,7 @@
        "widgetType": "icon-box"
       },
       {
-       "id": "988c629",
+       "id": "662f200",
        "elType": "widget",
        "settings": {
         "selected_icon": {
@@ -1210,7 +1259,7 @@
        "widgetType": "icon-box"
       },
       {
-       "id": "bd265b6",
+       "id": "c53c908",
        "elType": "widget",
        "settings": {
         "selected_icon": {
@@ -1288,7 +1337,7 @@
        "widgetType": "icon-box"
       },
       {
-       "id": "662f200",
+       "id": "63e12fb",
        "elType": "widget",
        "settings": {
         "selected_icon": {
@@ -1298,7 +1347,7 @@
         "view": "default",
         "position": "inline-start",
         "title_text": "Talk to",
-        "description_text": "Wael Makram",
+        "description_text": "Wael Makram & Berk Çetiner",
         "title_size": "div",
         "primary_color": "#1EC0CC",
         "icon_size": {
@@ -1372,7 +1421,7 @@
    "isInner": false
   },
   {
-   "id": "800bafb",
+   "id": "bfcf438",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -1418,7 +1467,7 @@
    },
    "elements": [
     {
-     "id": "9d4ff51",
+     "id": "fad883b",
      "elType": "widget",
      "settings": {
       "title": "Proud to work with",
@@ -1449,7 +1498,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "7dbfd49",
+     "id": "6352394",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -1500,7 +1549,7 @@
      },
      "elements": [
       {
-       "id": "5dc1f92",
+       "id": "f201d7b",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1528,7 +1577,7 @@
        "widgetType": "image"
       },
       {
-       "id": "fad883b",
+       "id": "9603c52",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1556,7 +1605,7 @@
        "widgetType": "image"
       },
       {
-       "id": "f201d7b",
+       "id": "c86e64f",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1584,7 +1633,7 @@
        "widgetType": "image"
       },
       {
-       "id": "9603c52",
+       "id": "564f04c",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1612,7 +1661,7 @@
        "widgetType": "image"
       },
       {
-       "id": "c86e64f",
+       "id": "597d5a5",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1640,7 +1689,7 @@
        "widgetType": "image"
       },
       {
-       "id": "564f04c",
+       "id": "7dbfd49",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1668,7 +1717,7 @@
        "widgetType": "image"
       },
       {
-       "id": "597d5a5",
+       "id": "087009a",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1699,7 +1748,7 @@
      "isInner": true
     },
     {
-     "id": "0af0672",
+     "id": "07fb41c",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -1745,7 +1794,7 @@
      },
      "elements": [
       {
-       "id": "087009a",
+       "id": "ee24ec6",
        "elType": "widget",
        "settings": {
         "title": "ISO-certified quality · 120+ languages · ATA member",
@@ -1775,7 +1824,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "19b1610",
+       "id": "800bafb",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -1801,7 +1850,7 @@
        },
        "elements": [
         {
-         "id": "6352394",
+         "id": "a2db6b3",
          "elType": "widget",
          "settings": {
           "image": {
@@ -1829,7 +1878,7 @@
          "widgetType": "image"
         },
         {
-         "id": "ee24ec6",
+         "id": "0fba96a",
          "elType": "widget",
          "settings": {
           "image": {
@@ -1857,7 +1906,7 @@
          "widgetType": "image"
         },
         {
-         "id": "a2db6b3",
+         "id": "19b1610",
          "elType": "widget",
          "settings": {
           "image": {
@@ -1885,7 +1934,7 @@
          "widgetType": "image"
         },
         {
-         "id": "0fba96a",
+         "id": "0af0672",
          "elType": "widget",
          "settings": {
           "image": {
@@ -1922,7 +1971,7 @@
    "isInner": false
   },
   {
-   "id": "da46b47",
+   "id": "d5fe34a",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -1962,7 +2011,7 @@
    },
    "elements": [
     {
-     "id": "e86d634",
+     "id": "d5b569d",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -1989,7 +2038,7 @@
      },
      "elements": [
       {
-       "id": "26d7a8b",
+       "id": "fa30b38",
        "elType": "widget",
        "settings": {
         "title": "Localization support",
@@ -2037,7 +2086,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "d0d7490",
+       "id": "e86d634",
        "elType": "widget",
        "settings": {
         "title": "Human-governed AI",
@@ -2085,7 +2134,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "fa30b38",
+       "id": "b4a2ea2",
        "elType": "widget",
        "settings": {
         "title": "Quality built to scale",
@@ -2136,7 +2185,7 @@
      "isInner": true
     },
     {
-     "id": "b4a2ea2",
+     "id": "e9459bd",
      "elType": "widget",
      "settings": {
       "title": "This Page Is For You If…",
@@ -2181,7 +2230,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "d5b569d",
+     "id": "9a41767",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -2220,117 +2269,6 @@
      },
      "elements": [
       {
-       "id": "bfcf438",
-       "elType": "container",
-       "settings": {
-        "content_width": "full",
-        "container_type": "flex",
-        "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": "22",
-         "right": "24",
-         "bottom": "22",
-         "left": "24",
-         "isLinked": false
-        },
-        "background_background": "classic",
-        "background_color": "rgba(255,255,255,0.05)",
-        "border_border": "solid",
-        "border_width": {
-         "unit": "px",
-         "top": "1",
-         "right": "1",
-         "bottom": "1",
-         "left": "1",
-         "isLinked": true
-        },
-        "border_color": "rgba(255,255,255,0.1)",
-        "border_radius": {
-         "unit": "px",
-         "top": "12",
-         "right": "12",
-         "bottom": "12",
-         "left": "12",
-         "isLinked": true
-        },
-        "animation": "fadeInUp",
-        "animation_duration": "",
-        "flex_gap": {
-         "unit": "px",
-         "row": "0",
-         "column": "0",
-         "isLinked": true
-        }
-       },
-       "elements": [
-        {
-         "id": "07fb41c",
-         "elType": "widget",
-         "settings": {
-          "selected_icon": {
-           "value": "far fa-check-circle",
-           "library": "fa-regular"
-          },
-          "view": "default",
-          "position": "inline-start",
-          "title_text": "You want a localization workflow that fits your internal process",
-          "description_text": "",
-          "title_size": "div",
-          "primary_color": "#00C0CF",
-          "icon_size": {
-           "unit": "px",
-           "size": 22,
-           "sizes": []
-          },
-          "icon_space": {
-           "unit": "px",
-           "size": 14,
-           "sizes": []
-          },
-          "title_bottom_space": {
-           "unit": "px",
-           "size": 2,
-           "sizes": []
-          },
-          "title_color": "#E6EEF5",
-          "description_color": "#4A5B6D",
-          "text_align": "start",
-          "content_vertical_alignment": "top",
-          "title_typography_typography": "custom",
-          "title_typography_font_family": "Lato",
-          "title_typography_font_size": {
-           "unit": "px",
-           "size": 16,
-           "sizes": []
-          },
-          "title_typography_font_weight": "400",
-          "title_typography_line_height": {
-           "unit": "em",
-           "size": 1.7,
-           "sizes": []
-          },
-          "description_typography_typography": "custom",
-          "description_typography_font_family": "Lato",
-          "description_typography_font_size": {
-           "unit": "px",
-           "size": 14,
-           "sizes": []
-          },
-          "description_typography_font_weight": "400",
-          "description_typography_line_height": {
-           "unit": "em",
-           "size": 1.55,
-           "sizes": []
-          }
-         },
-         "elements": [],
-         "widgetType": "icon-box"
-        }
-       ],
-       "isInner": true
-      },
-      {
        "id": "a76b685",
        "elType": "container",
        "settings": {
@@ -2367,7 +2305,6 @@
         },
         "animation": "fadeInUp",
         "animation_duration": "",
-        "animation_delay": 100,
         "flex_gap": {
          "unit": "px",
          "row": "0",
@@ -2386,7 +2323,7 @@
           },
           "view": "default",
           "position": "inline-start",
-          "title_text": "You want to use AI without losing human quality control",
+          "title_text": "You want a localization workflow that fits your internal process",
           "description_text": "",
           "title_size": "div",
           "primary_color": "#00C0CF",
@@ -2479,6 +2416,7 @@
         },
         "animation": "fadeInUp",
         "animation_duration": "",
+        "animation_delay": 100,
         "flex_gap": {
          "unit": "px",
          "row": "0",
@@ -2497,7 +2435,7 @@
           },
           "view": "default",
           "position": "inline-start",
-          "title_text": "You need a flexible localization partner, not a rigid production machine",
+          "title_text": "You want to use AI without losing human quality control",
           "description_text": "",
           "title_size": "div",
           "primary_color": "#00C0CF",
@@ -2590,7 +2528,6 @@
         },
         "animation": "fadeInUp",
         "animation_duration": "",
-        "animation_delay": 100,
         "flex_gap": {
          "unit": "px",
          "row": "0",
@@ -2609,7 +2546,7 @@
           },
           "view": "default",
           "position": "inline-start",
-          "title_text": "You manage multilingual content at scale",
+          "title_text": "You need a flexible localization partner, not a rigid production machine",
           "description_text": "",
           "title_size": "div",
           "primary_color": "#00C0CF",
@@ -2702,6 +2639,7 @@
         },
         "animation": "fadeInUp",
         "animation_duration": "",
+        "animation_delay": 100,
         "flex_gap": {
          "unit": "px",
          "row": "0",
@@ -2720,7 +2658,7 @@
           },
           "view": "default",
           "position": "inline-start",
-          "title_text": "You’re an MLV or LSP looking for a capable, easy-to-work-with partner",
+          "title_text": "You manage multilingual content at scale",
           "description_text": "",
           "title_size": "div",
           "primary_color": "#00C0CF",
@@ -2813,7 +2751,6 @@
         },
         "animation": "fadeInUp",
         "animation_duration": "",
-        "animation_delay": 100,
         "flex_gap": {
          "unit": "px",
          "row": "0",
@@ -2824,6 +2761,118 @@
        "elements": [
         {
          "id": "b1a5c86",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "far fa-check-circle",
+           "library": "fa-regular"
+          },
+          "view": "default",
+          "position": "inline-start",
+          "title_text": "You’re an MLV or LSP looking for a capable, easy-to-work-with partner",
+          "description_text": "",
+          "title_size": "div",
+          "primary_color": "#00C0CF",
+          "icon_size": {
+           "unit": "px",
+           "size": 22,
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "title_bottom_space": {
+           "unit": "px",
+           "size": 2,
+           "sizes": []
+          },
+          "title_color": "#E6EEF5",
+          "description_color": "#4A5B6D",
+          "text_align": "start",
+          "content_vertical_alignment": "top",
+          "title_typography_typography": "custom",
+          "title_typography_font_family": "Lato",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 16,
+           "sizes": []
+          },
+          "title_typography_font_weight": "400",
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": 1.7,
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_family": "Lato",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": 14,
+           "sizes": []
+          },
+          "description_typography_font_weight": "400",
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": 1.55,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "widgetType": "icon-box"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "d0d7490",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "container_type": "flex",
+        "flex_direction": "column",
+        "padding": {
+         "unit": "px",
+         "top": "22",
+         "right": "24",
+         "bottom": "22",
+         "left": "24",
+         "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "rgba(255,255,255,0.05)",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(255,255,255,0.1)",
+        "border_radius": {
+         "unit": "px",
+         "top": "12",
+         "right": "12",
+         "bottom": "12",
+         "left": "12",
+         "isLinked": true
+        },
+        "animation": "fadeInUp",
+        "animation_duration": "",
+        "animation_delay": 100,
+        "flex_gap": {
+         "unit": "px",
+         "row": "0",
+         "column": "0",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "26d7a8b",
          "elType": "widget",
          "settings": {
           "selected_icon": {
@@ -2892,7 +2941,7 @@
      "isInner": true
     },
     {
-     "id": "9a41767",
+     "id": "34e955e",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -2924,7 +2973,7 @@
      },
      "elements": [
       {
-       "id": "e9459bd",
+       "id": "da46b47",
        "elType": "widget",
        "settings": {
         "text": "That’s us. Let’s talk",
@@ -2975,7 +3024,7 @@
    "isInner": false
   },
   {
-   "id": "dec93e4",
+   "id": "791438f",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -3032,7 +3081,7 @@
    },
    "elements": [
     {
-     "id": "110a624",
+     "id": "dec93e4",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -3057,7 +3106,7 @@
      },
      "elements": [
       {
-       "id": "3c95cb6",
+       "id": "f707a25",
        "elType": "widget",
        "settings": {
         "title": "Who We Are",
@@ -3091,7 +3140,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "649ee7b",
+       "id": "110a624",
        "elType": "widget",
        "settings": {
         "editor": "<p>At Laoret, we help organizations build localization workflows that are practical, scalable and aligned with real business needs.</p>",
@@ -3114,7 +3163,7 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "f707a25",
+       "id": "8e58bf5",
        "elType": "widget",
        "settings": {
         "editor": "<p>A boutique localization partner that brings the process know-how, the right technology and the human judgment, and fits them around you.</p>",
@@ -3158,7 +3207,7 @@
      "isInner": true
     },
     {
-     "id": "8e58bf5",
+     "id": "02c7d9f",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -3181,7 +3230,7 @@
      },
      "elements": [
       {
-       "id": "7804e75",
+       "id": "87b0d9f",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3225,7 +3274,7 @@
        },
        "elements": [
         {
-         "id": "34e955e",
+         "id": "36c2ea3",
          "elType": "widget",
          "settings": {
           "title": "01",
@@ -3245,7 +3294,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "1f72e17",
+         "id": "476f05d",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3268,7 +3317,7 @@
          },
          "elements": [
           {
-           "id": "d5fe34a",
+           "id": "1f72e17",
            "elType": "widget",
            "settings": {
             "title": "We don’t build one-size-fits-all workflows.",
@@ -3292,7 +3341,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "36c2ea3",
+           "id": "7804e75",
            "elType": "widget",
            "settings": {
             "editor": "<p>Every engagement starts with how your team, tools and content already work.</p>",
@@ -3321,7 +3370,7 @@
        "isInner": true
       },
       {
-       "id": "f911dd1",
+       "id": "d8455e3",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3366,7 +3415,7 @@
        },
        "elements": [
         {
-         "id": "476f05d",
+         "id": "8d2c75f",
          "elType": "widget",
          "settings": {
           "title": "02",
@@ -3386,7 +3435,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "6d39bb4",
+         "id": "3d3eeb5",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3409,7 +3458,7 @@
          },
          "elements": [
           {
-           "id": "87b0d9f",
+           "id": "6d39bb4",
            "elType": "widget",
            "settings": {
             "title": "We don’t sell technology.",
@@ -3433,7 +3482,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "8d2c75f",
+           "id": "f911dd1",
            "elType": "widget",
            "settings": {
             "editor": "<p>We’re not tied to a platform, so our recommendations stay focused on what serves your content.</p>",
@@ -3462,7 +3511,7 @@
        "isInner": true
       },
       {
-       "id": "2085f1c",
+       "id": "4639255",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3507,7 +3556,7 @@
        },
        "elements": [
         {
-         "id": "3d3eeb5",
+         "id": "46fd7e9",
          "elType": "widget",
          "settings": {
           "title": "03",
@@ -3527,7 +3576,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "4f4f234",
+         "id": "8963f06",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3550,7 +3599,7 @@
          },
          "elements": [
           {
-           "id": "d8455e3",
+           "id": "4f4f234",
            "elType": "widget",
            "settings": {
             "title": "We understand technology and AI well enough to build the right workflow around you.",
@@ -3574,7 +3623,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "46fd7e9",
+           "id": "2085f1c",
            "elType": "widget",
            "settings": {
             "editor": "<p>MT, LLMs, TMS and CAT tools, chosen and configured for your content types.</p>",
@@ -3603,7 +3652,7 @@
        "isInner": true
       },
       {
-       "id": "0de880e",
+       "id": "99f688d",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3648,7 +3697,7 @@
        },
        "elements": [
         {
-         "id": "8963f06",
+         "id": "a5b2c78",
          "elType": "widget",
          "settings": {
           "title": "04",
@@ -3668,7 +3717,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "c7a6798",
+         "id": "57bcd11",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3691,7 +3740,7 @@
          },
          "elements": [
           {
-           "id": "4639255",
+           "id": "c7a6798",
            "elType": "widget",
            "settings": {
             "title": "We’re boutique, flexible and easy to work with.",
@@ -3715,7 +3764,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "a5b2c78",
+           "id": "0de880e",
            "elType": "widget",
            "settings": {
             "editor": "<p>Direct access to decision-makers, quick responses and room to adapt as you go.</p>",
@@ -3744,7 +3793,7 @@
        "isInner": true
       },
       {
-       "id": "f1755d2",
+       "id": "649ee7b",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3789,7 +3838,7 @@
        },
        "elements": [
         {
-         "id": "57bcd11",
+         "id": "a2f8a1d",
          "elType": "widget",
          "settings": {
           "title": "05",
@@ -3809,7 +3858,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "664db23",
+         "id": "3c95cb6",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3832,7 +3881,7 @@
          },
          "elements": [
           {
-           "id": "99f688d",
+           "id": "664db23",
            "elType": "widget",
            "settings": {
             "title": "Quality and human control remain central.",
@@ -3856,7 +3905,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "a2f8a1d",
+           "id": "f1755d2",
            "elType": "widget",
            "settings": {
             "editor": "<p>AI speeds things up. Qualified linguists decide what ships.</p>",
@@ -3891,7 +3940,7 @@
    "isInner": false
   },
   {
-   "id": "8840cfd",
+   "id": "84de87b",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -3930,7 +3979,7 @@
    },
    "elements": [
     {
-     "id": "fe8c468",
+     "id": "bf4f64e",
      "elType": "widget",
      "settings": {
       "title": "What We Help With",
@@ -3967,7 +4016,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "1f129fd",
+     "id": "8840cfd",
      "elType": "widget",
      "settings": {
       "editor": "<p>Built around the challenges localization and documentation teams bring to us most often.</p>",
@@ -4007,7 +4056,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "bf4f64e",
+     "id": "4a08f2b",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -4052,7 +4101,7 @@
      },
      "elements": [
       {
-       "id": "c67f1a4",
+       "id": "3ff6be0",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4111,7 +4160,7 @@
        },
        "elements": [
         {
-         "id": "02c7d9f",
+         "id": "11db126",
          "elType": "widget",
          "settings": {
           "title": "01",
@@ -4149,7 +4198,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "d46f302",
+         "id": "5ad3431",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4172,7 +4221,7 @@
          },
          "elements": [
           {
-           "id": "791438f",
+           "id": "d46f302",
            "elType": "widget",
            "settings": {
             "title": "Localization workflow design",
@@ -4201,7 +4250,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "11db126",
+           "id": "c67f1a4",
            "elType": "widget",
            "settings": {
             "editor": "<p>When handoffs are manual, tools don’t talk to each other or turnaround keeps slipping.</p>",
@@ -4231,7 +4280,7 @@
        "isInner": true
       },
       {
-       "id": "8bbc1f5",
+       "id": "65628a1",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4291,7 +4340,7 @@
        },
        "elements": [
         {
-         "id": "5ad3431",
+         "id": "8521e11",
          "elType": "widget",
          "settings": {
           "title": "02",
@@ -4329,7 +4378,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "1b03500",
+         "id": "6a39f9d",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4352,7 +4401,7 @@
          },
          "elements": [
           {
-           "id": "3ff6be0",
+           "id": "1b03500",
            "elType": "widget",
            "settings": {
             "title": "MTPE & AI-supported workflows",
@@ -4381,7 +4430,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "8521e11",
+           "id": "8bbc1f5",
            "elType": "widget",
            "settings": {
             "editor": "<p>When you want AI’s speed with ISO 18587-aligned post-editing and clear quality thresholds.</p>",
@@ -4411,7 +4460,7 @@
        "isInner": true
       },
       {
-       "id": "894f797",
+       "id": "2f60013",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4470,7 +4519,7 @@
        },
        "elements": [
         {
-         "id": "6a39f9d",
+         "id": "d36b655",
          "elType": "widget",
          "settings": {
           "title": "03",
@@ -4508,7 +4557,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "d7a54b1",
+         "id": "92c5f89",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4531,7 +4580,7 @@
          },
          "elements": [
           {
-           "id": "65628a1",
+           "id": "d7a54b1",
            "elType": "widget",
            "settings": {
             "title": "Multilingual content operations",
@@ -4560,7 +4609,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "d36b655",
+           "id": "894f797",
            "elType": "widget",
            "settings": {
             "editor": "<p>When volume, languages and channels grow faster than your team can coordinate them.</p>",
@@ -4590,7 +4639,7 @@
        "isInner": true
       },
       {
-       "id": "2c3d757",
+       "id": "da69b02",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4650,7 +4699,7 @@
        },
        "elements": [
         {
-         "id": "92c5f89",
+         "id": "28e8ba5",
          "elType": "widget",
          "settings": {
           "title": "04",
@@ -4688,7 +4737,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "231be1c",
+         "id": "0af8d90",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4711,7 +4760,7 @@
          },
          "elements": [
           {
-           "id": "2f60013",
+           "id": "231be1c",
            "elType": "widget",
            "settings": {
             "title": "Quality assurance & LQA",
@@ -4740,7 +4789,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "28e8ba5",
+           "id": "2c3d757",
            "elType": "widget",
            "settings": {
             "editor": "<p>When you need quality you can measure, report on and improve, not just “check”.</p>",
@@ -4770,7 +4819,7 @@
        "isInner": true
       },
       {
-       "id": "1f1933a",
+       "id": "48e89e4",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4829,7 +4878,7 @@
        },
        "elements": [
         {
-         "id": "0af8d90",
+         "id": "fa34ace",
          "elType": "widget",
          "settings": {
           "title": "05",
@@ -4867,7 +4916,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "e4d2303",
+         "id": "adabcd7",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4890,7 +4939,7 @@
          },
          "elements": [
           {
-           "id": "da69b02",
+           "id": "e4d2303",
            "elType": "widget",
            "settings": {
             "title": "Technical & regulated content",
@@ -4919,7 +4968,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "fa34ace",
+           "id": "1f1933a",
            "elType": "widget",
            "settings": {
             "editor": "<p>Manuals, safety, compliance and life-sciences content where accuracy carries real risk.</p>",
@@ -4949,7 +4998,7 @@
        "isInner": true
       },
       {
-       "id": "579ff92",
+       "id": "1f129fd",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -5009,7 +5058,7 @@
        },
        "elements": [
         {
-         "id": "adabcd7",
+         "id": "d2eb576",
          "elType": "widget",
          "settings": {
           "title": "06",
@@ -5047,7 +5096,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "f04291b",
+         "id": "fe8c468",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -5070,7 +5119,7 @@
          },
          "elements": [
           {
-           "id": "48e89e4",
+           "id": "f04291b",
            "elType": "widget",
            "settings": {
             "title": "Support for teams & language partners",
@@ -5099,7 +5148,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "d2eb576",
+           "id": "579ff92",
            "elType": "widget",
            "settings": {
             "editor": "<p>Extra capacity for in-house teams, and a dependable production partner for MLVs and LSPs.</p>",
@@ -5135,7 +5184,7 @@
    "isInner": false
   },
   {
-   "id": "60f9b3c",
+   "id": "76d7f35",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -5172,7 +5221,7 @@
    },
    "elements": [
     {
-     "id": "0cb24cf",
+     "id": "2258826",
      "elType": "widget",
      "settings": {
       "title": "Why Meet Laoret at tcworld?",
@@ -5209,7 +5258,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "58fc747",
+     "id": "9ed6c1c",
      "elType": "widget",
      "settings": {
       "editor": "<p>Six reasons the conversation at our booth is worth fifteen minutes of your fair.</p>",
@@ -5249,7 +5298,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "2258826",
+     "id": "9b12ddb",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -5293,7 +5342,7 @@
      },
      "elements": [
       {
-       "id": "ea3b4d5",
+       "id": "a183297",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -5337,7 +5386,7 @@
        },
        "elements": [
         {
-         "id": "4a08f2b",
+         "id": "382a6db",
          "elType": "widget",
          "settings": {
           "image": {
@@ -5393,7 +5442,7 @@
          "widgetType": "image"
         },
         {
-         "id": "8e7bd8a",
+         "id": "eac79ca",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -5416,7 +5465,7 @@
          },
          "elements": [
           {
-           "id": "84de87b",
+           "id": "c35214b",
            "elType": "widget",
            "settings": {
             "title": "01",
@@ -5446,7 +5495,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "382a6db",
+           "id": "8e7bd8a",
            "elType": "widget",
            "settings": {
             "title": "Workflow-first thinking",
@@ -5470,7 +5519,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "c35214b",
+           "id": "ea3b4d5",
            "elType": "widget",
            "settings": {
             "editor": "<p>We map your process before suggesting anything, then design localization to slot into it.</p>",
@@ -5499,7 +5548,7 @@
        "isInner": true
       },
       {
-       "id": "0566fab",
+       "id": "c3ba162",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -5544,7 +5593,7 @@
        },
        "elements": [
         {
-         "id": "eac79ca",
+         "id": "936873b",
          "elType": "widget",
          "settings": {
           "image": {
@@ -5600,7 +5649,7 @@
          "widgetType": "image"
         },
         {
-         "id": "658c7b4",
+         "id": "1375564",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -5623,7 +5672,7 @@
          },
          "elements": [
           {
-           "id": "a183297",
+           "id": "912b2ec",
            "elType": "widget",
            "settings": {
             "title": "02",
@@ -5653,7 +5702,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "936873b",
+           "id": "658c7b4",
            "elType": "widget",
            "settings": {
             "title": "Human-governed AI",
@@ -5677,7 +5726,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "912b2ec",
+           "id": "0566fab",
            "elType": "widget",
            "settings": {
             "editor": "<p>Machine speed where it’s safe, human review where it matters, with clear rules for which is which.</p>",
@@ -5706,7 +5755,7 @@
        "isInner": true
       },
       {
-       "id": "ab8c280",
+       "id": "8b256f4",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -5751,7 +5800,7 @@
        },
        "elements": [
         {
-         "id": "1375564",
+         "id": "3cfb8bb",
          "elType": "widget",
          "settings": {
           "image": {
@@ -5807,7 +5856,7 @@
          "widgetType": "image"
         },
         {
-         "id": "0c30128",
+         "id": "8ddba1d",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -5830,7 +5879,7 @@
          },
          "elements": [
           {
-           "id": "c3ba162",
+           "id": "202ed2c",
            "elType": "widget",
            "settings": {
             "title": "03",
@@ -5860,7 +5909,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "3cfb8bb",
+           "id": "0c30128",
            "elType": "widget",
            "settings": {
             "title": "Scalable quality",
@@ -5884,7 +5933,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "202ed2c",
+           "id": "ab8c280",
            "elType": "widget",
            "settings": {
             "editor": "<p>Defined LQA, managed terminology and measurable scoring that holds up as volume grows.</p>",
@@ -5913,7 +5962,7 @@
        "isInner": true
       },
       {
-       "id": "e6a50e5",
+       "id": "3012b9b",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -5958,7 +6007,7 @@
        },
        "elements": [
         {
-         "id": "8ddba1d",
+         "id": "29e8180",
          "elType": "widget",
          "settings": {
           "image": {
@@ -6014,7 +6063,7 @@
          "widgetType": "image"
         },
         {
-         "id": "863ad92",
+         "id": "bc518f9",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -6037,7 +6086,7 @@
          },
          "elements": [
           {
-           "id": "8b256f4",
+           "id": "557de07",
            "elType": "widget",
            "settings": {
             "title": "04",
@@ -6067,7 +6116,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "29e8180",
+           "id": "863ad92",
            "elType": "widget",
            "settings": {
             "title": "Flexible support",
@@ -6091,7 +6140,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "557de07",
+           "id": "e6a50e5",
            "elType": "widget",
            "settings": {
             "editor": "<p>Full projects, overflow capacity or a single workstream. Scope it the way your team needs.</p>",
@@ -6120,7 +6169,7 @@
        "isInner": true
       },
       {
-       "id": "f658f9e",
+       "id": "bffc577",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -6165,7 +6214,7 @@
        },
        "elements": [
         {
-         "id": "bc518f9",
+         "id": "231aeee",
          "elType": "widget",
          "settings": {
           "image": {
@@ -6221,7 +6270,7 @@
          "widgetType": "image"
         },
         {
-         "id": "532a3aa",
+         "id": "6e89ea2",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -6244,7 +6293,7 @@
          },
          "elements": [
           {
-           "id": "3012b9b",
+           "id": "20f50d6",
            "elType": "widget",
            "settings": {
             "title": "05",
@@ -6274,7 +6323,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "231aeee",
+           "id": "532a3aa",
            "elType": "widget",
            "settings": {
             "title": "Easy collaboration",
@@ -6298,7 +6347,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "20f50d6",
+           "id": "f658f9e",
            "elType": "widget",
            "settings": {
             "editor": "<p>Responsive people, transparent communication and no unnecessary layers between you and the work.</p>",
@@ -6327,7 +6376,7 @@
        "isInner": true
       },
       {
-       "id": "fa6716f",
+       "id": "58fc747",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -6372,7 +6421,7 @@
        },
        "elements": [
         {
-         "id": "6e89ea2",
+         "id": "1a78ba6",
          "elType": "widget",
          "settings": {
           "image": {
@@ -6428,7 +6477,7 @@
          "widgetType": "image"
         },
         {
-         "id": "ffd3ac1",
+         "id": "0cb24cf",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -6451,7 +6500,7 @@
          },
          "elements": [
           {
-           "id": "bffc577",
+           "id": "4d1415e",
            "elType": "widget",
            "settings": {
             "title": "06",
@@ -6481,7 +6530,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "1a78ba6",
+           "id": "ffd3ac1",
            "elType": "widget",
            "settings": {
             "title": "Practical localization expertise",
@@ -6505,7 +6554,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "4d1415e",
+           "id": "fa6716f",
            "elType": "widget",
            "settings": {
             "editor": "<p>Hands-on experience with technical, regulated and product content across 120+ languages.</p>",
@@ -6537,7 +6586,7 @@
      "isInner": true
     },
     {
-     "id": "9ed6c1c",
+     "id": "781fffd",
      "elType": "widget",
      "settings": {
       "title": "← Swipe to see all six →",
@@ -6578,7 +6627,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "9b12ddb",
+     "id": "b67870a",
      "elType": "widget",
      "settings": {
       "editor": "<p>If your team wants to improve localization efficiency without losing quality or control, this is the conversation to have at tcworld.</p>",
@@ -6613,7 +6662,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "b67870a",
+     "id": "73e547e",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -6637,7 +6686,7 @@
      },
      "elements": [
       {
-       "id": "781fffd",
+       "id": "60f9b3c",
        "elType": "widget",
        "settings": {
         "text": "Book a Meeting",
@@ -6688,7 +6737,7 @@
    "isInner": false
   },
   {
-   "id": "de1bc9c",
+   "id": "fd5c1bf",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -6727,7 +6776,7 @@
    },
    "elements": [
     {
-     "id": "3ad1518",
+     "id": "313b27d",
      "elType": "widget",
      "settings": {
       "title": "Why Companies Trust Laoret",
@@ -6764,7 +6813,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "799f262",
+     "id": "395d73e",
      "elType": "widget",
      "settings": {
       "editor": "<p>Human expertise and smart technology, backed by certified processes.</p>",
@@ -6804,7 +6853,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "313b27d",
+     "id": "de1bc9c",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -6861,7 +6910,7 @@
      },
      "elements": [
       {
-       "id": "06fd425",
+       "id": "b1b553f",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -6904,7 +6953,7 @@
        },
        "elements": [
         {
-         "id": "73e547e",
+         "id": "06fd425",
          "elType": "widget",
          "settings": {
           "title": "ISO<em>×3</em>",
@@ -6940,7 +6989,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "76d7f35",
+         "id": "0c0812e",
          "elType": "widget",
          "settings": {
           "editor": "<p>Certified to ISO 17100, ISO 18587 & ISO 9001</p>",
@@ -6967,7 +7016,7 @@
        "isInner": true
       },
       {
-       "id": "20d89be",
+       "id": "e3356ad",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7011,7 +7060,7 @@
        },
        "elements": [
         {
-         "id": "0c0812e",
+         "id": "20d89be",
          "elType": "widget",
          "settings": {
           "title": "120<em>+</em>",
@@ -7047,7 +7096,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "b1b553f",
+         "id": "d453847",
          "elType": "widget",
          "settings": {
           "editor": "<p>Languages covered by native linguists</p>",
@@ -7074,7 +7123,7 @@
        "isInner": true
       },
       {
-       "id": "10e88e5",
+       "id": "0014be2",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7118,7 +7167,7 @@
        },
        "elements": [
         {
-         "id": "d453847",
+         "id": "10e88e5",
          "elType": "widget",
          "settings": {
           "title": "Human<em>+</em>AI",
@@ -7154,7 +7203,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "e3356ad",
+         "id": "f1886fb",
          "elType": "widget",
          "settings": {
           "editor": "<p>Smart technology, human-governed output</p>",
@@ -7181,7 +7230,7 @@
        "isInner": true
       },
       {
-       "id": "29a41d8",
+       "id": "cd036ed",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7225,7 +7274,7 @@
        },
        "elements": [
         {
-         "id": "f1886fb",
+         "id": "29a41d8",
          "elType": "widget",
          "settings": {
           "title": "24<em>/</em>7",
@@ -7261,7 +7310,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "0014be2",
+         "id": "e899af8",
          "elType": "widget",
          "settings": {
           "editor": "<p>Availability across industries and time zones</p>",
@@ -7291,7 +7340,7 @@
      "isInner": true
     },
     {
-     "id": "395d73e",
+     "id": "f7ca5cc",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -7334,7 +7383,7 @@
      },
      "elements": [
       {
-       "id": "1844feb",
+       "id": "c8917e0",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7378,7 +7427,7 @@
        },
        "elements": [
         {
-         "id": "e899af8",
+         "id": "5234392",
          "elType": "widget",
          "settings": {
           "editor": "<p>★★★★★</p>",
@@ -7402,7 +7451,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "cd036ed",
+         "id": "f492d45",
          "elType": "widget",
          "settings": {
           "editor": "<p>“Choosing Laoret for full post-editing was a key success factor in our German product manual launch. They didn’t just correct language, they adapted the entire flow to feel native.”</p>",
@@ -7426,7 +7475,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "88de2f0",
+         "id": "9de4faa",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -7449,7 +7498,7 @@
          },
          "elements": [
           {
-           "id": "5234392",
+           "id": "88de2f0",
            "elType": "widget",
            "settings": {
             "title": "Andreas Vogel",
@@ -7473,7 +7522,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "f492d45",
+           "id": "1844feb",
            "elType": "widget",
            "settings": {
             "editor": "<p>Content Strategist, Industrial Automation</p>",
@@ -7502,7 +7551,7 @@
        "isInner": true
       },
       {
-       "id": "1275502",
+       "id": "4004099",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7547,7 +7596,7 @@
        },
        "elements": [
         {
-         "id": "9de4faa",
+         "id": "d624937",
          "elType": "widget",
          "settings": {
           "editor": "<p>★★★★★</p>",
@@ -7571,7 +7620,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "c8917e0",
+         "id": "3520cff",
          "elType": "widget",
          "settings": {
           "editor": "<p>“We needed fast turnaround on hundreds of technical documents. Their team clearly understands the balance between quality and efficiency.”</p>",
@@ -7595,7 +7644,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "2955f75",
+         "id": "b9333f2",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -7618,7 +7667,7 @@
          },
          "elements": [
           {
-           "id": "d624937",
+           "id": "2955f75",
            "elType": "widget",
            "settings": {
             "title": "Hiroshi Sato",
@@ -7642,7 +7691,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "3520cff",
+           "id": "1275502",
            "elType": "widget",
            "settings": {
             "editor": "<p>Technical Writer, Electronics</p>",
@@ -7671,7 +7720,7 @@
        "isInner": true
       },
       {
-       "id": "75d50d6",
+       "id": "799f262",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7716,7 +7765,7 @@
        },
        "elements": [
         {
-         "id": "b9333f2",
+         "id": "dc0ef4c",
          "elType": "widget",
          "settings": {
           "editor": "<p>★★★★★</p>",
@@ -7740,7 +7789,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "4004099",
+         "id": "07daa4e",
          "elType": "widget",
          "settings": {
           "editor": "<p>“Their team’s thorough editing and domain expertise ensure our translations meet strict regulatory requirements without compromise.”</p>",
@@ -7764,7 +7813,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "225c810",
+         "id": "3ad1518",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -7787,7 +7836,7 @@
          },
          "elements": [
           {
-           "id": "dc0ef4c",
+           "id": "225c810",
            "elType": "widget",
            "settings": {
             "title": "Layla Hassan",
@@ -7811,7 +7860,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "07daa4e",
+           "id": "75d50d6",
            "elType": "widget",
            "settings": {
             "editor": "<p>Senior Project Manager, Healthcare</p>",
@@ -7846,7 +7895,7 @@
    "isInner": false
   },
   {
-   "id": "89f645e",
+   "id": "e49fd32",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -7855,34 +7904,8 @@
      "size": 1180,
      "sizes": []
     },
-    "container_type": "grid",
-    "grid_columns_grid": {
-     "unit": "custom",
-     "size": "0.8fr 1.2fr",
-     "sizes": []
-    },
-    "grid_rows_grid": {
-     "unit": "custom",
-     "size": "auto",
-     "sizes": []
-    },
-    "grid_gaps": {
-     "unit": "px",
-     "row": "48",
-     "column": "64",
-     "isLinked": false
-    },
-    "grid_auto_flow": "row",
-    "grid_columns_grid_tablet": {
-     "unit": "fr",
-     "size": 1,
-     "sizes": []
-    },
-    "grid_columns_grid_mobile": {
-     "unit": "fr",
-     "size": 1,
-     "sizes": []
-    },
+    "container_type": "flex",
+    "flex_direction": "column",
     "padding": {
      "unit": "px",
      "top": "96",
@@ -7891,7 +7914,6 @@
      "left": "24",
      "isLinked": false
     },
-    "grid_align_items": "center",
     "padding_mobile": {
      "unit": "px",
      "top": "72",
@@ -7900,16 +7922,120 @@
      "left": "18",
      "isLinked": false
     },
-    "_element_id": "wael"
+    "flex_gap": {
+     "unit": "px",
+     "row": "0",
+     "column": "0",
+     "isLinked": true
+    },
+    "_element_id": "team"
    },
    "elements": [
     {
-     "id": "6da72f2",
+     "id": "19551bf",
+     "elType": "widget",
+     "settings": {
+      "title": "Meet Our Team at the Booth",
+      "header_size": "h2",
+      "title_color": "#0B233F",
+      "typography_typography": "custom",
+      "typography_font_family": "Open Sans",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.22,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": -0.02,
+       "sizes": []
+      },
+      "align": "center",
+      "_animation": "fadeInUp",
+      "animation_duration": ""
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "89f645e",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Wael and Berk will be representing Laoret at tcworld. Book a time with either of them, or both.</p>",
+      "text_color": "#0B233F",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "typography_font_weight": "300",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      },
+      "align": "center",
+      "_css_classes": "lt-maxw-720",
+      "_margin": {
+       "unit": "px",
+       "top": "14",
+       "right": "0",
+       "bottom": "56",
+       "left": "0",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "animation_duration": ""
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "1c45777",
      "elType": "container",
      "settings": {
       "content_width": "full",
-      "container_type": "flex",
-      "flex_direction": "column",
+      "container_type": "grid",
+      "grid_columns_grid": {
+       "unit": "fr",
+       "size": 2,
+       "sizes": []
+      },
+      "grid_rows_grid": {
+       "unit": "custom",
+       "size": "auto",
+       "sizes": []
+      },
+      "grid_gaps": {
+       "unit": "px",
+       "row": "32",
+       "column": "32",
+       "isLinked": true
+      },
+      "grid_auto_flow": "row",
+      "grid_columns_grid_mobile": {
+       "unit": "fr",
+       "size": 1,
+       "sizes": []
+      },
       "padding": {
        "unit": "px",
        "top": "0",
@@ -7918,330 +8044,16 @@
        "left": "0",
        "isLinked": true
       },
-      "css_classes": "lt-wael-photo",
-      "animation": "fadeInUp",
-      "animation_duration": "",
-      "flex_gap": {
-       "unit": "px",
-       "row": "0",
-       "column": "0",
-       "isLinked": true
-      }
+      "css_classes": "lt-maxw-980"
      },
      "elements": [
       {
-       "id": "f7ca5cc",
-       "elType": "widget",
-       "settings": {
-        "image": {
-         "url": "https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/wael-makram.jpg",
-         "id": "",
-         "alt": "Wael Makram, Localization & Operations Director at Laoret",
-         "source": "library",
-         "size": ""
-        },
-        "image_size": "full",
-        "width": {
-         "unit": "%",
-         "size": 100,
-         "sizes": []
-        },
-        "height": {
-         "unit": "px",
-         "size": 440,
-         "sizes": []
-        },
-        "object-fit": "cover",
-        "image_border_radius": {
-         "unit": "px",
-         "top": "24",
-         "right": "24",
-         "bottom": "24",
-         "left": "24",
-         "isLinked": true
-        },
-        "height_mobile": {
-         "unit": "px",
-         "size": 340,
-         "sizes": []
-        },
-        "image_box_shadow_box_shadow_type": "yes",
-        "image_box_shadow_box_shadow": {
-         "horizontal": 0,
-         "vertical": 24,
-         "blur": 60,
-         "spread": 0,
-         "color": "rgba(11,35,63,0.12)"
-        },
-        "object-position": "center center"
-       },
-       "elements": [],
-       "widgetType": "image"
-      },
-      {
-       "id": "50840bc",
+       "id": "de0fa43",
        "elType": "container",
        "settings": {
         "content_width": "full",
         "container_type": "flex",
         "flex_direction": "column",
-        "padding": {
-         "unit": "px",
-         "top": "14",
-         "right": "18",
-         "bottom": "14",
-         "left": "18",
-         "isLinked": false
-        },
-        "flex_gap": {
-         "unit": "px",
-         "row": "2",
-         "column": "2",
-         "isLinked": true
-        },
-        "background_background": "classic",
-        "background_color": "#000915",
-        "border_radius": {
-         "unit": "px",
-         "top": "14",
-         "right": "14",
-         "bottom": "14",
-         "left": "14",
-         "isLinked": true
-        },
-        "position": "absolute",
-        "_offset_orientation_h": "end",
-        "_offset_x_end": {
-         "unit": "px",
-         "size": -18,
-         "sizes": []
-        },
-        "_offset_orientation_v": "end",
-        "_offset_y_end": {
-         "unit": "px",
-         "size": 28,
-         "sizes": []
-        },
-        "_offset_x_end_mobile": {
-         "unit": "px",
-         "size": 12,
-         "sizes": []
-        },
-        "width": {
-         "unit": "px",
-         "size": "auto"
-        },
-        "box_shadow_box_shadow_type": "yes",
-        "box_shadow_box_shadow": {
-         "horizontal": 0,
-         "vertical": 24,
-         "blur": 60,
-         "spread": 0,
-         "color": "rgba(11,35,63,0.2)"
-        }
-       },
-       "elements": [
-        {
-         "id": "fd5c1bf",
-         "elType": "widget",
-         "settings": {
-          "title": "At the booth",
-          "header_size": "div",
-          "title_color": "#00C0CF",
-          "typography_typography": "custom",
-          "typography_font_family": "Open Sans",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 12,
-           "sizes": []
-          },
-          "typography_font_weight": "700",
-          "typography_line_height": {
-           "unit": "em",
-           "size": 1.4,
-           "sizes": []
-          },
-          "typography_letter_spacing": {
-           "unit": "em",
-           "size": 0.08,
-           "sizes": []
-          },
-          "typography_text_transform": "uppercase"
-         },
-         "elements": [],
-         "widgetType": "heading"
-        },
-        {
-         "id": "7307c04",
-         "elType": "widget",
-         "settings": {
-          "title": "Booth 2F27 · 10–12 Nov",
-          "header_size": "div",
-          "title_color": "#FFFFFF",
-          "typography_typography": "custom",
-          "typography_font_family": "Open Sans",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 15,
-           "sizes": []
-          },
-          "typography_font_weight": "700"
-         },
-         "elements": [],
-         "widgetType": "heading"
-        }
-       ],
-       "isInner": true
-      }
-     ],
-     "isInner": true
-    },
-    {
-     "id": "19551bf",
-     "elType": "container",
-     "settings": {
-      "content_width": "full",
-      "container_type": "flex",
-      "flex_direction": "column",
-      "padding": {
-       "unit": "px",
-       "top": "0",
-       "right": "0",
-       "bottom": "0",
-       "left": "0",
-       "isLinked": true
-      },
-      "flex_gap": {
-       "unit": "px",
-       "row": "12",
-       "column": "12",
-       "isLinked": true
-      },
-      "animation": "fadeInUp",
-      "animation_duration": "",
-      "animation_delay": 120
-     },
-     "elements": [
-      {
-       "id": "2fe81cc",
-       "elType": "widget",
-       "settings": {
-        "title": "Meet Wael Makram at the Booth",
-        "header_size": "h2",
-        "title_color": "#0B233F",
-        "typography_typography": "custom",
-        "typography_font_family": "Open Sans",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 36,
-         "sizes": []
-        },
-        "typography_font_weight": "700",
-        "typography_font_size_mobile": {
-         "unit": "px",
-         "size": 28,
-         "sizes": []
-        },
-        "typography_line_height": {
-         "unit": "em",
-         "size": 1.22,
-         "sizes": []
-        },
-        "typography_letter_spacing": {
-         "unit": "em",
-         "size": -0.02,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "widgetType": "heading"
-      },
-      {
-       "id": "ce30884",
-       "elType": "widget",
-       "settings": {
-        "title": "Localization & Operations Director, Laoret",
-        "header_size": "p",
-        "title_color": "#00A2AE",
-        "typography_typography": "custom",
-        "typography_font_family": "Open Sans",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 16,
-         "sizes": []
-        },
-        "typography_font_weight": "600"
-       },
-       "elements": [],
-       "widgetType": "heading"
-      },
-      {
-       "id": "bff02e6",
-       "elType": "widget",
-       "settings": {
-        "editor": "<p>Wael will be representing Laoret at tcworld and is available for conversations around localization workflows, AI-supported delivery, multilingual operations and practical ways to scale quality without unnecessary complexity.</p>",
-        "text_color": "#4A5B6D",
-        "typography_typography": "custom",
-        "typography_font_family": "Lato",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 18,
-         "sizes": []
-        },
-        "typography_font_weight": "400",
-        "typography_line_height": {
-         "unit": "em",
-         "size": 1.65,
-         "sizes": []
-        },
-        "_margin": {
-         "unit": "px",
-         "top": "10",
-         "right": "0",
-         "bottom": "8",
-         "left": "0",
-         "isLinked": false
-        }
-       },
-       "elements": [],
-       "widgetType": "text-editor"
-      },
-      {
-       "id": "11a5426",
-       "elType": "widget",
-       "settings": {
-        "title": "Let’s talk about…",
-        "header_size": "h4",
-        "title_color": "#0B233F",
-        "typography_typography": "custom",
-        "typography_font_family": "Open Sans",
-        "typography_font_size": {
-         "unit": "px",
-         "size": 15,
-         "sizes": []
-        },
-        "typography_font_weight": "700",
-        "typography_line_height": {
-         "unit": "em",
-         "size": 1.4,
-         "sizes": []
-        },
-        "typography_letter_spacing": {
-         "unit": "em",
-         "size": 0.04,
-         "sizes": []
-        }
-       },
-       "elements": [],
-       "widgetType": "heading"
-      },
-      {
-       "id": "d29a38b",
-       "elType": "container",
-       "settings": {
-        "content_width": "full",
-        "container_type": "flex",
-        "flex_direction": "row",
         "padding": {
          "unit": "px",
          "top": "0",
@@ -8250,304 +8062,267 @@
          "left": "0",
          "isLinked": true
         },
-        "flex_gap": {
+        "css_classes": "lt-person",
+        "overflow": "hidden",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
          "unit": "px",
-         "row": "10",
-         "column": "10",
+         "top": "14",
+         "right": "14",
+         "bottom": "14",
+         "left": "14",
          "isLinked": true
         },
-        "flex_wrap": "wrap",
-        "margin": {
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 10,
+         "blur": 30,
+         "spread": 0,
+         "color": "rgba(11,35,63,0.07)"
+        },
+        "animation": "fadeInUp",
+        "animation_duration": "",
+        "flex_gap": {
          "unit": "px",
-         "top": "0",
-         "right": "0",
-         "bottom": "18",
-         "left": "0",
-         "isLinked": false
+         "row": "0",
+         "column": "0",
+         "isLinked": true
         }
        },
        "elements": [
         {
-         "id": "de0fa43",
-         "elType": "widget",
+         "id": "6da72f2",
+         "elType": "container",
          "settings": {
-          "title": "Localization workflow optimization",
-          "header_size": "div",
-          "title_color": "#0B233F",
-          "typography_typography": "custom",
-          "typography_font_family": "Lato",
-          "typography_font_size": {
+          "content_width": "full",
+          "container_type": "flex",
+          "flex_direction": "column",
+          "padding": {
            "unit": "px",
-           "size": 16,
-           "sizes": []
-          },
-          "typography_font_weight": "400",
-          "_padding": {
-           "unit": "px",
-           "top": "8",
-           "right": "15",
-           "bottom": "8",
-           "left": "15",
-           "isLinked": false
-          },
-          "_border_border": "solid",
-          "_border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
            "isLinked": true
           },
-          "_border_color": "#D2F0F2",
-          "_border_radius": {
+          "css_classes": "lt-person-media",
+          "overflow": "hidden",
+          "flex_gap": {
            "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
+           "row": "0",
+           "column": "0",
            "isLinked": true
-          },
-          "_background_background": "classic",
-          "_background_color": "#EBF8F9"
+          }
          },
-         "elements": [],
-         "widgetType": "heading"
+         "elements": [
+          {
+           "id": "7307c04",
+           "elType": "widget",
+           "settings": {
+            "image": {
+             "url": "https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/wael-makram.jpg",
+             "id": "",
+             "alt": "Wael Makram, Operations Manager at Laoret",
+             "source": "library",
+             "size": ""
+            },
+            "image_size": "full",
+            "width": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "height": {
+             "unit": "px",
+             "size": 380,
+             "sizes": []
+            },
+            "object-fit": "cover",
+            "height_mobile": {
+             "unit": "px",
+             "size": 300,
+             "sizes": []
+            },
+            "_css_classes": "lt-person-photo",
+            "object-position": "center top"
+           },
+           "elements": [],
+           "widgetType": "image"
+          },
+          {
+           "id": "50840bc",
+           "elType": "widget",
+           "settings": {
+            "title": "At Booth 2F27",
+            "header_size": "div",
+            "title_color": "#00C0CF",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.4,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "em",
+             "size": 0.08,
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase",
+            "_padding": {
+             "unit": "px",
+             "top": "9",
+             "right": "14",
+             "bottom": "9",
+             "left": "14",
+             "isLinked": false
+            },
+            "_background_background": "classic",
+            "_background_color": "#000915",
+            "_border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "_position": "absolute",
+            "_offset_x": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "_offset_orientation_v": "end",
+            "_offset_y_end": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "_element_width": "initial",
+            "_element_custom_width": {
+             "unit": "px",
+             "size": "auto"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          }
+         ],
+         "isInner": true
         },
         {
-         "id": "3302e51",
-         "elType": "widget",
+         "id": "11a5426",
+         "elType": "container",
          "settings": {
-          "title": "AI in localization",
-          "header_size": "div",
-          "title_color": "#0B233F",
-          "typography_typography": "custom",
-          "typography_font_family": "Lato",
-          "typography_font_size": {
+          "content_width": "full",
+          "container_type": "flex",
+          "flex_direction": "column",
+          "padding": {
            "unit": "px",
-           "size": 16,
-           "sizes": []
-          },
-          "typography_font_weight": "400",
-          "_padding": {
-           "unit": "px",
-           "top": "8",
-           "right": "15",
-           "bottom": "8",
-           "left": "15",
+           "top": "26",
+           "right": "28",
+           "bottom": "30",
+           "left": "28",
            "isLinked": false
           },
-          "_border_border": "solid",
-          "_border_width": {
+          "flex_gap": {
            "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
+           "row": "0",
+           "column": "0",
            "isLinked": true
-          },
-          "_border_color": "#D2F0F2",
-          "_border_radius": {
-           "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
-           "isLinked": true
-          },
-          "_background_background": "classic",
-          "_background_color": "#EBF8F9"
+          }
          },
-         "elements": [],
-         "widgetType": "heading"
-        },
-        {
-         "id": "1e21d45",
-         "elType": "widget",
-         "settings": {
-          "title": "MTPE & human review",
-          "header_size": "div",
-          "title_color": "#0B233F",
-          "typography_typography": "custom",
-          "typography_font_family": "Lato",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 16,
-           "sizes": []
+         "elements": [
+          {
+           "id": "2fe81cc",
+           "elType": "widget",
+           "settings": {
+            "title": "Wael Makram",
+            "header_size": "h3",
+            "title_color": "#0B233F",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.3,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
           },
-          "typography_font_weight": "400",
-          "_padding": {
-           "unit": "px",
-           "top": "8",
-           "right": "15",
-           "bottom": "8",
-           "left": "15",
-           "isLinked": false
+          {
+           "id": "ce30884",
+           "elType": "widget",
+           "settings": {
+            "title": "Operations Manager",
+            "header_size": "p",
+            "title_color": "#00A2AE",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "_margin": {
+             "unit": "px",
+             "top": "4",
+             "right": "0",
+             "bottom": "8",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
           },
-          "_border_border": "solid",
-          "_border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "_border_color": "#D2F0F2",
-          "_border_radius": {
-           "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
-           "isLinked": true
-          },
-          "_background_background": "classic",
-          "_background_color": "#EBF8F9"
-         },
-         "elements": [],
-         "widgetType": "heading"
-        },
-        {
-         "id": "8bce278",
-         "elType": "widget",
-         "settings": {
-          "title": "Multilingual content operations",
-          "header_size": "div",
-          "title_color": "#0B233F",
-          "typography_typography": "custom",
-          "typography_font_family": "Lato",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 16,
-           "sizes": []
-          },
-          "typography_font_weight": "400",
-          "_padding": {
-           "unit": "px",
-           "top": "8",
-           "right": "15",
-           "bottom": "8",
-           "left": "15",
-           "isLinked": false
-          },
-          "_border_border": "solid",
-          "_border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "_border_color": "#D2F0F2",
-          "_border_radius": {
-           "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
-           "isLinked": true
-          },
-          "_background_background": "classic",
-          "_background_color": "#EBF8F9"
-         },
-         "elements": [],
-         "widgetType": "heading"
-        },
-        {
-         "id": "afc1361",
-         "elType": "widget",
-         "settings": {
-          "title": "Quality at scale",
-          "header_size": "div",
-          "title_color": "#0B233F",
-          "typography_typography": "custom",
-          "typography_font_family": "Lato",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 16,
-           "sizes": []
-          },
-          "typography_font_weight": "400",
-          "_padding": {
-           "unit": "px",
-           "top": "8",
-           "right": "15",
-           "bottom": "8",
-           "left": "15",
-           "isLinked": false
-          },
-          "_border_border": "solid",
-          "_border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "_border_color": "#D2F0F2",
-          "_border_radius": {
-           "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
-           "isLinked": true
-          },
-          "_background_background": "classic",
-          "_background_color": "#EBF8F9"
-         },
-         "elements": [],
-         "widgetType": "heading"
-        },
-        {
-         "id": "170ed6f",
-         "elType": "widget",
-         "settings": {
-          "title": "Flexible collaboration models",
-          "header_size": "div",
-          "title_color": "#0B233F",
-          "typography_typography": "custom",
-          "typography_font_family": "Lato",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 16,
-           "sizes": []
-          },
-          "typography_font_weight": "400",
-          "_padding": {
-           "unit": "px",
-           "top": "8",
-           "right": "15",
-           "bottom": "8",
-           "left": "15",
-           "isLinked": false
-          },
-          "_border_border": "solid",
-          "_border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "_border_color": "#D2F0F2",
-          "_border_radius": {
-           "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
-           "isLinked": true
-          },
-          "_background_background": "classic",
-          "_background_color": "#EBF8F9"
-         },
-         "elements": [],
-         "widgetType": "heading"
+          {
+           "id": "bff02e6",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Talk to Wael about localization workflows, AI-supported delivery and practical ways to scale quality without unnecessary complexity.</p>",
+            "text_color": "#4A5B6D",
+            "typography_typography": "custom",
+            "typography_font_family": "Lato",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
         }
        ],
        "isInner": true
@@ -8567,7 +8342,29 @@
          "left": "0",
          "isLinked": true
         },
-        "flex_align_items": "flex-start",
+        "css_classes": "lt-person",
+        "overflow": "hidden",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "14",
+         "right": "14",
+         "bottom": "14",
+         "left": "14",
+         "isLinked": true
+        },
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 10,
+         "blur": 30,
+         "spread": 0,
+         "color": "rgba(11,35,63,0.07)"
+        },
+        "animation": "fadeInUp",
+        "animation_duration": "",
+        "animation_delay": 120,
         "flex_gap": {
          "unit": "px",
          "row": "0",
@@ -8577,62 +8374,678 @@
        },
        "elements": [
         {
-         "id": "a59a79e",
-         "elType": "widget",
+         "id": "8bce278",
+         "elType": "container",
          "settings": {
-          "text": "Schedule a Meeting with Wael",
-          "link": {
-           "url": "#book",
-           "is_external": "",
-           "nofollow": ""
-          },
-          "background_background": "classic",
-          "background_color": "#00A2AE",
-          "button_text_color": "#FFFFFF",
-          "button_background_hover_background": "classic",
-          "button_background_hover_color": "#008B96",
-          "hover_color": "#FFFFFF",
-          "border_radius": {
+          "content_width": "full",
+          "container_type": "flex",
+          "flex_direction": "column",
+          "padding": {
            "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
            "isLinked": true
           },
-          "text_padding": {
+          "css_classes": "lt-person-media",
+          "overflow": "hidden",
+          "flex_gap": {
            "unit": "px",
-           "top": "14",
-           "right": "30",
-           "bottom": "14",
-           "left": "30",
-           "isLinked": false
-          },
-          "_css_classes": "lt-btn-glow",
-          "typography_typography": "custom",
-          "typography_font_family": "Open Sans",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 15,
-           "sizes": []
-          },
-          "typography_font_weight": "700",
-          "selected_icon": {
-           "value": "fas fa-arrow-right",
-           "library": "fa-solid"
-          },
-          "icon_align": "row-reverse",
-          "icon_indent": {
-           "unit": "px",
-           "size": 8,
-           "sizes": []
+           "row": "0",
+           "column": "0",
+           "isLinked": true
           }
          },
-         "elements": [],
-         "widgetType": "button"
+         "elements": [
+          {
+           "id": "3302e51",
+           "elType": "widget",
+           "settings": {
+            "image": {
+             "url": "https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/berk-cetiner.jpg",
+             "id": "",
+             "alt": "Berk Çetiner, BD Executive & Project Manager at Laoret",
+             "source": "library",
+             "size": ""
+            },
+            "image_size": "full",
+            "width": {
+             "unit": "%",
+             "size": 100,
+             "sizes": []
+            },
+            "height": {
+             "unit": "px",
+             "size": 380,
+             "sizes": []
+            },
+            "object-fit": "cover",
+            "height_mobile": {
+             "unit": "px",
+             "size": 300,
+             "sizes": []
+            },
+            "_css_classes": "lt-person-photo",
+            "object-position": "center top"
+           },
+           "elements": [],
+           "widgetType": "image"
+          },
+          {
+           "id": "1e21d45",
+           "elType": "widget",
+           "settings": {
+            "title": "At Booth 2F27",
+            "header_size": "div",
+            "title_color": "#00C0CF",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.4,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "em",
+             "size": 0.08,
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase",
+            "_padding": {
+             "unit": "px",
+             "top": "9",
+             "right": "14",
+             "bottom": "9",
+             "left": "14",
+             "isLinked": false
+            },
+            "_background_background": "classic",
+            "_background_color": "#000915",
+            "_border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "_position": "absolute",
+            "_offset_x": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "_offset_orientation_v": "end",
+            "_offset_y_end": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "_element_width": "initial",
+            "_element_custom_width": {
+             "unit": "px",
+             "size": "auto"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "a59a79e",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "container_type": "flex",
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "26",
+           "right": "28",
+           "bottom": "30",
+           "left": "28",
+           "isLinked": false
+          },
+          "flex_gap": {
+           "unit": "px",
+           "row": "0",
+           "column": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "afc1361",
+           "elType": "widget",
+           "settings": {
+            "title": "Berk Çetiner",
+            "header_size": "h3",
+            "title_color": "#0B233F",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 24,
+             "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 20,
+             "sizes": []
+            },
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.3,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "170ed6f",
+           "elType": "widget",
+           "settings": {
+            "title": "BD Executive & Project Manager",
+            "header_size": "p",
+            "title_color": "#00A2AE",
+            "typography_typography": "custom",
+            "typography_font_family": "Open Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "_margin": {
+             "unit": "px",
+             "top": "4",
+             "right": "0",
+             "bottom": "8",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "d29a38b",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Talk to Berk about partnership opportunities, scoping your next project and how working with Laoret gets started.</p>",
+            "text_color": "#4A5B6D",
+            "typography_typography": "custom",
+            "typography_font_family": "Lato",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_font_weight": "400",
+            "typography_line_height": {
+             "unit": "em",
+             "size": 1.7,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
         }
        ],
        "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "a201502",
+     "elType": "widget",
+     "settings": {
+      "title": "Let’s talk about…",
+      "header_size": "h4",
+      "title_color": "#0B233F",
+      "typography_typography": "custom",
+      "typography_font_family": "Open Sans",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 15,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.4,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": 0.04,
+       "sizes": []
+      },
+      "align": "center",
+      "_margin": {
+       "unit": "px",
+       "top": "48",
+       "right": "0",
+       "bottom": "14",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "781cff1",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "container_type": "flex",
+      "flex_direction": "row",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "flex_gap": {
+       "unit": "px",
+       "row": "10",
+       "column": "10",
+       "isLinked": true
+      },
+      "flex_wrap": "wrap",
+      "flex_justify_content": "center",
+      "css_classes": "lt-maxw-760",
+      "margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "30",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "808cb3f",
+       "elType": "widget",
+       "settings": {
+        "title": "Localization workflow optimization",
+        "header_size": "div",
+        "title_color": "#0B233F",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "15",
+         "bottom": "8",
+         "left": "15",
+         "isLinked": false
+        },
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#D2F0F2",
+        "_border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "_background_background": "classic",
+        "_background_color": "#EBF8F9"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "2e570ec",
+       "elType": "widget",
+       "settings": {
+        "title": "AI in localization",
+        "header_size": "div",
+        "title_color": "#0B233F",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "15",
+         "bottom": "8",
+         "left": "15",
+         "isLinked": false
+        },
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#D2F0F2",
+        "_border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "_background_background": "classic",
+        "_background_color": "#EBF8F9"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "a1dd9ae",
+       "elType": "widget",
+       "settings": {
+        "title": "MTPE & human review",
+        "header_size": "div",
+        "title_color": "#0B233F",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "15",
+         "bottom": "8",
+         "left": "15",
+         "isLinked": false
+        },
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#D2F0F2",
+        "_border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "_background_background": "classic",
+        "_background_color": "#EBF8F9"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "4c2993a",
+       "elType": "widget",
+       "settings": {
+        "title": "Multilingual content operations",
+        "header_size": "div",
+        "title_color": "#0B233F",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "15",
+         "bottom": "8",
+         "left": "15",
+         "isLinked": false
+        },
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#D2F0F2",
+        "_border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "_background_background": "classic",
+        "_background_color": "#EBF8F9"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "41f9ad5",
+       "elType": "widget",
+       "settings": {
+        "title": "Quality at scale",
+        "header_size": "div",
+        "title_color": "#0B233F",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "15",
+         "bottom": "8",
+         "left": "15",
+         "isLinked": false
+        },
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#D2F0F2",
+        "_border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "_background_background": "classic",
+        "_background_color": "#EBF8F9"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "4b14844",
+       "elType": "widget",
+       "settings": {
+        "title": "Flexible collaboration models",
+        "header_size": "div",
+        "title_color": "#0B233F",
+        "typography_typography": "custom",
+        "typography_font_family": "Lato",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "15",
+         "bottom": "8",
+         "left": "15",
+         "isLinked": false
+        },
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#D2F0F2",
+        "_border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "_background_background": "classic",
+        "_background_color": "#EBF8F9"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "1565bb3",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "container_type": "flex",
+      "flex_direction": "column",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      },
+      "flex_align_items": "center",
+      "flex_gap": {
+       "unit": "px",
+       "row": "0",
+       "column": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "5edcd38",
+       "elType": "widget",
+       "settings": {
+        "text": "Schedule a Meeting",
+        "link": {
+         "url": "#book",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_background": "classic",
+        "background_color": "#00A2AE",
+        "button_text_color": "#FFFFFF",
+        "button_background_hover_background": "classic",
+        "button_background_hover_color": "#008B96",
+        "hover_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "999",
+         "right": "999",
+         "bottom": "999",
+         "left": "999",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "14",
+         "right": "30",
+         "bottom": "14",
+         "left": "30",
+         "isLinked": false
+        },
+        "_css_classes": "lt-btn-glow",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "selected_icon": {
+         "value": "fas fa-arrow-right",
+         "library": "fa-solid"
+        },
+        "icon_align": "row-reverse",
+        "icon_indent": {
+         "unit": "px",
+         "size": 8,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "button"
       }
      ],
      "isInner": true
@@ -8641,7 +9054,7 @@
    "isInner": false
   },
   {
-   "id": "bfba516",
+   "id": "b52463f",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -8706,7 +9119,7 @@
    },
    "elements": [
     {
-     "id": "a2b91a4",
+     "id": "06023c1",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -8731,7 +9144,7 @@
      },
      "elements": [
       {
-       "id": "e49fd32",
+       "id": "091ef18",
        "elType": "widget",
        "settings": {
         "title": "Book a Meeting with Laoret at tcworld",
@@ -8765,7 +9178,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "3fde98b",
+       "id": "6d2f90f",
        "elType": "widget",
        "settings": {
         "editor": "<p>Share your details and our team will get back to you to arrange a meeting during the event or follow up right after.</p>",
@@ -8796,12 +9209,12 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "456bbfd",
+       "id": "ab42fc6",
        "elType": "widget",
        "settings": {
         "icon_list": [
          {
-          "_id": "d1c1e6f",
+          "_id": "64f3962",
           "text": "A focused conversation about your workflow, not a product demo",
           "selected_icon": {
            "value": "far fa-check-circle",
@@ -8809,7 +9222,7 @@
           }
          },
          {
-          "_id": "2a95021",
+          "_id": "eb33694",
           "text": "A confirmed time at the booth, so you skip the queue",
           "selected_icon": {
            "value": "far fa-check-circle",
@@ -8817,7 +9230,7 @@
           }
          },
          {
-          "_id": "0780f14",
+          "_id": "a2b91a4",
           "text": "Practical next steps you can take back to your team",
           "selected_icon": {
            "value": "far fa-check-circle",
@@ -8861,7 +9274,7 @@
        "widgetType": "icon-list"
       },
       {
-       "id": "552fe76",
+       "id": "412b3f0",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -8893,7 +9306,7 @@
        },
        "elements": [
         {
-         "id": "54d8151",
+         "id": "bfba516",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -8934,7 +9347,7 @@
          },
          "elements": [
           {
-           "id": "0855d0a",
+           "id": "95d6cca",
            "elType": "widget",
            "settings": {
             "selected_icon": {
@@ -9000,7 +9413,7 @@
          "isInner": true
         },
         {
-         "id": "38df881",
+         "id": "ec7ff2d",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -9041,7 +9454,7 @@
          },
          "elements": [
           {
-           "id": "b7b8a30",
+           "id": "0fb9f8b",
            "elType": "widget",
            "settings": {
             "selected_icon": {
@@ -9110,7 +9523,7 @@
        "isInner": true
       },
       {
-       "id": "eb33694",
+       "id": "50c73a5",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -9152,29 +9565,78 @@
        },
        "elements": [
         {
-         "id": "77ff3d1",
-         "elType": "widget",
+         "id": "325e990",
+         "elType": "container",
          "settings": {
-          "image": {
-           "url": "https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/wael-makram.jpg",
-           "id": "",
-           "alt": "Wael Makram",
-           "source": "library",
-           "size": ""
-          },
-          "image_size": "full",
-          "width": {
+          "content_width": "full",
+          "container_type": "flex",
+          "flex_direction": "row",
+          "padding": {
            "unit": "px",
-           "size": 52,
-           "sizes": []
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
           },
-          "_css_classes": "lt-avatar"
+          "flex_gap": {
+           "unit": "px",
+           "row": "0",
+           "column": "0",
+           "isLinked": true
+          },
+          "css_classes": "lt-avatars"
          },
-         "elements": [],
-         "widgetType": "image"
+         "elements": [
+          {
+           "id": "0daba23",
+           "elType": "widget",
+           "settings": {
+            "image": {
+             "url": "https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/wael-makram.jpg",
+             "id": "",
+             "alt": "Wael Makram",
+             "source": "library",
+             "size": ""
+            },
+            "image_size": "full",
+            "width": {
+             "unit": "px",
+             "size": 52,
+             "sizes": []
+            },
+            "_css_classes": "lt-avatar"
+           },
+           "elements": [],
+           "widgetType": "image"
+          },
+          {
+           "id": "e64dfc3",
+           "elType": "widget",
+           "settings": {
+            "image": {
+             "url": "https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/berk-cetiner.jpg",
+             "id": "",
+             "alt": "Berk Çetiner",
+             "source": "library",
+             "size": ""
+            },
+            "image_size": "full",
+            "width": {
+             "unit": "px",
+             "size": 52,
+             "sizes": []
+            },
+            "_css_classes": "lt-avatar lt-avatar-stack"
+           },
+           "elements": [],
+           "widgetType": "image"
+          }
+         ],
+         "isInner": true
         },
         {
-         "id": "64f3962",
+         "id": "4df79c8",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -9197,10 +9659,10 @@
          },
          "elements": [
           {
-           "id": "091ef18",
+           "id": "749848b",
            "elType": "widget",
            "settings": {
-            "title": "Wael Makram",
+            "title": "Wael Makram & Berk Çetiner",
             "header_size": "div",
             "title_color": "#0B233F",
             "typography_typography": "custom",
@@ -9221,10 +9683,10 @@
            "widgetType": "heading"
           },
           {
-           "id": "6d2f90f",
+           "id": "fc2339d",
            "elType": "widget",
            "settings": {
-            "editor": "<p>Your contact at Booth 2F27</p>",
+            "editor": "<p>Your contacts at Booth 2F27</p>",
             "text_color": "#7A8898",
             "typography_typography": "custom",
             "typography_font_family": "Lato",
@@ -9253,7 +9715,7 @@
      "isInner": true
     },
     {
-     "id": "95d6cca",
+     "id": "08487d0",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -9305,13 +9767,13 @@
      },
      "elements": [
       {
-       "id": "1565bb3",
+       "id": "77ff3d1",
        "elType": "widget",
        "settings": {
         "form_name": "tcworld 2026 meeting request (EN)",
         "form_fields": [
          {
-          "_id": "1c45777",
+          "_id": "3fde98b",
           "field_type": "text",
           "field_label": "Full name",
           "custom_id": "full_name",
@@ -9320,7 +9782,7 @@
           "placeholder": ""
          },
          {
-          "_id": "a201502",
+          "_id": "d1c1e6f",
           "field_type": "email",
           "field_label": "Work email",
           "custom_id": "work_email",
@@ -9329,7 +9791,7 @@
           "placeholder": ""
          },
          {
-          "_id": "808cb3f",
+          "_id": "2a95021",
           "field_type": "text",
           "field_label": "Company name",
           "custom_id": "company",
@@ -9338,7 +9800,7 @@
           "placeholder": ""
          },
          {
-          "_id": "2e570ec",
+          "_id": "0780f14",
           "field_type": "text",
           "field_label": "Job title",
           "custom_id": "job_title",
@@ -9347,7 +9809,7 @@
           "placeholder": ""
          },
          {
-          "_id": "a1dd9ae",
+          "_id": "456bbfd",
           "field_type": "tel",
           "field_label": "Phone number (optional)",
           "custom_id": "phone",
@@ -9356,7 +9818,7 @@
           "placeholder": ""
          },
          {
-          "_id": "4c2993a",
+          "_id": "0855d0a",
           "field_type": "select",
           "field_label": "Country",
           "custom_id": "country",
@@ -9366,7 +9828,7 @@
           "field_options": "Select your country|\nGermany\nAustria\nSwitzerland\nUnited Kingdom\nFrance\nNetherlands\nBelgium\nItaly\nSpain\nPoland\nSweden\nDenmark\nUnited States\nCanada\nSaudi Arabia\nUnited Arab Emirates\nEgypt\nOther"
          },
          {
-          "_id": "41f9ad5",
+          "_id": "54d8151",
           "field_type": "checkbox",
           "field_label": "What would you like to discuss?",
           "custom_id": "topics",
@@ -9377,7 +9839,7 @@
           "inline_list": "elementor-subgroup-inline"
          },
          {
-          "_id": "4b14844",
+          "_id": "b7b8a30",
           "field_type": "radio",
           "field_label": "Preferred meeting timing",
           "custom_id": "timing",
@@ -9389,7 +9851,7 @@
           "field_value": "During the event"
          },
          {
-          "_id": "781cff1",
+          "_id": "38df881",
           "field_type": "textarea",
           "field_label": "Message / notes (optional)",
           "custom_id": "message",
@@ -9399,7 +9861,7 @@
           "rows": 4
          },
          {
-          "_id": "5edcd38",
+          "_id": "552fe76",
           "field_type": "hidden",
           "field_label": "page_language",
           "custom_id": "page_language",
@@ -9426,7 +9888,7 @@
          "collect_submissions"
         ],
         "email_subject": "New tcworld 2026 meeting request",
-        "success_message": "Thank you, we’ve got it. Our team will be in touch shortly to confirm your meeting with Wael. See you in Stuttgart.",
+        "success_message": "Thank you, we’ve got it. Our team will be in touch shortly to confirm your meeting with Wael or Berk. See you in Stuttgart.",
         "form_id": "tcworld2026_en",
         "column_gap": {
          "unit": "px",
@@ -9529,7 +9991,7 @@
        "widgetType": "form"
       },
       {
-       "id": "ab42fc6",
+       "id": "0b55293",
        "elType": "widget",
        "settings": {
         "editor": "<p>🔒 We’ll only use your details to respond to your request and coordinate a relevant follow-up.</p>",
@@ -9567,7 +10029,7 @@
    "isInner": false
   },
   {
-   "id": "325e990",
+   "id": "e79e3ca",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -9607,7 +10069,7 @@
    },
    "elements": [
     {
-     "id": "0fb9f8b",
+     "id": "9ba859b",
      "elType": "widget",
      "settings": {
       "title": "Let’s Connect at <span>tekom 2026</span>",
@@ -9643,7 +10105,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "ec7ff2d",
+     "id": "4fed07c",
      "elType": "widget",
      "settings": {
       "editor": "<p>Meet Laoret at Booth 2F27, ICS Stuttgart, 10–12 November 2026.</p>",
@@ -9675,7 +10137,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "e64dfc3",
+     "id": "ecf260b",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -9700,7 +10162,7 @@
      },
      "elements": [
       {
-       "id": "412b3f0",
+       "id": "a25b017",
        "elType": "widget",
        "settings": {
         "text": "Connect with Laoret",
@@ -9745,7 +10207,7 @@
        "widgetType": "button"
       },
       {
-       "id": "0daba23",
+       "id": "a591b61",
        "elType": "widget",
        "settings": {
         "text": "Explore laoret.com",
@@ -9807,7 +10269,7 @@
    "isInner": false
   },
   {
-   "id": "50c73a5",
+   "id": "c932ffc",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -9858,7 +10320,7 @@
    },
    "elements": [
     {
-     "id": "749848b",
+     "id": "87e8879",
      "elType": "widget",
      "settings": {
       "image": {
@@ -9879,7 +10341,7 @@
      "widgetType": "image"
     },
     {
-     "id": "fc2339d",
+     "id": "734d5da",
      "elType": "widget",
      "settings": {
       "editor": "<p><a href=\"tel:+18572087276\">+1 857-208-7276</a> · Mon–Fri, 9 am – 6 pm · <a href=\"https://laoret.com/contact/\">Contact us</a></p>",
@@ -9903,7 +10365,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "4df79c8",
+     "id": "4234972",
      "elType": "widget",
      "settings": {
       "editor": "<p>© 2026 Laoret. All rights reserved.</p>",
@@ -9929,7 +10391,7 @@
    "isInner": false
   },
   {
-   "id": "08487d0",
+   "id": "bb7dace",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -9994,7 +10456,7 @@
    },
    "elements": [
     {
-     "id": "06023c1",
+     "id": "7c8767b",
      "elType": "widget",
      "settings": {
       "title": "Meet us at tcworld",
@@ -10013,7 +10475,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "0b55293",
+     "id": "183d3bb",
      "elType": "widget",
      "settings": {
       "text": "Book a Meeting",
@@ -10064,7 +10526,7 @@
  "page_settings": {
   "template": "elementor_canvas",
   "hide_title": "yes",
-  "custom_css": "/* =====================================================================\n   Laoret × tcworld 2026 — custom CSS for the Elementor Pro build\n   Paste once into: Site Settings → Custom CSS  (or a page's Page Settings → Custom CSS)\n   Every rule targets a CSS class you add in  Advanced → CSS Classes  on a container/widget.\n   ===================================================================== */\n\n:root{\n  --lt-navy:#0B233F; --lt-teal:#00A2AE; --lt-teal-d:#008B96; --lt-icon:#1EC0CC; --lt-cyan:#00C0CF;\n  --lt-coral:#F05A5C; --lt-dark:#000915; --lt-aqua:#E1F6F6; --lt-line:#E3EAF0; --lt-soft:#F6F9FB;\n}\n\n/* ---------- Hero info bar (container class: lt-event-bar) ----------\n   Sits half over the hero: give the container Margin Top = -60px and Z-Index = 2 in Elementor. */\n.lt-event-bar{box-shadow:0 10px 30px rgba(11,35,63,.07)}\n\n/* ---------- WHY MEET: illustrated cards ----------\n   Card container class: lt-why-card   (+ lt-acc-coral / lt-acc-navy on cards 2,5 / 3,6)\n   Image widget class:  lt-why-visual */\n.lt-why-card{--acc:var(--lt-teal);position:relative;overflow:hidden;\n  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}\n.lt-why-card.lt-acc-coral{--acc:var(--lt-coral)}\n.lt-why-card.lt-acc-navy{--acc:var(--lt-navy)}\n.lt-why-card::after{content:\"\";position:absolute;left:0;top:0;height:4px;width:0;background:var(--acc);\n  transition:width .5s cubic-bezier(.2,.7,.2,1);z-index:2}\n.lt-why-card:hover{transform:translateY(-8px);box-shadow:0 26px 50px rgba(11,35,63,.12);border-color:transparent}\n.lt-why-card:hover::after{width:100%}\n.lt-why-visual img{animation:ltFloat 6s ease-in-out infinite;transition:transform .5s cubic-bezier(.2,.7,.2,1)}\n.lt-why-card:nth-child(2n) .lt-why-visual img{animation-delay:-2s}\n.lt-why-card:nth-child(3n) .lt-why-visual img{animation-delay:-4s}\n.lt-why-card:hover .lt-why-visual img{transform:scale(1.07)}\n@keyframes ltFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}\n\n/* ---------- WHAT WE HELP WITH: numbered list ----------\n   Row container class: lt-help-item   (+ lt-acc-coral on rows 2,3,6) */\n.lt-help-item{position:relative}\n.lt-help-item::before{content:\"\";position:absolute;left:0;top:-1px;height:2px;width:0;background:var(--lt-teal);\n  transition:width .45s cubic-bezier(.2,.7,.2,1)}\n.lt-help-item.lt-acc-coral::before{background:var(--lt-coral)}\n.lt-help-item:hover::before{width:100%}\n.lt-help-item .elementor-heading-title{transition:color .2s}\n.lt-help-item:hover .elementor-heading-title{color:var(--lt-teal-d)}\n\n/* ---------- Client logos (Image widget class: lt-logo) ---------- */\n.lt-logo img{mix-blend-mode:multiply;transition:transform .2s}\n.lt-logo img:hover{transform:scale(1.05)}\n\n/* ---------- Form: chip-style checkboxes & radios (Form widget class: lt-form) ---------- */\n.lt-form .elementor-field-type-checkbox .elementor-field-subgroup,\n.lt-form .elementor-field-type-radio .elementor-field-subgroup{display:flex;flex-wrap:wrap;gap:10px}\n.lt-form .elementor-field-option{margin:0!important}\n.lt-form .elementor-field-option input{position:absolute;opacity:0;width:1px;height:1px}\n.lt-form .elementor-field-option label{display:inline-block;padding:9px 16px;border-radius:999px;border:1.5px solid var(--lt-line);\n  font-size:14px;font-weight:500;color:var(--lt-navy);cursor:pointer;transition:all .15s;background:#FBFDFE}\n.lt-form .elementor-field-option label:hover{border-color:var(--lt-teal)}\n.lt-form .elementor-field-type-checkbox input:checked+label{background:var(--lt-navy);border-color:var(--lt-navy);color:#fff}\n.lt-form .elementor-field-type-radio input:checked+label{background:var(--lt-teal);border-color:var(--lt-teal);color:#fff}\n.lt-form .elementor-field-option input:focus-visible+label{outline:3px solid var(--lt-coral);outline-offset:2px}\n\n/* ---------- Homepage-style buttons (add class lt-btn-glow to any Button widget) ---------- */\n.lt-btn-glow .elementor-button{box-shadow:0 8px 22px rgba(0,162,174,.35);transition:transform .2s,box-shadow .2s,background-color .2s}\n.lt-btn-glow .elementor-button:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,162,174,.45)}\n.lt-btn-glow-soft .elementor-button{box-shadow:0 8px 22px rgba(0,162,174,.18)}\n.lt-btn-glow-cyan .elementor-button{box-shadow:0 8px 26px rgba(0,192,207,.4)}\n\n/* ---------- Dark bands (container class lt-dark-band): homepage shapes ---------- */\n.lt-dark-band{position:relative;overflow:hidden}\n.lt-dark-band::before{content:\"\";position:absolute;right:-90px;top:-120px;width:420px;height:360px;border-radius:90px;\n  background:linear-gradient(140deg,rgba(0,192,207,.18),rgba(0,192,207,0) 70%);pointer-events:none}\n.lt-dark-band::after{content:\"\";position:absolute;left:6%;bottom:-110px;width:190px;height:190px;border-radius:50%;\n  border:38px solid rgba(37,84,214,.22);pointer-events:none}\n.lt-dark-band>.e-con-inner,.lt-dark-band>.e-con{position:relative;z-index:1}\n\n/* ---------- Mobile: Why cards as swipe row if you keep a Grid instead of the Nested Carousel ---------- */\n@media (max-width:767px){\n  .lt-why-grid{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;scrollbar-width:none}\n  .lt-why-grid::-webkit-scrollbar{display:none}\n  .lt-why-grid>.lt-why-card{flex:0 0 82%!important;scroll-snap-align:center}\n}\n\n@media (prefers-reduced-motion:reduce){\n  .lt-why-visual img{animation:none}\n  .lt-why-card,.lt-why-card:hover{transform:none}\n}\n\n/* ===== Page-level styles used by the template (classes set in Advanced → CSS Classes) ===== */\nhtml{scroll-behavior:smooth;scroll-padding-top:84px}\n.elementor-widget-text-editor p:last-child{margin-bottom:0}\n.lt-maxw-540{max-width:540px}.lt-maxw-440{max-width:440px}.lt-maxw-680,.lt-maxw-720,.lt-maxw-980,.lt-maxw-1080{margin-left:auto!important;margin-right:auto!important}\n.lt-maxw-680{max-width:680px}.lt-maxw-720{max-width:720px}.lt-maxw-980{max-width:980px}.lt-maxw-1080{max-width:1080px}\n/* Header */\n.elementor .lt-brand img.lt-event-logo{height:32px;width:auto;max-width:none;display:block}\n@media (max-width:767px){.elementor .lt-brand img.lt-event-logo{height:20px;max-width:110px;object-fit:contain}.lt-brand{min-width:0;flex-shrink:1;overflow:hidden}.lt-lang a{padding:5px 8px}}\n.lt-mobile-cta.e-con{--width:auto;width:auto}\n.lt-header>.e-con-inner>.e-con{--width:auto;width:auto;flex:0 1 auto}\n.lt-navlink .elementor-heading-title a{position:relative;padding:6px 0;color:inherit}\n.lt-navlink .elementor-heading-title a::after{content:\"\";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--lt-teal);transition:width .2s}\n.lt-navlink .elementor-heading-title a:hover{color:var(--lt-teal)}\n.lt-navlink .elementor-heading-title a:hover::after{width:100%}\n.lt-lang{display:flex;gap:2px;border:1px solid var(--lt-line);border-radius:999px;padding:3px;font:600 13px/1 \"Open Sans\",sans-serif;background:#fff}\n.lt-lang a{padding:6px 11px;border-radius:999px;color:#7A8898}\n.lt-lang a.is-active{background:var(--lt-teal);color:#fff}\n/* Hero */\n.lt-hero-title .elementor-heading-title span{display:block;color:var(--lt-coral)}\n.lt-closing-title .elementor-heading-title span{color:var(--lt-coral)}\n.lt-kv-logos{background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 10px 30px rgba(11,35,63,.07)}\n.elementor .lt-kv-logos img{height:26px;width:auto;max-width:none;display:block}\n@media (max-width:767px){.lt-kv-badge{position:relative!important;inset:auto!important;margin:-36px 16px 0!important;width:auto!important;max-width:none!important}}\n.elementor .lt-avatar img{width:52px!important;height:52px!important;border-radius:50%;object-fit:cover}\n.lt-bar-item+.lt-bar-item{border-left:1px solid var(--lt-line)}\n@media (max-width:1024px){.lt-bar-item:nth-child(3){border-left:0}.lt-bar-item:nth-child(n+3){border-top:1px solid var(--lt-line)}}\n@media (max-width:767px){.lt-bar-item+.lt-bar-item{border-left:0;border-top:1px solid var(--lt-line)}}\n.lt-cert img{height:58px!important;width:auto!important}\n@media (max-width:767px){.lt-cert img{height:46px!important}}\n/* Who we are: number badges */\n.lt-num .elementor-heading-title{width:38px;height:38px;border-radius:50%;background:var(--lt-aqua);display:grid;place-items:center}\n.lt-num-coral .elementor-heading-title{background:#FDEEEE;color:var(--lt-coral)!important}\n.lt-point{transition:box-shadow .2s}.lt-point:hover{box-shadow:0 16px 36px rgba(11,35,63,.1)!important}\n/* Stats, testimonials */\n.lt-stat .elementor-heading-title em{font-style:normal;color:var(--lt-coral)}\n.lt-grow{flex-grow:1}\n/* Wael */\n.lt-wael-photo{position:relative}\n.lt-wael-photo::before{content:\"\";position:absolute;width:90px;height:90px;left:-24px;top:-24px;border-radius:50%;border:10px solid var(--lt-coral);opacity:.15;z-index:0}\n.lt-wael-photo img{object-position:center 20%}\n/* Footer links */\n.lt-footer-links a{color:var(--lt-navy)}.lt-footer-links a:hover{color:var(--lt-teal)}\n/* Button on dark band */\n.lt-btn-light .elementor-button{box-shadow:0 0 20px rgba(0,192,207,.22)}\n",
+  "custom_css": "/* =====================================================================\n   Laoret × tcworld 2026 — custom CSS for the Elementor Pro build\n   Paste once into: Site Settings → Custom CSS  (or a page's Page Settings → Custom CSS)\n   Every rule targets a CSS class you add in  Advanced → CSS Classes  on a container/widget.\n   ===================================================================== */\n\n:root{\n  --lt-navy:#0B233F; --lt-teal:#00A2AE; --lt-teal-d:#008B96; --lt-icon:#1EC0CC; --lt-cyan:#00C0CF;\n  --lt-coral:#F05A5C; --lt-dark:#000915; --lt-aqua:#E1F6F6; --lt-line:#E3EAF0; --lt-soft:#F6F9FB;\n}\n\n/* ---------- Hero info bar (container class: lt-event-bar) ----------\n   Sits half over the hero: give the container Margin Top = -60px and Z-Index = 2 in Elementor. */\n.lt-event-bar{box-shadow:0 10px 30px rgba(11,35,63,.07)}\n\n/* ---------- WHY MEET: illustrated cards ----------\n   Card container class: lt-why-card   (+ lt-acc-coral / lt-acc-navy on cards 2,5 / 3,6)\n   Image widget class:  lt-why-visual */\n.lt-why-card{--acc:var(--lt-teal);position:relative;overflow:hidden;\n  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}\n.lt-why-card.lt-acc-coral{--acc:var(--lt-coral)}\n.lt-why-card.lt-acc-navy{--acc:var(--lt-navy)}\n.lt-why-card::after{content:\"\";position:absolute;left:0;top:0;height:4px;width:0;background:var(--acc);\n  transition:width .5s cubic-bezier(.2,.7,.2,1);z-index:2}\n.lt-why-card:hover{transform:translateY(-8px);box-shadow:0 26px 50px rgba(11,35,63,.12);border-color:transparent}\n.lt-why-card:hover::after{width:100%}\n.lt-why-visual img{animation:ltFloat 6s ease-in-out infinite;transition:transform .5s cubic-bezier(.2,.7,.2,1)}\n.lt-why-card:nth-child(2n) .lt-why-visual img{animation-delay:-2s}\n.lt-why-card:nth-child(3n) .lt-why-visual img{animation-delay:-4s}\n.lt-why-card:hover .lt-why-visual img{transform:scale(1.07)}\n@keyframes ltFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}\n\n/* ---------- WHAT WE HELP WITH: numbered list ----------\n   Row container class: lt-help-item   (+ lt-acc-coral on rows 2,3,6) */\n.lt-help-item{position:relative}\n.lt-help-item::before{content:\"\";position:absolute;left:0;top:-1px;height:2px;width:0;background:var(--lt-teal);\n  transition:width .45s cubic-bezier(.2,.7,.2,1)}\n.lt-help-item.lt-acc-coral::before{background:var(--lt-coral)}\n.lt-help-item:hover::before{width:100%}\n.lt-help-item .elementor-heading-title{transition:color .2s}\n.lt-help-item:hover .elementor-heading-title{color:var(--lt-teal-d)}\n\n/* ---------- Client logos (Image widget class: lt-logo) ---------- */\n.lt-logo img{mix-blend-mode:multiply;transition:transform .2s}\n.lt-logo img:hover{transform:scale(1.05)}\n\n/* ---------- Form: chip-style checkboxes & radios (Form widget class: lt-form) ---------- */\n.lt-form .elementor-field-type-checkbox .elementor-field-subgroup,\n.lt-form .elementor-field-type-radio .elementor-field-subgroup{display:flex;flex-wrap:wrap;gap:10px}\n.lt-form .elementor-field-option{margin:0!important}\n.lt-form .elementor-field-option input{position:absolute;opacity:0;width:1px;height:1px}\n.lt-form .elementor-field-option label{display:inline-block;padding:9px 16px;border-radius:999px;border:1.5px solid var(--lt-line);\n  font-size:14px;font-weight:500;color:var(--lt-navy);cursor:pointer;transition:all .15s;background:#FBFDFE}\n.lt-form .elementor-field-option label:hover{border-color:var(--lt-teal)}\n.lt-form .elementor-field-type-checkbox input:checked+label{background:var(--lt-navy);border-color:var(--lt-navy);color:#fff}\n.lt-form .elementor-field-type-radio input:checked+label{background:var(--lt-teal);border-color:var(--lt-teal);color:#fff}\n.lt-form .elementor-field-option input:focus-visible+label{outline:3px solid var(--lt-coral);outline-offset:2px}\n\n/* ---------- Homepage-style buttons (add class lt-btn-glow to any Button widget) ---------- */\n.lt-btn-glow .elementor-button{box-shadow:0 8px 22px rgba(0,162,174,.35);transition:transform .2s,box-shadow .2s,background-color .2s}\n.lt-btn-glow .elementor-button:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,162,174,.45)}\n.lt-btn-glow-soft .elementor-button{box-shadow:0 8px 22px rgba(0,162,174,.18)}\n.lt-btn-glow-cyan .elementor-button{box-shadow:0 8px 26px rgba(0,192,207,.4)}\n\n/* ---------- Dark bands (container class lt-dark-band): homepage shapes ---------- */\n.lt-dark-band{position:relative;overflow:hidden}\n.lt-dark-band::before{content:\"\";position:absolute;right:-90px;top:-120px;width:420px;height:360px;border-radius:90px;\n  background:linear-gradient(140deg,rgba(0,192,207,.18),rgba(0,192,207,0) 70%);pointer-events:none}\n.lt-dark-band::after{content:\"\";position:absolute;left:6%;bottom:-110px;width:190px;height:190px;border-radius:50%;\n  border:38px solid rgba(37,84,214,.22);pointer-events:none}\n.lt-dark-band>.e-con-inner,.lt-dark-band>.e-con{position:relative;z-index:1}\n\n/* ---------- Mobile: Why cards as swipe row if you keep a Grid instead of the Nested Carousel ---------- */\n@media (max-width:767px){\n  .lt-why-grid{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;scrollbar-width:none}\n  .lt-why-grid::-webkit-scrollbar{display:none}\n  .lt-why-grid>.lt-why-card{flex:0 0 82%!important;scroll-snap-align:center}\n}\n\n@media (prefers-reduced-motion:reduce){\n  .lt-why-visual img{animation:none}\n  .lt-why-card,.lt-why-card:hover{transform:none}\n}\n\n/* ===== Page-level styles used by the template (classes set in Advanced → CSS Classes) ===== */\nhtml{scroll-behavior:smooth;scroll-padding-top:84px}\n.elementor-widget-text-editor p:last-child{margin-bottom:0}\n.lt-maxw-540{max-width:540px}.lt-maxw-440{max-width:440px}.lt-maxw-680,.lt-maxw-720,.lt-maxw-980,.lt-maxw-1080{margin-left:auto!important;margin-right:auto!important}\n.lt-maxw-680{max-width:680px}.lt-maxw-760{max-width:760px;margin-left:auto!important;margin-right:auto!important}.lt-maxw-720{max-width:720px}.lt-maxw-980{max-width:980px}.lt-maxw-1080{max-width:1080px}\n/* Header */\n.elementor .lt-brand img.lt-event-logo{height:32px;width:auto;max-width:none;display:block}\n@media (max-width:767px){.elementor .lt-brand img.lt-event-logo{height:20px;max-width:110px;object-fit:contain}.lt-brand{min-width:0;flex-shrink:1;overflow:hidden}.lt-lang a{padding:5px 8px}}\n.lt-mobile-cta.e-con{--width:auto;width:auto}\n.lt-header>.e-con-inner>.e-con{--width:auto;width:auto;flex:0 1 auto}\n.lt-navlink .elementor-heading-title a{position:relative;padding:6px 0;color:inherit}\n.lt-navlink .elementor-heading-title a::after{content:\"\";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--lt-teal);transition:width .2s}\n.lt-navlink .elementor-heading-title a:hover{color:var(--lt-teal)}\n.lt-navlink .elementor-heading-title a:hover::after{width:100%}\n.lt-lang{display:flex;gap:2px;border:1px solid var(--lt-line);border-radius:999px;padding:3px;font:600 13px/1 \"Open Sans\",sans-serif;background:#fff}\n.lt-lang a{padding:6px 11px;border-radius:999px;color:#7A8898}\n.lt-lang a.is-active{background:var(--lt-teal);color:#fff}\n/* Hero */\n.lt-hero-title .elementor-heading-title span{display:block;color:var(--lt-coral)}\n.lt-closing-title .elementor-heading-title span{color:var(--lt-coral)}\n.lt-kv-logos{background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 10px 30px rgba(11,35,63,.07)}\n.elementor .lt-kv-logos img{height:26px;width:auto;max-width:none;display:block}\n@media (max-width:767px){.lt-kv-badge{position:relative!important;inset:auto!important;margin:-36px 16px 0!important;width:auto!important;max-width:none!important}}\n.elementor .lt-avatar img{width:52px!important;height:52px!important;border-radius:50%;object-fit:cover}\n.lt-bar-item+.lt-bar-item{border-left:1px solid var(--lt-line)}\n@media (max-width:1024px){.lt-bar-item:nth-child(3){border-left:0}.lt-bar-item:nth-child(n+3){border-top:1px solid var(--lt-line)}}\n@media (max-width:767px){.lt-bar-item+.lt-bar-item{border-left:0;border-top:1px solid var(--lt-line)}}\n.lt-cert img{height:58px!important;width:auto!important}\n@media (max-width:767px){.lt-cert img{height:46px!important}}\n/* Who we are: number badges */\n.lt-num .elementor-heading-title{width:38px;height:38px;border-radius:50%;background:var(--lt-aqua);display:grid;place-items:center}\n.lt-num-coral .elementor-heading-title{background:#FDEEEE;color:var(--lt-coral)!important}\n.lt-point{transition:box-shadow .2s}.lt-point:hover{box-shadow:0 16px 36px rgba(11,35,63,.1)!important}\n/* Team cards + stacked avatars */\n.lt-person{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}\n.lt-person:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(11,35,63,.12)!important}\n.lt-person-media{position:relative}\n.lt-person-photo img{transition:transform .5s cubic-bezier(.2,.7,.2,1);display:block}\n.lt-person:hover .lt-person-photo img{transform:scale(1.04)}\n.lt-avatars.e-con{--width:auto;width:auto;flex:none}\n.elementor .lt-avatars .lt-avatar img{border:3px solid #fff;box-shadow:0 4px 12px rgba(11,35,63,.12)}\n.lt-avatars .lt-avatar-stack{margin-left:-14px}\n/* Stats, testimonials */\n.lt-stat .elementor-heading-title em{font-style:normal;color:var(--lt-coral)}\n.lt-grow{flex-grow:1}\n/* Wael */\n.lt-wael-photo{position:relative}\n.lt-wael-photo::before{content:\"\";position:absolute;width:90px;height:90px;left:-24px;top:-24px;border-radius:50%;border:10px solid var(--lt-coral);opacity:.15;z-index:0}\n.lt-wael-photo img{object-position:center 20%}\n/* Footer links */\n.lt-footer-links a{color:var(--lt-navy)}.lt-footer-links a:hover{color:var(--lt-teal)}\n/* Button on dark band */\n.lt-btn-light .elementor-button{box-shadow:0 0 20px rgba(0,192,207,.22)}\n",
   "background_background": "classic",
   "background_color": "#FFFFFF"
  },

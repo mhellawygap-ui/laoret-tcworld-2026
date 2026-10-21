@@ -174,6 +174,7 @@ def extract(path):
     c['lead'] = T('.hero .lead')
     kb = soup.select_one('.kv-badge')
     c['badge'] = (kb.strong.get_text(strip=True), kb.select('span')[-1].get_text(' ', strip=True))
+    c['badge_avatars'] = [(i['src'].split('/')[-1], i['alt']) for i in kb.select('.avatar img')]
     c['kv_alt'] = soup.select_one('.kv img')['alt']
     c['bar'] = [(d.small.get_text(strip=True), d.strong.get_text(strip=True)) for d in soup.select('.event-bar > div')]
     c['logos_title'] = T('.logos-title')
@@ -195,16 +196,23 @@ def extract(path):
     c['trust_h'] = T('#trust-title'); c['trust_p'] = T('#trust .sec-head p')
     c['stats'] = [(inner(s.b), s.span.get_text(' ', strip=True)) for s in soup.select('.stat')]
     c['quotes'] = [(q.p.get_text(' ', strip=True), q.footer.strong.get_text(strip=True), q.footer.span.get_text(strip=True), q.select_one('.stars')['aria-label']) for q in soup.select('.quote')]
-    c['wael_alt'] = soup.select_one('.wael-photo img')['alt']
-    tag = soup.select_one('.wael-photo .tag'); c['wael_tag'] = (tag.small.get_text(strip=True), tag.strong.get_text(strip=True))
-    c['wael_h'] = T('#wael-title'); c['wael_role'] = T('.wael-copy .role')
-    c['wael_p'] = soup.select('.wael-copy > p')[1].get_text(' ', strip=True)
-    c['talk_h'] = T('.talk h4'); c['tags'] = [s.get_text(' ', strip=True) for s in soup.select('.tags span')]
-    c['wael_btn'] = T('.wael-copy .btn')
+    c['tags'] = [s.get_text(' ', strip=True) for s in soup.select('.tags span')]
+    if soup.select_one('#team'):
+        c['team'] = dict(h=T('#team-title'), p=T('#team .sec-head p'), talk_h=T('.team-foot h4'), btn=T('.team-foot .btn'),
+                         people=[(a.img['src'].split('/')[-1], a.img['alt'], a.h3.get_text(strip=True), a.select_one('.role').get_text(' ', strip=True),
+                                  a.select('.person-body p')[-1].get_text(' ', strip=True), a.select_one('.tag').get_text(strip=True)) for a in soup.select('.person')])
+    else:
+        c['wael_alt'] = soup.select_one('.wael-photo img')['alt']
+        tag = soup.select_one('.wael-photo .tag'); c['wael_tag'] = (tag.small.get_text(strip=True), tag.strong.get_text(strip=True))
+        c['wael_h'] = T('#wael-title'); c['wael_role'] = T('.wael-copy .role')
+        c['wael_p'] = soup.select('.wael-copy > p')[1].get_text(' ', strip=True)
+        c['talk_h'] = T('.talk h4')
+        c['wael_btn'] = T('.wael-copy .btn')
     c['book_h'] = T('#book-title'); c['book_p'] = T('.book-side > p')
     c['benefits'] = [' '.join(li.get_text(' ', strip=True).split()) for li in soup.select('.benefits li')]
     c['ways'] = [(li.strong.get_text(' ', strip=True), li.select('div > span')[0].get_text(' ', strip=True)) for li in soup.select('.ways li')]
     cm = soup.select_one('.contact-mini'); c['contact'] = (cm.strong.get_text(strip=True), cm.select('div > span')[0].get_text(' ', strip=True))
+    c['contact_avatars'] = [(i['src'].split('/')[-1], i['alt']) for i in cm.select('.avatar img')]
     # form
     f = {}
     lab = lambda fid: soup.select_one(f'label[for="{fid}"]').find(string=True, recursive=False).strip()
@@ -231,6 +239,11 @@ def build(c, css):
     lang = c['lang']; b = B(lang); _n[0] = 0
     img = lambda name: BASE + name
     DE = lang == 'de'
+
+    def avatars(lst):
+        imgs = [b.image(img(f), a, _css_classes='lt-avatar' + (' lt-avatar-stack' if i else ''), width={'unit': 'px', 'size': 52, 'sizes': []})
+                for i, (f, a) in enumerate(lst)]
+        return imgs[0] if len(imgs) == 1 else b.con(imgs, direction='row', flex_gap=gap(0), css_classes='lt-avatars')
 
     # ---- header (sticky)
     lang_html = (f'<div class="lt-lang"><a href="{PAGE_URL["en"]}"{" class=\"is-active\"" if not DE else ""}>EN</a>'
@@ -266,7 +279,7 @@ def build(c, css):
         b.html(f'<img src="{TEKOM_LOGO}" alt="tekom Jahrestagung">', _css_classes='lt-kv-logos',
                _position='absolute', _offset_orientation_h='end', _offset_x_end=px(18), _offset_y=px(18), hide_mobile='hidden-mobile'),
         b.con([
-            b.image(img('wael-makram.jpg'), 'Wael Makram', _css_classes='lt-avatar', width={'unit': 'px', 'size': 52, 'sizes': []}),
+            avatars(c['badge_avatars']),
             b.con([b.heading(c['badge'][0], 'div', NAVY, H5()), b.text(c['badge'][1], MUTED, SMALL())], flex_gap=gap(2)),
         ], direction='row', flex_gap=gap(12), flex_align_items='center', padding=box(14, 18, 14, 14),
             position='absolute', _offset_orientation_h='start', _offset_x=px(-28), _offset_orientation_v='end', _offset_y=px(36),
@@ -408,7 +421,32 @@ def build(c, css):
     # ---- meet wael
     tag_pill = lambda t: b.heading(t, 'div', NAVY, typo('', LATO, 16, 400), _padding=box(8, 15), _border_border='solid', _border_width=box(1),
                                    _border_color='#D2F0F2', _border_radius=box(999), _background_background='classic', _background_color='#EBF8F9')
-    wael = b.con([
+    if 'team' in c:
+        tm = c['team']
+        people = []
+        for i, (f, alt, name, role, desc, tag) in enumerate(tm['people']):
+            people.append(b.con([
+                b.con([
+                    b.image(img(f), alt, width={'unit': '%', 'size': 100, 'sizes': []}, height=380, fit='cover', height_mobile=px(300),
+                            _css_classes='lt-person-photo', **{'object-position': 'center top'}),
+                    b.heading(tag, 'div', CYAN, CAPTION(), _padding=box(9, 14), _background_background='classic', _background_color=DARK,
+                              _border_radius=box(999), _position='absolute', _offset_x=px(18), _offset_orientation_v='end', _offset_y_end=px(18),
+                              _element_width='initial', _element_custom_width={'unit': 'px', 'size': 'auto'}),
+                ], css_classes='lt-person-media', overflow='hidden'),
+                b.con([b.heading(name, 'h3', NAVY, H3()), b.heading(role, 'p', BRAND, typo('', OPEN, 16, 600), _margin=box(4, 0, 8, 0)),
+                       b.text(desc, BODY, BODY_())], flex_gap=gap(0), padding=box(26, 28, 30, 28)),
+            ], padding=box(0), css_classes='lt-person', overflow='hidden', **card(border_radius=box(14)), **anim(True, i * 120)))
+        wael = b.con([
+            b.heading(tm['h'], 'h2', NAVY, H2(), align='center', **anim()),
+            b.text(tm['p'], NAVY, INTRO(), align='center', _css_classes='lt-maxw-720', _margin=box(14, 0, 56, 0), **anim()),
+            b.con(people, grid=({'unit': 'fr', 'size': 2, 'sizes': []}, gap(32), None, {'unit': 'fr', 'size': 1, 'sizes': []}), css_classes='lt-maxw-980'),
+            b.heading(tm['talk_h'], 'h4', NAVY, H6(), align='center', _margin=box(48, 0, 14, 0)),
+            b.con([tag_pill(t) for t in c['tags']], direction='row', flex_gap=gap(10), flex_wrap='wrap', flex_justify_content='center',
+                  css_classes='lt-maxw-760', margin=box(0, 0, 30, 0)),
+            b.con([b.button(tm['btn'], '#book', icon=True)], flex_align_items='center'),
+        ], top=True, padding=box(96, 24), padding_mobile=box(72, 18), flex_gap=gap(0), _element_id='team')
+    else:
+      wael = b.con([
         b.con([
             b.image(img('wael-makram.jpg'), c['wael_alt'], width={'unit': '%', 'size': 100, 'sizes': []}, height=440, fit='cover', radius=24,
                     height_mobile=px(340), image_box_shadow_box_shadow_type='yes', image_box_shadow_box_shadow=shadow(0, 24, 60, 0, 'rgba(11,35,63,0.12)'),
@@ -477,7 +515,7 @@ def build(c, css):
             b.con([b.con([b.icon_box(ic, t, d, size=28)], padding=box(16, 18), **card())
                    for ic, (t, d) in zip(['fas fa-map-marker-alt', 'far fa-envelope'], c['ways'])],
                   flex_gap=gap(12), margin=box(16, 0, 8, 0), _element_id='booth'),
-            b.con([b.image(img('wael-makram.jpg'), 'Wael Makram', _css_classes='lt-avatar', width={'unit': 'px', 'size': 52, 'sizes': []}),
+            b.con([avatars(c['contact_avatars']),
                    b.con([b.heading(c['contact'][0], 'div', NAVY, H5()), b.text(c['contact'][1], MUTED, SMALL())], flex_gap=gap(2))],
                   direction='row', flex_gap=gap(14), flex_align_items='center', padding=box(18), **card()),
         ], flex_gap=gap(14), **anim(True)),
@@ -531,7 +569,7 @@ EXTRA_CSS = '''
 html{scroll-behavior:smooth;scroll-padding-top:84px}
 .elementor-widget-text-editor p:last-child{margin-bottom:0}
 .lt-maxw-540{max-width:540px}.lt-maxw-440{max-width:440px}.lt-maxw-680,.lt-maxw-720,.lt-maxw-980,.lt-maxw-1080{margin-left:auto!important;margin-right:auto!important}
-.lt-maxw-680{max-width:680px}.lt-maxw-720{max-width:720px}.lt-maxw-980{max-width:980px}.lt-maxw-1080{max-width:1080px}
+.lt-maxw-680{max-width:680px}.lt-maxw-760{max-width:760px;margin-left:auto!important;margin-right:auto!important}.lt-maxw-720{max-width:720px}.lt-maxw-980{max-width:980px}.lt-maxw-1080{max-width:1080px}
 /* Header */
 .elementor .lt-brand img.lt-event-logo{height:32px;width:auto;max-width:none;display:block}
 @media (max-width:767px){.elementor .lt-brand img.lt-event-logo{height:20px;max-width:110px;object-fit:contain}.lt-brand{min-width:0;flex-shrink:1;overflow:hidden}.lt-lang a{padding:5px 8px}}
@@ -560,6 +598,15 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 .lt-num .elementor-heading-title{width:38px;height:38px;border-radius:50%;background:var(--lt-aqua);display:grid;place-items:center}
 .lt-num-coral .elementor-heading-title{background:#FDEEEE;color:var(--lt-coral)!important}
 .lt-point{transition:box-shadow .2s}.lt-point:hover{box-shadow:0 16px 36px rgba(11,35,63,.1)!important}
+/* Team cards + stacked avatars */
+.lt-person{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.lt-person:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(11,35,63,.12)!important}
+.lt-person-media{position:relative}
+.lt-person-photo img{transition:transform .5s cubic-bezier(.2,.7,.2,1);display:block}
+.lt-person:hover .lt-person-photo img{transform:scale(1.04)}
+.lt-avatars.e-con{--width:auto;width:auto;flex:none}
+.elementor .lt-avatars .lt-avatar img{border:3px solid #fff;box-shadow:0 4px 12px rgba(11,35,63,.12)}
+.lt-avatars .lt-avatar-stack{margin-left:-14px}
 /* Stats, testimonials */
 .lt-stat .elementor-heading-title em{font-style:normal;color:var(--lt-coral)}
 .lt-grow{flex-grow:1}

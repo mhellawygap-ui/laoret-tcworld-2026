@@ -476,6 +476,7 @@ footer.site a:hover{color:var(--brand)}
         <li><a href="#about">About</a></li>
         <li><a href="#services">What We Help With</a></li>
         <li><a href="#why">Why Laoret</a></li>
+        <li><a href="#resources">Resources</a></li>
         <li><a href="#team">Meet the Team</a></li>
       </ul>
     </nav>
@@ -687,6 +688,175 @@ footer.site a:hover{color:var(--brand)}
     </div>
   </div>
 </section>
+
+<section id="resources" aria-labelledby="resources-title">
+<style>
+#resources .lt-res-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+#resources .lt-res-card{background:#fff;border:1px solid #E3EAF0;border-radius:18px;padding:12px 12px 20px;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s,border-color .3s}
+#resources .lt-res-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(11,35,63,.12);border-color:transparent}
+#resources .lt-res-thumb{position:relative;display:block;width:100%;padding:0;border:0;background:#F5FAFB;border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:210/297}
+#resources .lt-res-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+#resources .lt-res-card:hover .lt-res-thumb img{transform:scale(1.04)}
+#resources .lt-res-tag{position:absolute;left:10px;top:10px;background:#0B233F;color:#fff;font:700 11px/1 "Open Sans",sans-serif;letter-spacing:.08em;padding:6px 9px;border-radius:999px}
+#resources .lt-res-body{padding:16px 6px 0;display:flex;flex-direction:column;gap:8px;flex:1}
+#resources .lt-res-body h3{font:700 17px/1.35 "Open Sans",sans-serif;color:#0B233F;margin:0}
+#resources .lt-res-body p{font:400 14px/1.55 Lato,sans-serif;color:#4A5B6D;margin:0;flex:1}
+#resources .lt-res-meta{font:700 12px/1 "Open Sans",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#7A8898}
+#resources .lt-res-btn{margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 18px;border-radius:999px;border:0;background:#00A2AE;color:#fff;font:700 14px/1 "Open Sans",sans-serif;cursor:pointer;box-shadow:0 0 20px rgba(0,192,207,.25);transition:background .2s,transform .2s}
+#resources .lt-res-btn:hover{background:#008B96;transform:translateY(-1px)}
+#resources .lt-res-btn:focus-visible,#resources .lt-res-thumb:focus-visible,.lt-res-modal button:focus-visible{outline:3px solid #F05A5C;outline-offset:3px}
+#resources .lt-res-btn svg{width:16px;height:16px}
+.lt-res-modal{position:fixed;inset:0;margin:auto;height:fit-content;overflow:auto;border:0;padding:0;border-radius:20px;width:min(560px,calc(100vw - 32px));max-height:calc(100vh - 32px);box-shadow:0 30px 80px rgba(11,35,63,.35);color:#0B233F}
+.lt-res-modal::backdrop{background:rgba(11,35,63,.6)}
+.lt-res-modal .lt-res-mhead{display:flex;gap:16px;align-items:center;padding:24px 24px 0}
+.lt-res-modal .lt-res-mhead img{width:64px;height:90px;object-fit:cover;border-radius:8px;border:1px solid #E3EAF0;flex:none}
+.lt-res-modal h3{font:700 22px/1.25 "Open Sans",sans-serif;margin:0}
+.lt-res-modal .lt-res-doc{font:700 13px/1.4 "Open Sans",sans-serif;color:#00A2AE;margin:4px 0 0}
+.lt-res-modal form,.lt-res-modal .lt-res-ok{padding:18px 24px 24px}
+.lt-res-modal .lt-res-sub{font:400 15px/1.55 Lato,sans-serif;color:#4A5B6D;margin:0 0 16px}
+.lt-res-modal .lt-res-f{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.lt-res-modal .lt-res-field{display:flex;flex-direction:column;gap:6px}
+.lt-res-modal label{font:600 13px/1.3 "Open Sans",sans-serif;color:#0B233F}
+.lt-res-modal input[type=text],.lt-res-modal input[type=email]{font:400 15px Lato,sans-serif;padding:12px 14px;border:1.5px solid #E3EAF0;border-radius:10px;background:#FBFDFE;color:#0B233F;min-height:46px}
+.lt-res-modal input:focus{outline:none;border-color:#00A2AE;box-shadow:0 0 0 3px rgba(0,162,174,.15)}
+.lt-res-modal .lt-res-err{display:none;font:400 12px Lato,sans-serif;color:#C8383B}
+.lt-res-modal .has-err input{border-color:#C8383B}
+.lt-res-modal .has-err .lt-res-err{display:block}
+.lt-res-modal .lt-res-consent .lt-res-err{flex-basis:100%;padding-left:28px}
+.lt-res-modal .has-err input[type=checkbox]{outline:2px solid #C8383B;outline-offset:2px}
+.lt-res-modal .lt-res-consent{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;font:400 13px/1.5 Lato,sans-serif;color:#4A5B6D}
+.lt-res-modal .lt-res-consent label{flex:1 1 0;min-width:0;display:block}
+.lt-res-modal .lt-res-consent input{margin-top:3px;width:18px;height:18px;accent-color:#00A2AE;flex:none}
+.lt-res-modal .lt-res-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px;flex-wrap:wrap}
+.lt-res-modal .lt-res-primary{min-height:46px;padding:12px 24px;border-radius:999px;border:0;background:#00A2AE;color:#fff;font:700 15px "Open Sans",sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.lt-res-modal .lt-res-primary:hover{background:#008B96;color:#fff}
+.lt-res-modal .lt-res-ghost{min-height:46px;padding:12px 20px;border-radius:999px;border:1.5px solid #E3EAF0;background:#fff;color:#0B233F;font:600 15px "Open Sans",sans-serif;cursor:pointer}
+.lt-res-modal .lt-res-x{position:absolute;right:12px;top:12px;width:40px;height:40px;border-radius:50%;border:0;background:#F5FAFB;color:#0B233F;font-size:22px;line-height:1;cursor:pointer}
+.lt-res-modal .lt-res-ok{display:none;text-align:center}
+.lt-res-modal .lt-res-ok svg{width:56px;height:56px;color:#00A2AE;margin:4px auto 10px;display:block}
+.lt-res-modal .lt-res-ok p{font:400 15px/1.55 Lato,sans-serif;color:#4A5B6D;margin:8px 0 18px}
+.lt-res-modal.is-done form{display:none}.lt-res-modal.is-done .lt-res-ok{display:block}
+@media (max-width:1024px){#resources .lt-res-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){#resources .lt-res-grid{grid-template-columns:1fr 1fr;gap:14px}#resources .lt-res-body p{display:none}#resources .lt-res-body h3{font-size:15px}#resources .lt-res-btn{padding:10px 12px;font-size:13px;gap:6px}#resources .lt-res-btn svg{display:none}.lt-res-modal .lt-res-f{grid-template-columns:1fr}}
+</style>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" style="font:700 12px/1 'Open Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#00A2AE;margin-bottom:14px">Resources</p>
+      <h2 id="resources-title">Take Laoret with you</h2>
+      <p>Download our company brochure and three short guides. Fill in your details once, and every document is yours.</p>
+    </div>
+    <div class="lt-res-grid">
+      <article class="lt-res-card reveal" data-id="1HyB22XIaZ7zjJ1SUzq8ZkE7CeT_NdSbz" data-file="Laoret-Company-Brochure.pdf">
+        <button type="button" class="lt-res-thumb" data-res-open aria-label="Download PDF: Company brochure"><img src="https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/company-brochure.webp" alt="" width="720" height="1019" loading="lazy"></button>
+        <div class="lt-res-body">
+          <span class="lt-res-meta">8 pages · A4</span>
+          <h3>Company brochure</h3>
+          <p>One partner. Every language. End-to-end solutions: who we are, how we work and what we deliver.</p>
+          <button type="button" class="lt-res-btn" data-res-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-ok="Download again">Download PDF</span></button>
+        </div>
+      </article>
+      <article class="lt-res-card reveal" data-id="1nPc1z_THzL0X8EhqeK_X0x6-jxy4n_7r" data-file="Laoret-Technical-Documentation-Localization.pdf">
+        <button type="button" class="lt-res-thumb" data-res-open aria-label="Download PDF: Technical documentation localization"><img src="https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/technical-documentation-localization.webp" alt="" width="720" height="1019" loading="lazy"></button>
+        <div class="lt-res-body">
+          <span class="lt-res-meta">8 pages · A4</span>
+          <h3>Technical documentation localization</h3>
+          <p>Localization that fits your docs workflow: CCMS, DITA/XML, terminology and measurable quality.</p>
+          <button type="button" class="lt-res-btn" data-res-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-ok="Download again">Download PDF</span></button>
+        </div>
+      </article>
+      <article class="lt-res-card reveal" data-id="1JfISI-jB4oe2HQ1sKYUrAes87ZpgBccf" data-file="Laoret-Human-Governed-AI-Translation.pdf">
+        <button type="button" class="lt-res-thumb" data-res-open aria-label="Download PDF: Human-governed AI translation"><img src="https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/human-governed-ai-translation.webp" alt="" width="720" height="1019" loading="lazy"></button>
+        <div class="lt-res-body">
+          <span class="lt-res-meta">8 pages · A4</span>
+          <h3>Human-governed AI translation</h3>
+          <p>AI wrote it. Who checked it? How we route content by risk and evaluate every AI output.</p>
+          <button type="button" class="lt-res-btn" data-res-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-ok="Download again">Download PDF</span></button>
+        </div>
+      </article>
+      <article class="lt-res-card reveal" data-id="1tguvgxfv-vHu3WWK1FIG5OM-HcGS5uEZ" data-file="Laoret-LSP-MLV-Partnerships.pdf">
+        <button type="button" class="lt-res-thumb" data-res-open aria-label="Download PDF: LSP & MLV partnerships"><img src="https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/lsp-mlv-partnerships.webp" alt="" width="720" height="1019" loading="lazy"></button>
+        <div class="lt-res-body">
+          <span class="lt-res-meta">8 pages · A4</span>
+          <h3>LSP & MLV partnerships</h3>
+          <p>Extend your capacity without building it in-house: white-label, collaborative and scalable delivery.</p>
+          <button type="button" class="lt-res-btn" data-res-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-ok="Download again">Download PDF</span></button>
+        </div>
+      </article>
+    </div>
+  </div>
+  <dialog class="lt-res-modal" id="ltResModal" aria-labelledby="ltResTitle">
+    <button type="button" class="lt-res-x" data-res-close aria-label="Close">&times;</button>
+    <div class="lt-res-mhead"><img src="https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/company-brochure.webp" alt=""><div><h3 id="ltResTitle">Get your free download</h3><p class="lt-res-doc"></p></div></div>
+    <form id="ltResForm" novalidate>
+      <p class="lt-res-sub">Tell us who you are and the download starts right away. You only need to do this once.</p>
+      <input type="hidden" name="page_language" value="en">
+      <div class="lt-res-f">
+        <div class="lt-res-field"><label for="ltResName">Full name *</label><input id="ltResName" name="full_name" type="text" autocomplete="name" required><span class="lt-res-err">Please enter your name.</span></div>
+        <div class="lt-res-field"><label for="ltResEmail">Work email *</label><input id="ltResEmail" name="work_email" type="email" autocomplete="email" required><span class="lt-res-err">Please enter a valid work email.</span></div>
+        <div class="lt-res-field"><label for="ltResCompany">Company name *</label><input id="ltResCompany" name="company" type="text" autocomplete="organization" required><span class="lt-res-err">Please enter your company.</span></div>
+        <div class="lt-res-field"><label for="ltResTitle2">Job title *</label><input id="ltResTitle2" name="job_title" type="text" autocomplete="organization-title" required><span class="lt-res-err">Please enter your job title.</span></div>
+        <div class="lt-res-consent"><input id="ltResConsent" name="consent" type="checkbox" value="yes" required><label for="ltResConsent" style="font:400 13px/1.5 Lato,sans-serif;color:#4A5B6D">I agree that Laoret may contact me about its services. I can unsubscribe at any time.</label><span class="lt-res-err">Please confirm to continue.</span></div>
+      </div>
+      <div class="lt-res-actions"><button type="button" class="lt-res-ghost" data-res-close>Close</button><button type="submit" class="lt-res-primary">Download now</button></div>
+    </form>
+    <div class="lt-res-ok" role="status">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+      <h3>Your download has started</h3><p>If it didn’t open, use the button below. All other documents on this page are now unlocked for you.</p>
+      <div class="lt-res-actions" style="justify-content:center"><button type="button" class="lt-res-ghost" data-res-close>Close</button><a class="lt-res-primary" href="#" target="_blank" rel="noopener">Open the PDF</a></div>
+    </div>
+  </dialog>
+<script>
+(function(){
+  /* Lead endpoint: set to your form/CRM webhook (HubSpot, Make, Zapier, WordPress REST...). Leave empty to skip posting. */
+  var LT_RES_ENDPOINT='';
+  var sec=document.getElementById('resources'); if(!sec) return;
+  var dlg=document.getElementById('ltResModal'), form=document.getElementById('ltResForm');
+  var KEY='lt_tcworld_resources_lead', cur=null;
+  function unlocked(){try{return localStorage.getItem(KEY)==='1'}catch(e){return false}}
+  function remember(){try{localStorage.setItem(KEY,'1')}catch(e){}}
+  function url(id){return 'https://drive.google.com/uc?export=download&id='+id}
+  function go(card){var a=document.createElement('a');a.href=url(card.dataset.id);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+    try{(window.dataLayer=window.dataLayer||[]).push({event:'resource_download',resource:card.dataset.file})}catch(e){}}
+  function mark(){if(!unlocked())return;sec.querySelectorAll('.lt-res-btn span').forEach(function(s){s.textContent=s.dataset.ok})}
+  function open(card){
+    cur=card;
+    if(unlocked()){go(card);return;}
+    dlg.querySelector('.lt-res-doc').textContent=card.querySelector('h3').textContent;
+    dlg.querySelector('.lt-res-mhead img').src=card.querySelector('.lt-res-thumb img').src;
+    dlg.classList.remove('is-done');
+    if(dlg.showModal){dlg.showModal()}else{dlg.setAttribute('open','')}
+    setTimeout(function(){var f=form.querySelector('input');if(f)f.focus()},50);
+  }
+  sec.querySelectorAll('[data-res-open]').forEach(function(b){b.addEventListener('click',function(){open(b.closest('.lt-res-card'))})});
+  dlg.querySelectorAll('[data-res-close]').forEach(function(b){b.addEventListener('click',function(){dlg.close?dlg.close():dlg.removeAttribute('open')})});
+  dlg.addEventListener('click',function(e){if(e.target===dlg&&dlg.close)dlg.close()});
+  form.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var ok=true,first=null;
+    form.querySelectorAll('[required]').forEach(function(f){
+      var v=f.type==='checkbox'?f.checked:f.value.trim();
+      var bad=!v||(f.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value.trim()));
+      f.closest('.lt-res-field,.lt-res-consent').classList.toggle('has-err',bad);f.setAttribute('aria-invalid',bad);
+      if(bad){ok=false;if(!first)first=f}
+    });
+    if(!ok){first.focus();return;}
+    var data=new FormData(form);data.append('resource',cur.dataset.file);data.append('page',location.href);
+    if(LT_RES_ENDPOINT){try{fetch(LT_RES_ENDPOINT,{method:'POST',body:data,mode:'no-cors',keepalive:true})}catch(e){}}
+    remember();mark();
+    dlg.querySelector('.lt-res-ok a').href=url(cur.dataset.id);
+    dlg.classList.add('is-done');
+    go(cur);
+  });
+  form.querySelectorAll('[required]').forEach(function(f){f.addEventListener('input',function(){f.closest('.lt-res-field,.lt-res-consent').classList.remove('has-err');f.setAttribute('aria-invalid','false')})});
+  mark();
+})();
+</script>
+</section>
+
+
+
+
+
 
 <!-- ================= 8. MEET THE TEAM ================= -->
 <!-- Elementor: Container (boxed) > Heading block + Container (Grid 2 cols) of 2 person cards + tags + button -->

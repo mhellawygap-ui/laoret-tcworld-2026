@@ -1,0 +1,170 @@
+{
+ "content": [
+  {
+   "id": "0313802",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "container_type": "flex",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    },
+    "flex_gap": {
+     "unit": "px",
+     "row": "0",
+     "column": "0",
+     "isLinked": true
+    },
+    "_element_id": "resources-section"
+   },
+   "elements": [
+    {
+     "id": "d1df747",
+     "elType": "widget",
+     "settings": {
+      "title": "Downloads",
+      "header_size": "div",
+      "title_color": "#00A2AE",
+      "typography_typography": "custom",
+      "typography_font_family": "Open Sans",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 12,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": 0.2,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "align": "center",
+      "_animation": "fadeInUp",
+      "animation_duration": ""
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "afbb929",
+     "elType": "widget",
+     "settings": {
+      "title": "Laoret zum Mitnehmen",
+      "header_size": "h2",
+      "title_color": "#0B233F",
+      "typography_typography": "custom",
+      "typography_font_family": "Open Sans",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.22,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": -0.02,
+       "sizes": []
+      },
+      "align": "center",
+      "_margin": {
+       "unit": "px",
+       "top": "14",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "animation_duration": ""
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "183e7a3",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Laden Sie unsere Unternehmensbroschüre und drei kompakte Leitfäden herunter. Einmal Ihre Daten angeben, alle Dokumente erhalten.</p>",
+      "text_color": "#0B233F",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "typography_font_weight": "300",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      },
+      "align": "center",
+      "_css_classes": "lt-maxw-720",
+      "_margin": {
+       "unit": "px",
+       "top": "14",
+       "right": "0",
+       "bottom": "56",
+       "left": "0",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "animation_duration": ""
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "61bc058",
+     "elType": "widget",
+     "settings": {
+      "html": "<div id=\"resources\"><style>\n#resources .lt-res-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}\n#resources .lt-res-card{background:#fff;border:1px solid #E3EAF0;border-radius:18px;padding:12px 12px 20px;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s,border-color .3s}\n#resources .lt-res-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(11,35,63,.12);border-color:transparent}\n#resources .lt-res-thumb{position:relative;display:block;width:100%;padding:0;border:0;background:#F5FAFB;border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:210/297}\n#resources .lt-res-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.7,.2,1)}\n#resources .lt-res-card:hover .lt-res-thumb img{transform:scale(1.04)}\n#resources .lt-res-tag{position:absolute;left:10px;top:10px;background:#0B233F;color:#fff;font:700 11px/1 \"Open Sans\",sans-serif;letter-spacing:.08em;padding:6px 9px;border-radius:999px}\n#resources .lt-res-body{padding:16px 6px 0;display:flex;flex-direction:column;gap:8px;flex:1}\n#resources .lt-res-body h3{font:700 17px/1.35 \"Open Sans\",sans-serif;color:#0B233F;margin:0}\n#resources .lt-res-body p{font:400 14px/1.55 Lato,sans-serif;color:#4A5B6D;margin:0;flex:1}\n#resources .lt-res-meta{font:700 12px/1 \"Open Sans\",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#7A8898}\n#resources .lt-res-btn{margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 18px;border-radius:999px;border:0;background:#00A2AE;color:#fff;font:700 14px/1 \"Open Sans\",sans-serif;cursor:pointer;box-shadow:0 0 20px rgba(0,192,207,.25);transition:background .2s,transform .2s}\n#resources .lt-res-btn:hover{background:#008B96;transform:translateY(-1px)}\n#resources .lt-res-btn:focus-visible,#resources .lt-res-thumb:focus-visible,.lt-res-modal button:focus-visible{outline:3px solid #F05A5C;outline-offset:3px}\n#resources .lt-res-btn svg{width:16px;height:16px}\n.lt-res-modal{position:fixed;inset:0;margin:auto;height:fit-content;overflow:auto;border:0;padding:0;border-radius:20px;width:min(560px,calc(100vw - 32px));max-height:calc(100vh - 32px);box-shadow:0 30px 80px rgba(11,35,63,.35);color:#0B233F}\n.lt-res-modal::backdrop{background:rgba(11,35,63,.6)}\n.lt-res-modal .lt-res-mhead{display:flex;gap:16px;align-items:center;padding:24px 24px 0}\n.lt-res-modal .lt-res-mhead img{width:64px;height:90px;object-fit:cover;border-radius:8px;border:1px solid #E3EAF0;flex:none}\n.lt-res-modal h3{font:700 22px/1.25 \"Open Sans\",sans-serif;margin:0}\n.lt-res-modal .lt-res-doc{font:700 13px/1.4 \"Open Sans\",sans-serif;color:#00A2AE;margin:4px 0 0}\n.lt-res-modal form,.lt-res-modal .lt-res-ok{padding:18px 24px 24px}\n.lt-res-modal .lt-res-sub{font:400 15px/1.55 Lato,sans-serif;color:#4A5B6D;margin:0 0 16px}\n.lt-res-modal .lt-res-f{display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.lt-res-modal .lt-res-field{display:flex;flex-direction:column;gap:6px}\n.lt-res-modal label{font:600 13px/1.3 \"Open Sans\",sans-serif;color:#0B233F}\n.lt-res-modal input[type=text],.lt-res-modal input[type=email]{font:400 15px Lato,sans-serif;padding:12px 14px;border:1.5px solid #E3EAF0;border-radius:10px;background:#FBFDFE;color:#0B233F;min-height:46px}\n.lt-res-modal input:focus{outline:none;border-color:#00A2AE;box-shadow:0 0 0 3px rgba(0,162,174,.15)}\n.lt-res-modal .lt-res-err{display:none;font:400 12px Lato,sans-serif;color:#C8383B}\n.lt-res-modal .has-err input{border-color:#C8383B}\n.lt-res-modal .has-err .lt-res-err{display:block}\n.lt-res-modal .lt-res-consent .lt-res-err{flex-basis:100%;padding-left:28px}\n.lt-res-modal .has-err input[type=checkbox]{outline:2px solid #C8383B;outline-offset:2px}\n.lt-res-modal .lt-res-consent{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;font:400 13px/1.5 Lato,sans-serif;color:#4A5B6D}\n.lt-res-modal .lt-res-consent label{flex:1 1 0;min-width:0;display:block}\n.lt-res-modal .lt-res-consent input{margin-top:3px;width:18px;height:18px;accent-color:#00A2AE;flex:none}\n.lt-res-modal .lt-res-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px;flex-wrap:wrap}\n.lt-res-modal .lt-res-primary{min-height:46px;padding:12px 24px;border-radius:999px;border:0;background:#00A2AE;color:#fff;font:700 15px \"Open Sans\",sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}\n.lt-res-modal .lt-res-primary:hover{background:#008B96;color:#fff}\n.lt-res-modal .lt-res-ghost{min-height:46px;padding:12px 20px;border-radius:999px;border:1.5px solid #E3EAF0;background:#fff;color:#0B233F;font:600 15px \"Open Sans\",sans-serif;cursor:pointer}\n.lt-res-modal .lt-res-x{position:absolute;right:12px;top:12px;width:40px;height:40px;border-radius:50%;border:0;background:#F5FAFB;color:#0B233F;font-size:22px;line-height:1;cursor:pointer}\n.lt-res-modal .lt-res-ok{display:none;text-align:center}\n.lt-res-modal .lt-res-ok svg{width:56px;height:56px;color:#00A2AE;margin:4px auto 10px;display:block}\n.lt-res-modal .lt-res-ok p{font:400 15px/1.55 Lato,sans-serif;color:#4A5B6D;margin:8px 0 18px}\n.lt-res-modal.is-done form{display:none}.lt-res-modal.is-done .lt-res-ok{display:block}\n@media (max-width:1024px){#resources .lt-res-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:560px){#resources .lt-res-grid{grid-template-columns:1fr 1fr;gap:14px}#resources .lt-res-body p{display:none}#resources .lt-res-body h3{font-size:15px}#resources .lt-res-btn{padding:10px 12px;font-size:13px;gap:6px}#resources .lt-res-btn svg{display:none}.lt-res-modal .lt-res-f{grid-template-columns:1fr}}\n</style>\n<div class=\"lt-res-grid\">\n<article class=\"lt-res-card\" data-file=\"Laoret-Company-Brochure.pdf\" data-id=\"1HyB22XIaZ7zjJ1SUzq8ZkE7CeT_NdSbz\">\n<button aria-label=\"PDF herunterladen: Unternehmensbroschüre\" class=\"lt-res-thumb\" data-res-open=\"\" type=\"button\"><img alt=\"\" height=\"1019\" loading=\"lazy\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/company-brochure.webp\" width=\"720\"/></button>\n<div class=\"lt-res-body\">\n<span class=\"lt-res-meta\">8 Seiten · A4</span>\n<h3>Unternehmensbroschüre</h3>\n<p>Ein Partner. Jede Sprache. End-to-End-Lösungen: wer wir sind, wie wir arbeiten und was wir liefern.</p>\n<button class=\"lt-res-btn\" data-res-open=\"\" type=\"button\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\"><path d=\"M12 3v12M7 10l5 5 5-5M5 21h14\"></path></svg><span data-ok=\"Erneut herunterladen\">PDF herunterladen</span></button>\n</div>\n</article>\n<article class=\"lt-res-card\" data-file=\"Laoret-Technical-Documentation-Localization.pdf\" data-id=\"1nPc1z_THzL0X8EhqeK_X0x6-jxy4n_7r\">\n<button aria-label=\"PDF herunterladen: Lokalisierung technischer Dokumentation\" class=\"lt-res-thumb\" data-res-open=\"\" type=\"button\"><img alt=\"\" height=\"1019\" loading=\"lazy\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/technical-documentation-localization.webp\" width=\"720\"/></button>\n<div class=\"lt-res-body\">\n<span class=\"lt-res-meta\">8 Seiten · A4</span>\n<h3>Lokalisierung technischer Dokumentation</h3>\n<p>Lokalisierung, die in Ihren Doku-Workflow passt: CCMS, DITA/XML, Terminologie und messbare Qualität.</p>\n<button class=\"lt-res-btn\" data-res-open=\"\" type=\"button\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\"><path d=\"M12 3v12M7 10l5 5 5-5M5 21h14\"></path></svg><span data-ok=\"Erneut herunterladen\">PDF herunterladen</span></button>\n</div>\n</article>\n<article class=\"lt-res-card\" data-file=\"Laoret-Human-Governed-AI-Translation.pdf\" data-id=\"1JfISI-jB4oe2HQ1sKYUrAes87ZpgBccf\">\n<button aria-label=\"PDF herunterladen: Menschlich gesteuerte KI-Übersetzung\" class=\"lt-res-thumb\" data-res-open=\"\" type=\"button\"><img alt=\"\" height=\"1019\" loading=\"lazy\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/human-governed-ai-translation.webp\" width=\"720\"/></button>\n<div class=\"lt-res-body\">\n<span class=\"lt-res-meta\">8 Seiten · A4</span>\n<h3>Menschlich gesteuerte KI-Übersetzung</h3>\n<p>Die KI hat es geschrieben. Wer hat es geprüft? Wie wir Inhalte nach Risiko steuern und jede KI-Ausgabe bewerten.</p>\n<button class=\"lt-res-btn\" data-res-open=\"\" type=\"button\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\"><path d=\"M12 3v12M7 10l5 5 5-5M5 21h14\"></path></svg><span data-ok=\"Erneut herunterladen\">PDF herunterladen</span></button>\n</div>\n</article>\n<article class=\"lt-res-card\" data-file=\"Laoret-LSP-MLV-Partnerships.pdf\" data-id=\"1tguvgxfv-vHu3WWK1FIG5OM-HcGS5uEZ\">\n<button aria-label=\"PDF herunterladen: Partnerschaften für LSPs &amp; MLVs\" class=\"lt-res-thumb\" data-res-open=\"\" type=\"button\"><img alt=\"\" height=\"1019\" loading=\"lazy\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/lsp-mlv-partnerships.webp\" width=\"720\"/></button>\n<div class=\"lt-res-body\">\n<span class=\"lt-res-meta\">8 Seiten · A4</span>\n<h3>Partnerschaften für LSPs &amp; MLVs</h3>\n<p>Mehr Kapazität, ohne sie selbst aufzubauen: White-Label, gemeinsame und skalierbare Lieferung.</p>\n<button class=\"lt-res-btn\" data-res-open=\"\" type=\"button\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\"><path d=\"M12 3v12M7 10l5 5 5-5M5 21h14\"></path></svg><span data-ok=\"Erneut herunterladen\">PDF herunterladen</span></button>\n</div>\n</article>\n</div>\n<dialog aria-labelledby=\"ltResTitle\" class=\"lt-res-modal\" id=\"ltResModal\">\n<button aria-label=\"Schließen\" class=\"lt-res-x\" data-res-close=\"\" type=\"button\">×</button>\n<div class=\"lt-res-mhead\"><img alt=\"\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/company-brochure.webp\"/><div><h3 id=\"ltResTitle\">Ihr kostenloser Download</h3><p class=\"lt-res-doc\"></p></div></div>\n<form id=\"ltResForm\" novalidate=\"\">\n<p class=\"lt-res-sub\">Sagen Sie uns kurz, wer Sie sind, und der Download startet sofort. Das ist nur einmal nötig.</p>\n<input name=\"page_language\" type=\"hidden\" value=\"de\"/>\n<div class=\"lt-res-f\">\n<div class=\"lt-res-field\"><label for=\"ltResName\">Vollständiger Name *</label><input autocomplete=\"name\" id=\"ltResName\" name=\"full_name\" required=\"\" type=\"text\"/><span class=\"lt-res-err\">Bitte geben Sie Ihren Namen ein.</span></div>\n<div class=\"lt-res-field\"><label for=\"ltResEmail\">Geschäftliche E-Mail *</label><input autocomplete=\"email\" id=\"ltResEmail\" name=\"work_email\" required=\"\" type=\"email\"/><span class=\"lt-res-err\">Bitte geben Sie eine gültige geschäftliche E-Mail ein.</span></div>\n<div class=\"lt-res-field\"><label for=\"ltResCompany\">Unternehmen *</label><input autocomplete=\"organization\" id=\"ltResCompany\" name=\"company\" required=\"\" type=\"text\"/><span class=\"lt-res-err\">Bitte geben Sie Ihr Unternehmen ein.</span></div>\n<div class=\"lt-res-field\"><label for=\"ltResTitle2\">Position *</label><input autocomplete=\"organization-title\" id=\"ltResTitle2\" name=\"job_title\" required=\"\" type=\"text\"/><span class=\"lt-res-err\">Bitte geben Sie Ihre Position ein.</span></div>\n<div class=\"lt-res-consent\"><input id=\"ltResConsent\" name=\"consent\" required=\"\" type=\"checkbox\" value=\"yes\"/><label for=\"ltResConsent\" style=\"font:400 13px/1.5 Lato,sans-serif;color:#4A5B6D\">Ich bin einverstanden, dass Laoret mich zu seinen Leistungen kontaktiert. Ich kann mich jederzeit abmelden.</label><span class=\"lt-res-err\">Bitte bestätigen Sie, um fortzufahren.</span></div>\n</div>\n<div class=\"lt-res-actions\"><button class=\"lt-res-ghost\" data-res-close=\"\" type=\"button\">Schließen</button><button class=\"lt-res-primary\" type=\"submit\">Jetzt herunterladen</button></div>\n</form>\n<div class=\"lt-res-ok\" role=\"status\">\n<svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.8\" viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle><path d=\"M8 12l3 3 5-6\"></path></svg>\n<h3>Ihr Download wurde gestartet</h3><p>Falls er sich nicht geöffnet hat, nutzen Sie die Schaltfläche unten. Alle weiteren Dokumente auf dieser Seite sind jetzt für Sie freigeschaltet.</p>\n<div class=\"lt-res-actions\" style=\"justify-content:center\"><button class=\"lt-res-ghost\" data-res-close=\"\" type=\"button\">Schließen</button><a class=\"lt-res-primary\" href=\"#\" rel=\"noopener\" target=\"_blank\">PDF öffnen</a></div>\n</div>\n</dialog>\n<script>\n(function(){\n  /* Lead endpoint: set to your form/CRM webhook (HubSpot, Make, Zapier, WordPress REST...). Leave empty to skip posting. */\n  var LT_RES_ENDPOINT='';\n  var sec=document.getElementById('resources'); if(!sec) return;\n  var dlg=document.getElementById('ltResModal'), form=document.getElementById('ltResForm');\n  var KEY='lt_tcworld_resources_lead', cur=null;\n  function unlocked(){try{return localStorage.getItem(KEY)==='1'}catch(e){return false}}\n  function remember(){try{localStorage.setItem(KEY,'1')}catch(e){}}\n  function url(id){return 'https://drive.google.com/uc?export=download&id='+id}\n  function go(card){var a=document.createElement('a');a.href=url(card.dataset.id);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();\n    try{(window.dataLayer=window.dataLayer||[]).push({event:'resource_download',resource:card.dataset.file})}catch(e){}}\n  function mark(){if(!unlocked())return;sec.querySelectorAll('.lt-res-btn span').forEach(function(s){s.textContent=s.dataset.ok})}\n  function open(card){\n    cur=card;\n    if(unlocked()){go(card);return;}\n    dlg.querySelector('.lt-res-doc').textContent=card.querySelector('h3').textContent;\n    dlg.querySelector('.lt-res-mhead img').src=card.querySelector('.lt-res-thumb img').src;\n    dlg.classList.remove('is-done');\n    if(dlg.showModal){dlg.showModal()}else{dlg.setAttribute('open','')}\n    setTimeout(function(){var f=form.querySelector('input');if(f)f.focus()},50);\n  }\n  sec.querySelectorAll('[data-res-open]').forEach(function(b){b.addEventListener('click',function(){open(b.closest('.lt-res-card'))})});\n  dlg.querySelectorAll('[data-res-close]').forEach(function(b){b.addEventListener('click',function(){dlg.close?dlg.close():dlg.removeAttribute('open')})});\n  dlg.addEventListener('click',function(e){if(e.target===dlg&&dlg.close)dlg.close()});\n  form.addEventListener('submit',function(ev){\n    ev.preventDefault();\n    var ok=true,first=null;\n    form.querySelectorAll('[required]').forEach(function(f){\n      var v=f.type==='checkbox'?f.checked:f.value.trim();\n      var bad=!v||(f.type==='email'&&!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(f.value.trim()));\n      f.closest('.lt-res-field,.lt-res-consent').classList.toggle('has-err',bad);f.setAttribute('aria-invalid',bad);\n      if(bad){ok=false;if(!first)first=f}\n    });\n    if(!ok){first.focus();return;}\n    var data=new FormData(form);data.append('resource',cur.dataset.file);data.append('page',location.href);\n    if(LT_RES_ENDPOINT){try{fetch(LT_RES_ENDPOINT,{method:'POST',body:data,mode:'no-cors',keepalive:true})}catch(e){}}\n    remember();mark();\n    dlg.querySelector('.lt-res-ok a').href=url(cur.dataset.id);\n    dlg.classList.add('is-done');\n    go(cur);\n  });\n  form.querySelectorAll('[required]').forEach(function(f){f.addEventListener('input',function(){f.closest('.lt-res-field,.lt-res-consent').classList.remove('has-err');f.setAttribute('aria-invalid','false')})});\n  mark();\n})();\n</script></div>"
+     },
+     "elements": [],
+     "widgetType": "html"
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": [],
+ "version": "0.4",
+ "title": "Laoret tcworld 2026 – Resources section (DE)",
+ "type": "container"
+}

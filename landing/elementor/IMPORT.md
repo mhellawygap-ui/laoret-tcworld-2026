@@ -35,3 +35,12 @@ Both were test-imported into WordPress with Elementor 4.4 (laoret.com runs 4.3.4
 ## Regenerating after copy changes
 
 Edit `../index.html` / `../de/index.html`, then run `python3 build_templates.py` in this folder. It rebuilds both JSON files from the pages, so the WordPress version never drifts from the approved copy.
+
+## Resources section (gated downloads)
+
+The Resources section (after "Why Companies Trust Laoret") shows the company brochure and the three A4 guides as cards. Clicking a card opens a short form (name, work email, company, job title, consent); after a valid submit the PDF downloads from Google Drive and the browser remembers the visitor, so the other documents download straight away.
+
+- Already on a published page? Import `laoret-tcworld-2026-resources-section-en.json` / `-de.json` and insert it below the Trust section instead of re-importing the whole page.
+- **Lead capture:** the section is one HTML widget. Open it and set `LT_RES_ENDPOINT` at the top of the script to your webhook (HubSpot form endpoint, Make/Zapier webhook, etc.). Until it is set, downloads work but submitted details are not stored anywhere.
+- The Drive files must stay shared as "Anyone with the link".
+- Thumbnails load from `/landing/assets/resources/` on GitHub Pages; upload them to the Media Library and swap the URLs if you prefer.

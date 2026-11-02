@@ -1,7 +1,7 @@
 {
  "content": [
   {
-   "id": "198d44f",
+   "id": "55818ed",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -160,7 +160,7 @@
      "isInner": true
     },
     {
-     "id": "0924bda",
+     "id": "5d7f83f",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -264,6 +264,31 @@
        "id": "8f5b3b4",
        "elType": "widget",
        "settings": {
+        "title": "Resources",
+        "header_size": "div",
+        "title_color": "#0B233F",
+        "typography_typography": "custom",
+        "typography_font_family": "Open Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "400",
+        "link": {
+         "url": "#resources",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "_css_classes": "lt-navlink"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0924bda",
+       "elType": "widget",
+       "settings": {
         "title": "Meet the Team",
         "header_size": "div",
         "title_color": "#0B233F",
@@ -289,7 +314,7 @@
      "isInner": true
     },
     {
-     "id": "15a0615",
+     "id": "198d44f",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -313,7 +338,7 @@
      },
      "elements": [
       {
-       "id": "5d7f83f",
+       "id": "e1cde66",
        "elType": "widget",
        "settings": {
         "html": "<div class=\"lt-lang\"><a href=\"/tcworld-2026/\" class=\"is-active\">EN</a><a href=\"/de/tcworld-2026/\">DE</a></div>"
@@ -322,7 +347,7 @@
        "widgetType": "html"
       },
       {
-       "id": "e1cde66",
+       "id": "15a0615",
        "elType": "widget",
        "settings": {
         "text": "Book a Meeting",
@@ -374,7 +399,7 @@
    "isInner": false
   },
   {
-   "id": "5dc1f92",
+   "id": "fad883b",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -425,7 +450,7 @@
    },
    "elements": [
     {
-     "id": "9d4ff51",
+     "id": "5dc1f92",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -469,7 +494,7 @@
      },
      "elements": [
       {
-       "id": "167fff2",
+       "id": "14c0411",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -493,7 +518,7 @@
        },
        "elements": [
         {
-         "id": "55818ed",
+         "id": "625c6ae",
          "elType": "widget",
          "settings": {
           "title": "Your Workflow. <span>Our Localization.</span>",
@@ -528,7 +553,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "625c6ae",
+         "id": "a694f08",
          "elType": "widget",
          "settings": {
           "editor": "<p>We fit localization into the way your team already works, not the other way around.</p>",
@@ -557,7 +582,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "0ed3cae",
+         "id": "167fff2",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -589,7 +614,7 @@
          },
          "elements": [
           {
-           "id": "a694f08",
+           "id": "ff32928",
            "elType": "widget",
            "settings": {
             "text": "Book a Meeting",
@@ -644,7 +669,7 @@
            "widgetType": "button"
           },
           {
-           "id": "ff32928",
+           "id": "0ed3cae",
            "elType": "widget",
            "settings": {
             "text": "Visit Us at the Booth",
@@ -706,7 +731,7 @@
        "isInner": true
       },
       {
-       "id": "988c629",
+       "id": "bd265b6",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -730,7 +755,7 @@
        },
        "elements": [
         {
-         "id": "14c0411",
+         "id": "5bf2746",
          "elType": "widget",
          "settings": {
           "image": {
@@ -778,7 +803,7 @@
          "widgetType": "image"
         },
         {
-         "id": "5bf2746",
+         "id": "d5be44a",
          "elType": "widget",
          "settings": {
           "html": "<img src=\"https://jahrestagung.tekom.de/fileadmin/tagungen.tekom.de/H26/Logos_Banner_Keyvisual/Logos_Banner_Tagung/Logos_pur/tekom-jahrestagung_transparent.svg\" alt=\"tekom Jahrestagung\">",
@@ -801,7 +826,7 @@
          "widgetType": "html"
         },
         {
-         "id": "f5e277e",
+         "id": "988c629",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -861,7 +886,7 @@
          },
          "elements": [
           {
-           "id": "9b899c7",
+           "id": "93c2757",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -885,7 +910,7 @@
            },
            "elements": [
             {
-             "id": "d5be44a",
+             "id": "3482e83",
              "elType": "widget",
              "settings": {
               "image": {
@@ -907,7 +932,7 @@
              "widgetType": "image"
             },
             {
-             "id": "3482e83",
+             "id": "9b899c7",
              "elType": "widget",
              "settings": {
               "image": {
@@ -932,7 +957,7 @@
            "isInner": true
           },
           {
-           "id": "0e4e3ec",
+           "id": "f5e277e",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -955,7 +980,7 @@
            },
            "elements": [
             {
-             "id": "93c2757",
+             "id": "98f89f4",
              "elType": "widget",
              "settings": {
               "title": "Meet Wael & Berk",
@@ -979,7 +1004,7 @@
              "widgetType": "heading"
             },
             {
-             "id": "98f89f4",
+             "id": "0e4e3ec",
              "elType": "widget",
              "settings": {
               "editor": "<p>At Booth 2F27</p>",
@@ -1014,7 +1039,7 @@
      "isInner": true
     },
     {
-     "id": "e8fb806",
+     "id": "9d4ff51",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -1103,7 +1128,7 @@
      },
      "elements": [
       {
-       "id": "bd265b6",
+       "id": "662f200",
        "elType": "widget",
        "settings": {
         "selected_icon": {
@@ -1181,7 +1206,7 @@
        "widgetType": "icon-box"
       },
       {
-       "id": "662f200",
+       "id": "c53c908",
        "elType": "widget",
        "settings": {
         "selected_icon": {
@@ -1259,7 +1284,7 @@
        "widgetType": "icon-box"
       },
       {
-       "id": "c53c908",
+       "id": "63e12fb",
        "elType": "widget",
        "settings": {
         "selected_icon": {
@@ -1337,7 +1362,7 @@
        "widgetType": "icon-box"
       },
       {
-       "id": "63e12fb",
+       "id": "e8fb806",
        "elType": "widget",
        "settings": {
         "selected_icon": {
@@ -1421,7 +1446,7 @@
    "isInner": false
   },
   {
-   "id": "bfcf438",
+   "id": "34936f9",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -1467,7 +1492,7 @@
    },
    "elements": [
     {
-     "id": "fad883b",
+     "id": "f201d7b",
      "elType": "widget",
      "settings": {
       "title": "Proud to work with",
@@ -1498,7 +1523,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "6352394",
+     "id": "ee24ec6",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -1549,7 +1574,7 @@
      },
      "elements": [
       {
-       "id": "f201d7b",
+       "id": "9603c52",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1577,7 +1602,7 @@
        "widgetType": "image"
       },
       {
-       "id": "9603c52",
+       "id": "c86e64f",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1605,7 +1630,7 @@
        "widgetType": "image"
       },
       {
-       "id": "c86e64f",
+       "id": "564f04c",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1633,7 +1658,7 @@
        "widgetType": "image"
       },
       {
-       "id": "564f04c",
+       "id": "597d5a5",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1661,7 +1686,7 @@
        "widgetType": "image"
       },
       {
-       "id": "597d5a5",
+       "id": "7dbfd49",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1689,7 +1714,7 @@
        "widgetType": "image"
       },
       {
-       "id": "7dbfd49",
+       "id": "087009a",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1717,7 +1742,7 @@
        "widgetType": "image"
       },
       {
-       "id": "087009a",
+       "id": "6352394",
        "elType": "widget",
        "settings": {
         "image": {
@@ -1748,7 +1773,7 @@
      "isInner": true
     },
     {
-     "id": "07fb41c",
+     "id": "bfcf438",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -1794,7 +1819,7 @@
      },
      "elements": [
       {
-       "id": "ee24ec6",
+       "id": "a2db6b3",
        "elType": "widget",
        "settings": {
         "title": "ISO-certified quality · 120+ languages · ATA member",
@@ -1824,7 +1849,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "800bafb",
+       "id": "07fb41c",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -1850,7 +1875,7 @@
        },
        "elements": [
         {
-         "id": "a2db6b3",
+         "id": "0fba96a",
          "elType": "widget",
          "settings": {
           "image": {
@@ -1878,7 +1903,7 @@
          "widgetType": "image"
         },
         {
-         "id": "0fba96a",
+         "id": "19b1610",
          "elType": "widget",
          "settings": {
           "image": {
@@ -1906,7 +1931,7 @@
          "widgetType": "image"
         },
         {
-         "id": "19b1610",
+         "id": "0af0672",
          "elType": "widget",
          "settings": {
           "image": {
@@ -1934,7 +1959,7 @@
          "widgetType": "image"
         },
         {
-         "id": "0af0672",
+         "id": "800bafb",
          "elType": "widget",
          "settings": {
           "image": {
@@ -1971,7 +1996,7 @@
    "isInner": false
   },
   {
-   "id": "d5fe34a",
+   "id": "36c2ea3",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -2011,7 +2036,7 @@
    },
    "elements": [
     {
-     "id": "d5b569d",
+     "id": "e9459bd",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -2038,7 +2063,7 @@
      },
      "elements": [
       {
-       "id": "fa30b38",
+       "id": "e86d634",
        "elType": "widget",
        "settings": {
         "title": "Localization support",
@@ -2086,7 +2111,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "e86d634",
+       "id": "b4a2ea2",
        "elType": "widget",
        "settings": {
         "title": "Human-governed AI",
@@ -2134,7 +2159,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "b4a2ea2",
+       "id": "d5b569d",
        "elType": "widget",
        "settings": {
         "title": "Quality built to scale",
@@ -2185,7 +2210,7 @@
      "isInner": true
     },
     {
-     "id": "e9459bd",
+     "id": "9a41767",
      "elType": "widget",
      "settings": {
       "title": "This Page Is For You If…",
@@ -2230,7 +2255,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "9a41767",
+     "id": "da46b47",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -2269,7 +2294,7 @@
      },
      "elements": [
       {
-       "id": "a76b685",
+       "id": "e06996d",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -2314,7 +2339,7 @@
        },
        "elements": [
         {
-         "id": "34936f9",
+         "id": "a76b685",
          "elType": "widget",
          "settings": {
           "selected_icon": {
@@ -2380,7 +2405,7 @@
        "isInner": true
       },
       {
-       "id": "6e1246a",
+       "id": "e5b53cb",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -2426,7 +2451,7 @@
        },
        "elements": [
         {
-         "id": "e06996d",
+         "id": "6e1246a",
          "elType": "widget",
          "settings": {
           "selected_icon": {
@@ -2492,7 +2517,7 @@
        "isInner": true
       },
       {
-       "id": "c81e3f5",
+       "id": "31723a9",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -2537,7 +2562,7 @@
        },
        "elements": [
         {
-         "id": "e5b53cb",
+         "id": "c81e3f5",
          "elType": "widget",
          "settings": {
           "selected_icon": {
@@ -2603,7 +2628,7 @@
        "isInner": true
       },
       {
-       "id": "ef6143e",
+       "id": "b1a5c86",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -2649,7 +2674,7 @@
        },
        "elements": [
         {
-         "id": "31723a9",
+         "id": "ef6143e",
          "elType": "widget",
          "settings": {
           "selected_icon": {
@@ -2715,7 +2740,7 @@
        "isInner": true
       },
       {
-       "id": "a4e1555",
+       "id": "26d7a8b",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -2760,7 +2785,7 @@
        },
        "elements": [
         {
-         "id": "b1a5c86",
+         "id": "a4e1555",
          "elType": "widget",
          "settings": {
           "selected_icon": {
@@ -2826,7 +2851,7 @@
        "isInner": true
       },
       {
-       "id": "d0d7490",
+       "id": "fa30b38",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -2872,7 +2897,7 @@
        },
        "elements": [
         {
-         "id": "26d7a8b",
+         "id": "d0d7490",
          "elType": "widget",
          "settings": {
           "selected_icon": {
@@ -2941,7 +2966,7 @@
      "isInner": true
     },
     {
-     "id": "34e955e",
+     "id": "d5fe34a",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -2973,7 +2998,7 @@
      },
      "elements": [
       {
-       "id": "da46b47",
+       "id": "34e955e",
        "elType": "widget",
        "settings": {
         "text": "That’s us. Let’s talk",
@@ -3024,7 +3049,7 @@
    "isInner": false
   },
   {
-   "id": "791438f",
+   "id": "11db126",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -3081,7 +3106,7 @@
    },
    "elements": [
     {
-     "id": "dec93e4",
+     "id": "02c7d9f",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -3106,7 +3131,7 @@
      },
      "elements": [
       {
-       "id": "f707a25",
+       "id": "110a624",
        "elType": "widget",
        "settings": {
         "title": "Who We Are",
@@ -3140,7 +3165,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "110a624",
+       "id": "8e58bf5",
        "elType": "widget",
        "settings": {
         "editor": "<p>At Laoret, we help organizations build localization workflows that are practical, scalable and aligned with real business needs.</p>",
@@ -3163,7 +3188,7 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "8e58bf5",
+       "id": "dec93e4",
        "elType": "widget",
        "settings": {
         "editor": "<p>A boutique localization partner that brings the process know-how, the right technology and the human judgment, and fits them around you.</p>",
@@ -3207,7 +3232,7 @@
      "isInner": true
     },
     {
-     "id": "02c7d9f",
+     "id": "791438f",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -3230,7 +3255,7 @@
      },
      "elements": [
       {
-       "id": "87b0d9f",
+       "id": "8d2c75f",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3274,7 +3299,7 @@
        },
        "elements": [
         {
-         "id": "36c2ea3",
+         "id": "1f72e17",
          "elType": "widget",
          "settings": {
           "title": "01",
@@ -3294,7 +3319,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "476f05d",
+         "id": "87b0d9f",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3317,7 +3342,7 @@
          },
          "elements": [
           {
-           "id": "1f72e17",
+           "id": "7804e75",
            "elType": "widget",
            "settings": {
             "title": "We don’t build one-size-fits-all workflows.",
@@ -3341,7 +3366,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "7804e75",
+           "id": "476f05d",
            "elType": "widget",
            "settings": {
             "editor": "<p>Every engagement starts with how your team, tools and content already work.</p>",
@@ -3370,7 +3395,7 @@
        "isInner": true
       },
       {
-       "id": "d8455e3",
+       "id": "46fd7e9",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3415,7 +3440,7 @@
        },
        "elements": [
         {
-         "id": "8d2c75f",
+         "id": "6d39bb4",
          "elType": "widget",
          "settings": {
           "title": "02",
@@ -3435,7 +3460,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "3d3eeb5",
+         "id": "d8455e3",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3458,7 +3483,7 @@
          },
          "elements": [
           {
-           "id": "6d39bb4",
+           "id": "f911dd1",
            "elType": "widget",
            "settings": {
             "title": "We don’t sell technology.",
@@ -3482,7 +3507,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "f911dd1",
+           "id": "3d3eeb5",
            "elType": "widget",
            "settings": {
             "editor": "<p>We’re not tied to a platform, so our recommendations stay focused on what serves your content.</p>",
@@ -3511,7 +3536,7 @@
        "isInner": true
       },
       {
-       "id": "4639255",
+       "id": "a5b2c78",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3556,7 +3581,7 @@
        },
        "elements": [
         {
-         "id": "46fd7e9",
+         "id": "4f4f234",
          "elType": "widget",
          "settings": {
           "title": "03",
@@ -3576,7 +3601,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "8963f06",
+         "id": "4639255",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3599,7 +3624,7 @@
          },
          "elements": [
           {
-           "id": "4f4f234",
+           "id": "2085f1c",
            "elType": "widget",
            "settings": {
             "title": "We understand technology and AI well enough to build the right workflow around you.",
@@ -3623,7 +3648,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "2085f1c",
+           "id": "8963f06",
            "elType": "widget",
            "settings": {
             "editor": "<p>MT, LLMs, TMS and CAT tools, chosen and configured for your content types.</p>",
@@ -3652,7 +3677,7 @@
        "isInner": true
       },
       {
-       "id": "99f688d",
+       "id": "a2f8a1d",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3697,7 +3722,7 @@
        },
        "elements": [
         {
-         "id": "a5b2c78",
+         "id": "c7a6798",
          "elType": "widget",
          "settings": {
           "title": "04",
@@ -3717,7 +3742,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "57bcd11",
+         "id": "99f688d",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3740,7 +3765,7 @@
          },
          "elements": [
           {
-           "id": "c7a6798",
+           "id": "0de880e",
            "elType": "widget",
            "settings": {
             "title": "We’re boutique, flexible and easy to work with.",
@@ -3764,7 +3789,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "0de880e",
+           "id": "57bcd11",
            "elType": "widget",
            "settings": {
             "editor": "<p>Direct access to decision-makers, quick responses and room to adapt as you go.</p>",
@@ -3793,7 +3818,7 @@
        "isInner": true
       },
       {
-       "id": "649ee7b",
+       "id": "f707a25",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -3838,7 +3863,7 @@
        },
        "elements": [
         {
-         "id": "a2f8a1d",
+         "id": "664db23",
          "elType": "widget",
          "settings": {
           "title": "05",
@@ -3858,7 +3883,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "3c95cb6",
+         "id": "649ee7b",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -3881,7 +3906,7 @@
          },
          "elements": [
           {
-           "id": "664db23",
+           "id": "f1755d2",
            "elType": "widget",
            "settings": {
             "title": "Quality and human control remain central.",
@@ -3905,7 +3930,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "f1755d2",
+           "id": "3c95cb6",
            "elType": "widget",
            "settings": {
             "editor": "<p>AI speeds things up. Qualified linguists decide what ships.</p>",
@@ -3940,7 +3965,7 @@
    "isInner": false
   },
   {
-   "id": "84de87b",
+   "id": "382a6db",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -3979,7 +4004,7 @@
    },
    "elements": [
     {
-     "id": "bf4f64e",
+     "id": "8840cfd",
      "elType": "widget",
      "settings": {
       "title": "What We Help With",
@@ -4016,7 +4041,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "8840cfd",
+     "id": "4a08f2b",
      "elType": "widget",
      "settings": {
       "editor": "<p>Built around the challenges localization and documentation teams bring to us most often.</p>",
@@ -4056,7 +4081,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "4a08f2b",
+     "id": "84de87b",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -4101,7 +4126,7 @@
      },
      "elements": [
       {
-       "id": "3ff6be0",
+       "id": "8521e11",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4160,7 +4185,7 @@
        },
        "elements": [
         {
-         "id": "11db126",
+         "id": "d46f302",
          "elType": "widget",
          "settings": {
           "title": "01",
@@ -4198,7 +4223,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "5ad3431",
+         "id": "3ff6be0",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4221,7 +4246,7 @@
          },
          "elements": [
           {
-           "id": "d46f302",
+           "id": "c67f1a4",
            "elType": "widget",
            "settings": {
             "title": "Localization workflow design",
@@ -4250,7 +4275,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "c67f1a4",
+           "id": "5ad3431",
            "elType": "widget",
            "settings": {
             "editor": "<p>When handoffs are manual, tools don’t talk to each other or turnaround keeps slipping.</p>",
@@ -4280,7 +4305,7 @@
        "isInner": true
       },
       {
-       "id": "65628a1",
+       "id": "d36b655",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4340,7 +4365,7 @@
        },
        "elements": [
         {
-         "id": "8521e11",
+         "id": "1b03500",
          "elType": "widget",
          "settings": {
           "title": "02",
@@ -4378,7 +4403,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "6a39f9d",
+         "id": "65628a1",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4401,7 +4426,7 @@
          },
          "elements": [
           {
-           "id": "1b03500",
+           "id": "8bbc1f5",
            "elType": "widget",
            "settings": {
             "title": "MTPE & AI-supported workflows",
@@ -4430,7 +4455,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "8bbc1f5",
+           "id": "6a39f9d",
            "elType": "widget",
            "settings": {
             "editor": "<p>When you want AI’s speed with ISO 18587-aligned post-editing and clear quality thresholds.</p>",
@@ -4460,7 +4485,7 @@
        "isInner": true
       },
       {
-       "id": "2f60013",
+       "id": "28e8ba5",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4519,7 +4544,7 @@
        },
        "elements": [
         {
-         "id": "d36b655",
+         "id": "d7a54b1",
          "elType": "widget",
          "settings": {
           "title": "03",
@@ -4557,7 +4582,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "92c5f89",
+         "id": "2f60013",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4580,7 +4605,7 @@
          },
          "elements": [
           {
-           "id": "d7a54b1",
+           "id": "894f797",
            "elType": "widget",
            "settings": {
             "title": "Multilingual content operations",
@@ -4609,7 +4634,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "894f797",
+           "id": "92c5f89",
            "elType": "widget",
            "settings": {
             "editor": "<p>When volume, languages and channels grow faster than your team can coordinate them.</p>",
@@ -4639,7 +4664,7 @@
        "isInner": true
       },
       {
-       "id": "da69b02",
+       "id": "fa34ace",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4699,7 +4724,7 @@
        },
        "elements": [
         {
-         "id": "28e8ba5",
+         "id": "231be1c",
          "elType": "widget",
          "settings": {
           "title": "04",
@@ -4737,7 +4762,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "0af8d90",
+         "id": "da69b02",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4760,7 +4785,7 @@
          },
          "elements": [
           {
-           "id": "231be1c",
+           "id": "2c3d757",
            "elType": "widget",
            "settings": {
             "title": "Quality assurance & LQA",
@@ -4789,7 +4814,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "2c3d757",
+           "id": "0af8d90",
            "elType": "widget",
            "settings": {
             "editor": "<p>When you need quality you can measure, report on and improve, not just “check”.</p>",
@@ -4819,7 +4844,7 @@
        "isInner": true
       },
       {
-       "id": "48e89e4",
+       "id": "d2eb576",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -4878,7 +4903,7 @@
        },
        "elements": [
         {
-         "id": "fa34ace",
+         "id": "e4d2303",
          "elType": "widget",
          "settings": {
           "title": "05",
@@ -4916,7 +4941,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "adabcd7",
+         "id": "48e89e4",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -4939,7 +4964,7 @@
          },
          "elements": [
           {
-           "id": "e4d2303",
+           "id": "1f1933a",
            "elType": "widget",
            "settings": {
             "title": "Technical & regulated content",
@@ -4968,7 +4993,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "1f1933a",
+           "id": "adabcd7",
            "elType": "widget",
            "settings": {
             "editor": "<p>Manuals, safety, compliance and life-sciences content where accuracy carries real risk.</p>",
@@ -4998,7 +5023,7 @@
        "isInner": true
       },
       {
-       "id": "1f129fd",
+       "id": "bf4f64e",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -5058,7 +5083,7 @@
        },
        "elements": [
         {
-         "id": "d2eb576",
+         "id": "f04291b",
          "elType": "widget",
          "settings": {
           "title": "06",
@@ -5096,7 +5121,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "fe8c468",
+         "id": "1f129fd",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -5119,7 +5144,7 @@
          },
          "elements": [
           {
-           "id": "f04291b",
+           "id": "579ff92",
            "elType": "widget",
            "settings": {
             "title": "Support for teams & language partners",
@@ -5148,7 +5173,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "579ff92",
+           "id": "fe8c468",
            "elType": "widget",
            "settings": {
             "editor": "<p>Extra capacity for in-house teams, and a dependable production partner for MLVs and LSPs.</p>",
@@ -5184,7 +5209,7 @@
    "isInner": false
   },
   {
-   "id": "76d7f35",
+   "id": "06fd425",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -5221,7 +5246,7 @@
    },
    "elements": [
     {
-     "id": "2258826",
+     "id": "9ed6c1c",
      "elType": "widget",
      "settings": {
       "title": "Why Meet Laoret at tcworld?",
@@ -5258,7 +5283,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "9ed6c1c",
+     "id": "9b12ddb",
      "elType": "widget",
      "settings": {
       "editor": "<p>Six reasons the conversation at our booth is worth fifteen minutes of your fair.</p>",
@@ -5298,7 +5323,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "9b12ddb",
+     "id": "781fffd",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -5342,7 +5367,7 @@
      },
      "elements": [
       {
-       "id": "a183297",
+       "id": "936873b",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -5386,7 +5411,7 @@
        },
        "elements": [
         {
-         "id": "382a6db",
+         "id": "c35214b",
          "elType": "widget",
          "settings": {
           "image": {
@@ -5442,7 +5467,7 @@
          "widgetType": "image"
         },
         {
-         "id": "eac79ca",
+         "id": "a183297",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -5465,7 +5490,7 @@
          },
          "elements": [
           {
-           "id": "c35214b",
+           "id": "8e7bd8a",
            "elType": "widget",
            "settings": {
             "title": "01",
@@ -5495,7 +5520,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "8e7bd8a",
+           "id": "ea3b4d5",
            "elType": "widget",
            "settings": {
             "title": "Workflow-first thinking",
@@ -5519,7 +5544,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "ea3b4d5",
+           "id": "eac79ca",
            "elType": "widget",
            "settings": {
             "editor": "<p>We map your process before suggesting anything, then design localization to slot into it.</p>",
@@ -5548,7 +5573,7 @@
        "isInner": true
       },
       {
-       "id": "c3ba162",
+       "id": "3cfb8bb",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -5593,7 +5618,7 @@
        },
        "elements": [
         {
-         "id": "936873b",
+         "id": "912b2ec",
          "elType": "widget",
          "settings": {
           "image": {
@@ -5649,7 +5674,7 @@
          "widgetType": "image"
         },
         {
-         "id": "1375564",
+         "id": "c3ba162",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -5672,7 +5697,7 @@
          },
          "elements": [
           {
-           "id": "912b2ec",
+           "id": "658c7b4",
            "elType": "widget",
            "settings": {
             "title": "02",
@@ -5702,7 +5727,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "658c7b4",
+           "id": "0566fab",
            "elType": "widget",
            "settings": {
             "title": "Human-governed AI",
@@ -5726,7 +5751,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "0566fab",
+           "id": "1375564",
            "elType": "widget",
            "settings": {
             "editor": "<p>Machine speed where it’s safe, human review where it matters, with clear rules for which is which.</p>",
@@ -5755,7 +5780,7 @@
        "isInner": true
       },
       {
-       "id": "8b256f4",
+       "id": "29e8180",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -5800,7 +5825,7 @@
        },
        "elements": [
         {
-         "id": "3cfb8bb",
+         "id": "202ed2c",
          "elType": "widget",
          "settings": {
           "image": {
@@ -5856,7 +5881,7 @@
          "widgetType": "image"
         },
         {
-         "id": "8ddba1d",
+         "id": "8b256f4",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -5879,7 +5904,7 @@
          },
          "elements": [
           {
-           "id": "202ed2c",
+           "id": "0c30128",
            "elType": "widget",
            "settings": {
             "title": "03",
@@ -5909,7 +5934,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "0c30128",
+           "id": "ab8c280",
            "elType": "widget",
            "settings": {
             "title": "Scalable quality",
@@ -5933,7 +5958,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "ab8c280",
+           "id": "8ddba1d",
            "elType": "widget",
            "settings": {
             "editor": "<p>Defined LQA, managed terminology and measurable scoring that holds up as volume grows.</p>",
@@ -5962,7 +5987,7 @@
        "isInner": true
       },
       {
-       "id": "3012b9b",
+       "id": "231aeee",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -6007,7 +6032,7 @@
        },
        "elements": [
         {
-         "id": "29e8180",
+         "id": "557de07",
          "elType": "widget",
          "settings": {
           "image": {
@@ -6063,7 +6088,7 @@
          "widgetType": "image"
         },
         {
-         "id": "bc518f9",
+         "id": "3012b9b",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -6086,7 +6111,7 @@
          },
          "elements": [
           {
-           "id": "557de07",
+           "id": "863ad92",
            "elType": "widget",
            "settings": {
             "title": "04",
@@ -6116,7 +6141,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "863ad92",
+           "id": "e6a50e5",
            "elType": "widget",
            "settings": {
             "title": "Flexible support",
@@ -6140,7 +6165,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "e6a50e5",
+           "id": "bc518f9",
            "elType": "widget",
            "settings": {
             "editor": "<p>Full projects, overflow capacity or a single workstream. Scope it the way your team needs.</p>",
@@ -6169,7 +6194,7 @@
        "isInner": true
       },
       {
-       "id": "bffc577",
+       "id": "1a78ba6",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -6214,7 +6239,7 @@
        },
        "elements": [
         {
-         "id": "231aeee",
+         "id": "20f50d6",
          "elType": "widget",
          "settings": {
           "image": {
@@ -6270,7 +6295,7 @@
          "widgetType": "image"
         },
         {
-         "id": "6e89ea2",
+         "id": "bffc577",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -6293,7 +6318,7 @@
          },
          "elements": [
           {
-           "id": "20f50d6",
+           "id": "532a3aa",
            "elType": "widget",
            "settings": {
             "title": "05",
@@ -6323,7 +6348,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "532a3aa",
+           "id": "f658f9e",
            "elType": "widget",
            "settings": {
             "title": "Easy collaboration",
@@ -6347,7 +6372,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "f658f9e",
+           "id": "6e89ea2",
            "elType": "widget",
            "settings": {
             "editor": "<p>Responsive people, transparent communication and no unnecessary layers between you and the work.</p>",
@@ -6376,7 +6401,7 @@
        "isInner": true
       },
       {
-       "id": "58fc747",
+       "id": "2258826",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -6421,7 +6446,7 @@
        },
        "elements": [
         {
-         "id": "1a78ba6",
+         "id": "4d1415e",
          "elType": "widget",
          "settings": {
           "image": {
@@ -6477,7 +6502,7 @@
          "widgetType": "image"
         },
         {
-         "id": "0cb24cf",
+         "id": "58fc747",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -6500,7 +6525,7 @@
          },
          "elements": [
           {
-           "id": "4d1415e",
+           "id": "ffd3ac1",
            "elType": "widget",
            "settings": {
             "title": "06",
@@ -6530,7 +6555,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "ffd3ac1",
+           "id": "fa6716f",
            "elType": "widget",
            "settings": {
             "title": "Practical localization expertise",
@@ -6554,7 +6579,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "fa6716f",
+           "id": "0cb24cf",
            "elType": "widget",
            "settings": {
             "editor": "<p>Hands-on experience with technical, regulated and product content across 120+ languages.</p>",
@@ -6586,7 +6611,7 @@
      "isInner": true
     },
     {
-     "id": "781fffd",
+     "id": "b67870a",
      "elType": "widget",
      "settings": {
       "title": "← Swipe to see all six →",
@@ -6627,7 +6652,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "b67870a",
+     "id": "60f9b3c",
      "elType": "widget",
      "settings": {
       "editor": "<p>If your team wants to improve localization efficiency without losing quality or control, this is the conversation to have at tcworld.</p>",
@@ -6662,7 +6687,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "73e547e",
+     "id": "76d7f35",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -6686,7 +6711,7 @@
      },
      "elements": [
       {
-       "id": "60f9b3c",
+       "id": "73e547e",
        "elType": "widget",
        "settings": {
         "text": "Book a Meeting",
@@ -6737,7 +6762,7 @@
    "isInner": false
   },
   {
-   "id": "fd5c1bf",
+   "id": "7307c04",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -6776,7 +6801,7 @@
    },
    "elements": [
     {
-     "id": "313b27d",
+     "id": "395d73e",
      "elType": "widget",
      "settings": {
       "title": "Why Companies Trust Laoret",
@@ -6813,7 +6838,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "395d73e",
+     "id": "de1bc9c",
      "elType": "widget",
      "settings": {
       "editor": "<p>Human expertise and smart technology, backed by certified processes.</p>",
@@ -6853,7 +6878,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "de1bc9c",
+     "id": "f7ca5cc",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -6910,7 +6935,7 @@
      },
      "elements": [
       {
-       "id": "b1b553f",
+       "id": "20d89be",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -6953,7 +6978,7 @@
        },
        "elements": [
         {
-         "id": "06fd425",
+         "id": "0c0812e",
          "elType": "widget",
          "settings": {
           "title": "ISO<em>×3</em>",
@@ -6989,7 +7014,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "0c0812e",
+         "id": "b1b553f",
          "elType": "widget",
          "settings": {
           "editor": "<p>Certified to ISO 17100, ISO 18587 & ISO 9001</p>",
@@ -7016,7 +7041,7 @@
        "isInner": true
       },
       {
-       "id": "e3356ad",
+       "id": "10e88e5",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7060,7 +7085,7 @@
        },
        "elements": [
         {
-         "id": "20d89be",
+         "id": "d453847",
          "elType": "widget",
          "settings": {
           "title": "120<em>+</em>",
@@ -7096,7 +7121,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "d453847",
+         "id": "e3356ad",
          "elType": "widget",
          "settings": {
           "editor": "<p>Languages covered by native linguists</p>",
@@ -7123,7 +7148,7 @@
        "isInner": true
       },
       {
-       "id": "0014be2",
+       "id": "29a41d8",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7167,7 +7192,7 @@
        },
        "elements": [
         {
-         "id": "10e88e5",
+         "id": "f1886fb",
          "elType": "widget",
          "settings": {
           "title": "Human<em>+</em>AI",
@@ -7203,7 +7228,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "f1886fb",
+         "id": "0014be2",
          "elType": "widget",
          "settings": {
           "editor": "<p>Smart technology, human-governed output</p>",
@@ -7230,7 +7255,7 @@
        "isInner": true
       },
       {
-       "id": "cd036ed",
+       "id": "5234392",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7274,7 +7299,7 @@
        },
        "elements": [
         {
-         "id": "29a41d8",
+         "id": "e899af8",
          "elType": "widget",
          "settings": {
           "title": "24<em>/</em>7",
@@ -7310,7 +7335,7 @@
          "widgetType": "heading"
         },
         {
-         "id": "e899af8",
+         "id": "cd036ed",
          "elType": "widget",
          "settings": {
           "editor": "<p>Availability across industries and time zones</p>",
@@ -7340,7 +7365,7 @@
      "isInner": true
     },
     {
-     "id": "f7ca5cc",
+     "id": "fd5c1bf",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -7383,7 +7408,7 @@
      },
      "elements": [
       {
-       "id": "c8917e0",
+       "id": "d624937",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7427,7 +7452,7 @@
        },
        "elements": [
         {
-         "id": "5234392",
+         "id": "f492d45",
          "elType": "widget",
          "settings": {
           "editor": "<p>★★★★★</p>",
@@ -7451,7 +7476,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "f492d45",
+         "id": "88de2f0",
          "elType": "widget",
          "settings": {
           "editor": "<p>“Choosing Laoret for full post-editing was a key success factor in our German product manual launch. They didn’t just correct language, they adapted the entire flow to feel native.”</p>",
@@ -7475,7 +7500,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "9de4faa",
+         "id": "c8917e0",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -7498,7 +7523,7 @@
          },
          "elements": [
           {
-           "id": "88de2f0",
+           "id": "1844feb",
            "elType": "widget",
            "settings": {
             "title": "Andreas Vogel",
@@ -7522,7 +7547,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "1844feb",
+           "id": "9de4faa",
            "elType": "widget",
            "settings": {
             "editor": "<p>Content Strategist, Industrial Automation</p>",
@@ -7551,7 +7576,7 @@
        "isInner": true
       },
       {
-       "id": "4004099",
+       "id": "dc0ef4c",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7596,7 +7621,7 @@
        },
        "elements": [
         {
-         "id": "d624937",
+         "id": "3520cff",
          "elType": "widget",
          "settings": {
           "editor": "<p>★★★★★</p>",
@@ -7620,7 +7645,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "3520cff",
+         "id": "2955f75",
          "elType": "widget",
          "settings": {
           "editor": "<p>“We needed fast turnaround on hundreds of technical documents. Their team clearly understands the balance between quality and efficiency.”</p>",
@@ -7644,7 +7669,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "b9333f2",
+         "id": "4004099",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -7667,7 +7692,7 @@
          },
          "elements": [
           {
-           "id": "2955f75",
+           "id": "1275502",
            "elType": "widget",
            "settings": {
             "title": "Hiroshi Sato",
@@ -7691,7 +7716,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "1275502",
+           "id": "b9333f2",
            "elType": "widget",
            "settings": {
             "editor": "<p>Technical Writer, Electronics</p>",
@@ -7720,7 +7745,7 @@
        "isInner": true
       },
       {
-       "id": "799f262",
+       "id": "313b27d",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -7765,7 +7790,7 @@
        },
        "elements": [
         {
-         "id": "dc0ef4c",
+         "id": "07daa4e",
          "elType": "widget",
          "settings": {
           "editor": "<p>★★★★★</p>",
@@ -7789,7 +7814,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "07daa4e",
+         "id": "225c810",
          "elType": "widget",
          "settings": {
           "editor": "<p>“Their team’s thorough editing and domain expertise ensure our translations meet strict regulatory requirements without compromise.”</p>",
@@ -7813,7 +7838,7 @@
          "widgetType": "text-editor"
         },
         {
-         "id": "3ad1518",
+         "id": "799f262",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -7836,7 +7861,7 @@
          },
          "elements": [
           {
-           "id": "225c810",
+           "id": "75d50d6",
            "elType": "widget",
            "settings": {
             "title": "Layla Hassan",
@@ -7860,7 +7885,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "75d50d6",
+           "id": "3ad1518",
            "elType": "widget",
            "settings": {
             "editor": "<p>Senior Project Manager, Healthcare</p>",
@@ -7895,7 +7920,169 @@
    "isInner": false
   },
   {
-   "id": "e49fd32",
+   "id": "fd396c6",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "container_type": "flex",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "24",
+     "bottom": "96",
+     "left": "24",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    },
+    "flex_gap": {
+     "unit": "px",
+     "row": "0",
+     "column": "0",
+     "isLinked": true
+    },
+    "_element_id": "resources-section"
+   },
+   "elements": [
+    {
+     "id": "79953a1",
+     "elType": "widget",
+     "settings": {
+      "title": "Resources",
+      "header_size": "div",
+      "title_color": "#00A2AE",
+      "typography_typography": "custom",
+      "typography_font_family": "Open Sans",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 12,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": 0.2,
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase",
+      "align": "center",
+      "_animation": "fadeInUp",
+      "animation_duration": ""
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "2191eb5",
+     "elType": "widget",
+     "settings": {
+      "title": "Take Laoret with you",
+      "header_size": "h2",
+      "title_color": "#0B233F",
+      "typography_typography": "custom",
+      "typography_font_family": "Open Sans",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 36,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 28,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.22,
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "em",
+       "size": -0.02,
+       "sizes": []
+      },
+      "align": "center",
+      "_margin": {
+       "unit": "px",
+       "top": "14",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "animation_duration": ""
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "c416151",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>Download our company brochure and three short guides. Fill in your details once, and every document is yours.</p>",
+      "text_color": "#0B233F",
+      "typography_typography": "custom",
+      "typography_font_family": "Lato",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "typography_font_weight": "300",
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": 1.6,
+       "sizes": []
+      },
+      "align": "center",
+      "_css_classes": "lt-maxw-720",
+      "_margin": {
+       "unit": "px",
+       "top": "14",
+       "right": "0",
+       "bottom": "56",
+       "left": "0",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "animation_duration": ""
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "4eae0fa",
+     "elType": "widget",
+     "settings": {
+      "html": "<div id=\"resources\"><style>\n#resources .lt-res-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}\n#resources .lt-res-card{background:#fff;border:1px solid #E3EAF0;border-radius:18px;padding:12px 12px 20px;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s,border-color .3s}\n#resources .lt-res-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(11,35,63,.12);border-color:transparent}\n#resources .lt-res-thumb{position:relative;display:block;width:100%;padding:0;border:0;background:#F5FAFB;border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:210/297}\n#resources .lt-res-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.7,.2,1)}\n#resources .lt-res-card:hover .lt-res-thumb img{transform:scale(1.04)}\n#resources .lt-res-tag{position:absolute;left:10px;top:10px;background:#0B233F;color:#fff;font:700 11px/1 \"Open Sans\",sans-serif;letter-spacing:.08em;padding:6px 9px;border-radius:999px}\n#resources .lt-res-body{padding:16px 6px 0;display:flex;flex-direction:column;gap:8px;flex:1}\n#resources .lt-res-body h3{font:700 17px/1.35 \"Open Sans\",sans-serif;color:#0B233F;margin:0}\n#resources .lt-res-body p{font:400 14px/1.55 Lato,sans-serif;color:#4A5B6D;margin:0;flex:1}\n#resources .lt-res-meta{font:700 12px/1 \"Open Sans\",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#7A8898}\n#resources .lt-res-btn{margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 18px;border-radius:999px;border:0;background:#00A2AE;color:#fff;font:700 14px/1 \"Open Sans\",sans-serif;cursor:pointer;box-shadow:0 0 20px rgba(0,192,207,.25);transition:background .2s,transform .2s}\n#resources .lt-res-btn:hover{background:#008B96;transform:translateY(-1px)}\n#resources .lt-res-btn:focus-visible,#resources .lt-res-thumb:focus-visible,.lt-res-modal button:focus-visible{outline:3px solid #F05A5C;outline-offset:3px}\n#resources .lt-res-btn svg{width:16px;height:16px}\n.lt-res-modal{position:fixed;inset:0;margin:auto;height:fit-content;overflow:auto;border:0;padding:0;border-radius:20px;width:min(560px,calc(100vw - 32px));max-height:calc(100vh - 32px);box-shadow:0 30px 80px rgba(11,35,63,.35);color:#0B233F}\n.lt-res-modal::backdrop{background:rgba(11,35,63,.6)}\n.lt-res-modal .lt-res-mhead{display:flex;gap:16px;align-items:center;padding:24px 24px 0}\n.lt-res-modal .lt-res-mhead img{width:64px;height:90px;object-fit:cover;border-radius:8px;border:1px solid #E3EAF0;flex:none}\n.lt-res-modal h3{font:700 22px/1.25 \"Open Sans\",sans-serif;margin:0}\n.lt-res-modal .lt-res-doc{font:700 13px/1.4 \"Open Sans\",sans-serif;color:#00A2AE;margin:4px 0 0}\n.lt-res-modal form,.lt-res-modal .lt-res-ok{padding:18px 24px 24px}\n.lt-res-modal .lt-res-sub{font:400 15px/1.55 Lato,sans-serif;color:#4A5B6D;margin:0 0 16px}\n.lt-res-modal .lt-res-f{display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.lt-res-modal .lt-res-field{display:flex;flex-direction:column;gap:6px}\n.lt-res-modal label{font:600 13px/1.3 \"Open Sans\",sans-serif;color:#0B233F}\n.lt-res-modal input[type=text],.lt-res-modal input[type=email]{font:400 15px Lato,sans-serif;padding:12px 14px;border:1.5px solid #E3EAF0;border-radius:10px;background:#FBFDFE;color:#0B233F;min-height:46px}\n.lt-res-modal input:focus{outline:none;border-color:#00A2AE;box-shadow:0 0 0 3px rgba(0,162,174,.15)}\n.lt-res-modal .lt-res-err{display:none;font:400 12px Lato,sans-serif;color:#C8383B}\n.lt-res-modal .has-err input{border-color:#C8383B}\n.lt-res-modal .has-err .lt-res-err{display:block}\n.lt-res-modal .lt-res-consent .lt-res-err{flex-basis:100%;padding-left:28px}\n.lt-res-modal .has-err input[type=checkbox]{outline:2px solid #C8383B;outline-offset:2px}\n.lt-res-modal .lt-res-consent{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;font:400 13px/1.5 Lato,sans-serif;color:#4A5B6D}\n.lt-res-modal .lt-res-consent label{flex:1 1 0;min-width:0;display:block}\n.lt-res-modal .lt-res-consent input{margin-top:3px;width:18px;height:18px;accent-color:#00A2AE;flex:none}\n.lt-res-modal .lt-res-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px;flex-wrap:wrap}\n.lt-res-modal .lt-res-primary{min-height:46px;padding:12px 24px;border-radius:999px;border:0;background:#00A2AE;color:#fff;font:700 15px \"Open Sans\",sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}\n.lt-res-modal .lt-res-primary:hover{background:#008B96;color:#fff}\n.lt-res-modal .lt-res-ghost{min-height:46px;padding:12px 20px;border-radius:999px;border:1.5px solid #E3EAF0;background:#fff;color:#0B233F;font:600 15px \"Open Sans\",sans-serif;cursor:pointer}\n.lt-res-modal .lt-res-x{position:absolute;right:12px;top:12px;width:40px;height:40px;border-radius:50%;border:0;background:#F5FAFB;color:#0B233F;font-size:22px;line-height:1;cursor:pointer}\n.lt-res-modal .lt-res-ok{display:none;text-align:center}\n.lt-res-modal .lt-res-ok svg{width:56px;height:56px;color:#00A2AE;margin:4px auto 10px;display:block}\n.lt-res-modal .lt-res-ok p{font:400 15px/1.55 Lato,sans-serif;color:#4A5B6D;margin:8px 0 18px}\n.lt-res-modal.is-done form{display:none}.lt-res-modal.is-done .lt-res-ok{display:block}\n@media (max-width:1024px){#resources .lt-res-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}\n@media (max-width:560px){#resources .lt-res-grid{grid-template-columns:1fr 1fr;gap:14px}#resources .lt-res-body p{display:none}#resources .lt-res-body h3{font-size:15px}#resources .lt-res-btn{padding:10px 12px;font-size:13px;gap:6px}#resources .lt-res-btn svg{display:none}.lt-res-modal .lt-res-f{grid-template-columns:1fr}}\n</style>\n<div class=\"lt-res-grid\">\n<article class=\"lt-res-card\" data-file=\"Laoret-Company-Brochure.pdf\" data-id=\"1HyB22XIaZ7zjJ1SUzq8ZkE7CeT_NdSbz\">\n<button aria-label=\"Download PDF: Company brochure\" class=\"lt-res-thumb\" data-res-open=\"\" type=\"button\"><img alt=\"\" height=\"1019\" loading=\"lazy\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/company-brochure.webp\" width=\"720\"/></button>\n<div class=\"lt-res-body\">\n<span class=\"lt-res-meta\">8 pages · A4</span>\n<h3>Company brochure</h3>\n<p>One partner. Every language. End-to-end solutions: who we are, how we work and what we deliver.</p>\n<button class=\"lt-res-btn\" data-res-open=\"\" type=\"button\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\"><path d=\"M12 3v12M7 10l5 5 5-5M5 21h14\"></path></svg><span data-ok=\"Download again\">Download PDF</span></button>\n</div>\n</article>\n<article class=\"lt-res-card\" data-file=\"Laoret-Technical-Documentation-Localization.pdf\" data-id=\"1nPc1z_THzL0X8EhqeK_X0x6-jxy4n_7r\">\n<button aria-label=\"Download PDF: Technical documentation localization\" class=\"lt-res-thumb\" data-res-open=\"\" type=\"button\"><img alt=\"\" height=\"1019\" loading=\"lazy\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/technical-documentation-localization.webp\" width=\"720\"/></button>\n<div class=\"lt-res-body\">\n<span class=\"lt-res-meta\">8 pages · A4</span>\n<h3>Technical documentation localization</h3>\n<p>Localization that fits your docs workflow: CCMS, DITA/XML, terminology and measurable quality.</p>\n<button class=\"lt-res-btn\" data-res-open=\"\" type=\"button\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\"><path d=\"M12 3v12M7 10l5 5 5-5M5 21h14\"></path></svg><span data-ok=\"Download again\">Download PDF</span></button>\n</div>\n</article>\n<article class=\"lt-res-card\" data-file=\"Laoret-Human-Governed-AI-Translation.pdf\" data-id=\"1JfISI-jB4oe2HQ1sKYUrAes87ZpgBccf\">\n<button aria-label=\"Download PDF: Human-governed AI translation\" class=\"lt-res-thumb\" data-res-open=\"\" type=\"button\"><img alt=\"\" height=\"1019\" loading=\"lazy\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/human-governed-ai-translation.webp\" width=\"720\"/></button>\n<div class=\"lt-res-body\">\n<span class=\"lt-res-meta\">8 pages · A4</span>\n<h3>Human-governed AI translation</h3>\n<p>AI wrote it. Who checked it? How we route content by risk and evaluate every AI output.</p>\n<button class=\"lt-res-btn\" data-res-open=\"\" type=\"button\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\"><path d=\"M12 3v12M7 10l5 5 5-5M5 21h14\"></path></svg><span data-ok=\"Download again\">Download PDF</span></button>\n</div>\n</article>\n<article class=\"lt-res-card\" data-file=\"Laoret-LSP-MLV-Partnerships.pdf\" data-id=\"1tguvgxfv-vHu3WWK1FIG5OM-HcGS5uEZ\">\n<button aria-label=\"Download PDF: LSP &amp; MLV partnerships\" class=\"lt-res-thumb\" data-res-open=\"\" type=\"button\"><img alt=\"\" height=\"1019\" loading=\"lazy\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/lsp-mlv-partnerships.webp\" width=\"720\"/></button>\n<div class=\"lt-res-body\">\n<span class=\"lt-res-meta\">8 pages · A4</span>\n<h3>LSP &amp; MLV partnerships</h3>\n<p>Extend your capacity without building it in-house: white-label, collaborative and scalable delivery.</p>\n<button class=\"lt-res-btn\" data-res-open=\"\" type=\"button\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\"><path d=\"M12 3v12M7 10l5 5 5-5M5 21h14\"></path></svg><span data-ok=\"Download again\">Download PDF</span></button>\n</div>\n</article>\n</div>\n<dialog aria-labelledby=\"ltResTitle\" class=\"lt-res-modal\" id=\"ltResModal\">\n<button aria-label=\"Close\" class=\"lt-res-x\" data-res-close=\"\" type=\"button\">×</button>\n<div class=\"lt-res-mhead\"><img alt=\"\" src=\"https://mhellawygap-ui.github.io/laoret-tcworld-2026/landing/assets/resources/company-brochure.webp\"/><div><h3 id=\"ltResTitle\">Get your free download</h3><p class=\"lt-res-doc\"></p></div></div>\n<form id=\"ltResForm\" novalidate=\"\">\n<p class=\"lt-res-sub\">Tell us who you are and the download starts right away. You only need to do this once.</p>\n<input name=\"page_language\" type=\"hidden\" value=\"en\"/>\n<div class=\"lt-res-f\">\n<div class=\"lt-res-field\"><label for=\"ltResName\">Full name *</label><input autocomplete=\"name\" id=\"ltResName\" name=\"full_name\" required=\"\" type=\"text\"/><span class=\"lt-res-err\">Please enter your name.</span></div>\n<div class=\"lt-res-field\"><label for=\"ltResEmail\">Work email *</label><input autocomplete=\"email\" id=\"ltResEmail\" name=\"work_email\" required=\"\" type=\"email\"/><span class=\"lt-res-err\">Please enter a valid work email.</span></div>\n<div class=\"lt-res-field\"><label for=\"ltResCompany\">Company name *</label><input autocomplete=\"organization\" id=\"ltResCompany\" name=\"company\" required=\"\" type=\"text\"/><span class=\"lt-res-err\">Please enter your company.</span></div>\n<div class=\"lt-res-field\"><label for=\"ltResTitle2\">Job title *</label><input autocomplete=\"organization-title\" id=\"ltResTitle2\" name=\"job_title\" required=\"\" type=\"text\"/><span class=\"lt-res-err\">Please enter your job title.</span></div>\n<div class=\"lt-res-consent\"><input id=\"ltResConsent\" name=\"consent\" required=\"\" type=\"checkbox\" value=\"yes\"/><label for=\"ltResConsent\" style=\"font:400 13px/1.5 Lato,sans-serif;color:#4A5B6D\">I agree that Laoret may contact me about its services. I can unsubscribe at any time.</label><span class=\"lt-res-err\">Please confirm to continue.</span></div>\n</div>\n<div class=\"lt-res-actions\"><button class=\"lt-res-ghost\" data-res-close=\"\" type=\"button\">Close</button><button class=\"lt-res-primary\" type=\"submit\">Download now</button></div>\n</form>\n<div class=\"lt-res-ok\" role=\"status\">\n<svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.8\" viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle><path d=\"M8 12l3 3 5-6\"></path></svg>\n<h3>Your download has started</h3><p>If it didn’t open, use the button below. All other documents on this page are now unlocked for you.</p>\n<div class=\"lt-res-actions\" style=\"justify-content:center\"><button class=\"lt-res-ghost\" data-res-close=\"\" type=\"button\">Close</button><a class=\"lt-res-primary\" href=\"#\" rel=\"noopener\" target=\"_blank\">Open the PDF</a></div>\n</div>\n</dialog>\n<script>\n(function(){\n  /* Lead endpoint: set to your form/CRM webhook (HubSpot, Make, Zapier, WordPress REST...). Leave empty to skip posting. */\n  var LT_RES_ENDPOINT='';\n  var sec=document.getElementById('resources'); if(!sec) return;\n  var dlg=document.getElementById('ltResModal'), form=document.getElementById('ltResForm');\n  var KEY='lt_tcworld_resources_lead', cur=null;\n  function unlocked(){try{return localStorage.getItem(KEY)==='1'}catch(e){return false}}\n  function remember(){try{localStorage.setItem(KEY,'1')}catch(e){}}\n  function url(id){return 'https://drive.google.com/uc?export=download&id='+id}\n  function go(card){var a=document.createElement('a');a.href=url(card.dataset.id);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();\n    try{(window.dataLayer=window.dataLayer||[]).push({event:'resource_download',resource:card.dataset.file})}catch(e){}}\n  function mark(){if(!unlocked())return;sec.querySelectorAll('.lt-res-btn span').forEach(function(s){s.textContent=s.dataset.ok})}\n  function open(card){\n    cur=card;\n    if(unlocked()){go(card);return;}\n    dlg.querySelector('.lt-res-doc').textContent=card.querySelector('h3').textContent;\n    dlg.querySelector('.lt-res-mhead img').src=card.querySelector('.lt-res-thumb img').src;\n    dlg.classList.remove('is-done');\n    if(dlg.showModal){dlg.showModal()}else{dlg.setAttribute('open','')}\n    setTimeout(function(){var f=form.querySelector('input');if(f)f.focus()},50);\n  }\n  sec.querySelectorAll('[data-res-open]').forEach(function(b){b.addEventListener('click',function(){open(b.closest('.lt-res-card'))})});\n  dlg.querySelectorAll('[data-res-close]').forEach(function(b){b.addEventListener('click',function(){dlg.close?dlg.close():dlg.removeAttribute('open')})});\n  dlg.addEventListener('click',function(e){if(e.target===dlg&&dlg.close)dlg.close()});\n  form.addEventListener('submit',function(ev){\n    ev.preventDefault();\n    var ok=true,first=null;\n    form.querySelectorAll('[required]').forEach(function(f){\n      var v=f.type==='checkbox'?f.checked:f.value.trim();\n      var bad=!v||(f.type==='email'&&!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(f.value.trim()));\n      f.closest('.lt-res-field,.lt-res-consent').classList.toggle('has-err',bad);f.setAttribute('aria-invalid',bad);\n      if(bad){ok=false;if(!first)first=f}\n    });\n    if(!ok){first.focus();return;}\n    var data=new FormData(form);data.append('resource',cur.dataset.file);data.append('page',location.href);\n    if(LT_RES_ENDPOINT){try{fetch(LT_RES_ENDPOINT,{method:'POST',body:data,mode:'no-cors',keepalive:true})}catch(e){}}\n    remember();mark();\n    dlg.querySelector('.lt-res-ok a').href=url(cur.dataset.id);\n    dlg.classList.add('is-done');\n    go(cur);\n  });\n  form.querySelectorAll('[required]').forEach(function(f){f.addEventListener('input',function(){f.closest('.lt-res-field,.lt-res-consent').classList.remove('has-err');f.setAttribute('aria-invalid','false')})});\n  mark();\n})();\n</script></div>"
+     },
+     "elements": [],
+     "widgetType": "html"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "3fde98b",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -7932,7 +8119,7 @@
    },
    "elements": [
     {
-     "id": "19551bf",
+     "id": "89f645e",
      "elType": "widget",
      "settings": {
       "title": "Meet Our Team at the Booth",
@@ -7969,7 +8156,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "89f645e",
+     "id": "1c45777",
      "elType": "widget",
      "settings": {
       "editor": "<p>Wael and Berk will be representing Laoret at tcworld. Book a time with either of them, or both.</p>",
@@ -8009,7 +8196,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "1c45777",
+     "id": "a201502",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -8048,7 +8235,7 @@
      },
      "elements": [
       {
-       "id": "de0fa43",
+       "id": "3302e51",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -8093,7 +8280,7 @@
        },
        "elements": [
         {
-         "id": "6da72f2",
+         "id": "2fe81cc",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -8118,7 +8305,7 @@
          },
          "elements": [
           {
-           "id": "7307c04",
+           "id": "50840bc",
            "elType": "widget",
            "settings": {
             "image": {
@@ -8152,7 +8339,7 @@
            "widgetType": "image"
           },
           {
-           "id": "50840bc",
+           "id": "6da72f2",
            "elType": "widget",
            "settings": {
             "title": "At Booth 2F27",
@@ -8220,7 +8407,7 @@
          "isInner": true
         },
         {
-         "id": "11a5426",
+         "id": "de0fa43",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -8243,7 +8430,7 @@
          },
          "elements": [
           {
-           "id": "2fe81cc",
+           "id": "ce30884",
            "elType": "widget",
            "settings": {
             "title": "Wael Makram",
@@ -8272,7 +8459,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "ce30884",
+           "id": "bff02e6",
            "elType": "widget",
            "settings": {
             "title": "Operations Manager",
@@ -8299,7 +8486,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "bff02e6",
+           "id": "11a5426",
            "elType": "widget",
            "settings": {
             "editor": "<p>Talk to Wael about localization workflows, AI-supported delivery and practical ways to scale quality without unnecessary complexity.</p>",
@@ -8328,7 +8515,7 @@
        "isInner": true
       },
       {
-       "id": "ba33025",
+       "id": "19551bf",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -8374,7 +8561,7 @@
        },
        "elements": [
         {
-         "id": "8bce278",
+         "id": "afc1361",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -8399,7 +8586,7 @@
          },
          "elements": [
           {
-           "id": "3302e51",
+           "id": "1e21d45",
            "elType": "widget",
            "settings": {
             "image": {
@@ -8433,7 +8620,7 @@
            "widgetType": "image"
           },
           {
-           "id": "1e21d45",
+           "id": "8bce278",
            "elType": "widget",
            "settings": {
             "title": "At Booth 2F27",
@@ -8501,7 +8688,7 @@
          "isInner": true
         },
         {
-         "id": "a59a79e",
+         "id": "ba33025",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -8524,7 +8711,7 @@
          },
          "elements": [
           {
-           "id": "afc1361",
+           "id": "170ed6f",
            "elType": "widget",
            "settings": {
             "title": "Berk Çetiner",
@@ -8553,7 +8740,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "170ed6f",
+           "id": "d29a38b",
            "elType": "widget",
            "settings": {
             "title": "BD Executive & Project Manager",
@@ -8580,7 +8767,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "d29a38b",
+           "id": "a59a79e",
            "elType": "widget",
            "settings": {
             "editor": "<p>Talk to Berk about partnership opportunities, scoping your next project and how working with Laoret gets started.</p>",
@@ -8612,7 +8799,7 @@
      "isInner": true
     },
     {
-     "id": "a201502",
+     "id": "808cb3f",
      "elType": "widget",
      "settings": {
       "title": "Let’s talk about…",
@@ -8650,7 +8837,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "781cff1",
+     "id": "5edcd38",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -8684,7 +8871,7 @@
      },
      "elements": [
       {
-       "id": "808cb3f",
+       "id": "2e570ec",
        "elType": "widget",
        "settings": {
         "title": "Localization workflow optimization",
@@ -8731,7 +8918,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "2e570ec",
+       "id": "a1dd9ae",
        "elType": "widget",
        "settings": {
         "title": "AI in localization",
@@ -8778,7 +8965,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "a1dd9ae",
+       "id": "4c2993a",
        "elType": "widget",
        "settings": {
         "title": "MTPE & human review",
@@ -8825,7 +9012,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "4c2993a",
+       "id": "41f9ad5",
        "elType": "widget",
        "settings": {
         "title": "Multilingual content operations",
@@ -8872,7 +9059,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "41f9ad5",
+       "id": "4b14844",
        "elType": "widget",
        "settings": {
         "title": "Quality at scale",
@@ -8919,7 +9106,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "4b14844",
+       "id": "781cff1",
        "elType": "widget",
        "settings": {
         "title": "Flexible collaboration models",
@@ -8969,7 +9156,7 @@
      "isInner": true
     },
     {
-     "id": "1565bb3",
+     "id": "e49fd32",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -8993,7 +9180,7 @@
      },
      "elements": [
       {
-       "id": "5edcd38",
+       "id": "1565bb3",
        "elType": "widget",
        "settings": {
         "text": "Schedule a Meeting",
@@ -9054,7 +9241,7 @@
    "isInner": false
   },
   {
-   "id": "b52463f",
+   "id": "9ba859b",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -9119,7 +9306,7 @@
    },
    "elements": [
     {
-     "id": "06023c1",
+     "id": "0b55293",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -9144,7 +9331,7 @@
      },
      "elements": [
       {
-       "id": "091ef18",
+       "id": "6d2f90f",
        "elType": "widget",
        "settings": {
         "title": "Book a Meeting with Laoret at tcworld",
@@ -9178,7 +9365,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "6d2f90f",
+       "id": "64f3962",
        "elType": "widget",
        "settings": {
         "editor": "<p>Share your details and our team will get back to you to arrange a meeting during the event or follow up right after.</p>",
@@ -9209,12 +9396,12 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "ab42fc6",
+       "id": "95d6cca",
        "elType": "widget",
        "settings": {
         "icon_list": [
          {
-          "_id": "64f3962",
+          "_id": "eb33694",
           "text": "A focused conversation about your workflow, not a product demo",
           "selected_icon": {
            "value": "far fa-check-circle",
@@ -9222,7 +9409,7 @@
           }
          },
          {
-          "_id": "eb33694",
+          "_id": "a2b91a4",
           "text": "A confirmed time at the booth, so you skip the queue",
           "selected_icon": {
            "value": "far fa-check-circle",
@@ -9230,7 +9417,7 @@
           }
          },
          {
-          "_id": "a2b91a4",
+          "_id": "ab42fc6",
           "text": "Practical next steps you can take back to your team",
           "selected_icon": {
            "value": "far fa-check-circle",
@@ -9274,7 +9461,7 @@
        "widgetType": "icon-list"
       },
       {
-       "id": "412b3f0",
+       "id": "0daba23",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -9306,7 +9493,7 @@
        },
        "elements": [
         {
-         "id": "bfba516",
+         "id": "0fb9f8b",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -9347,7 +9534,7 @@
          },
          "elements": [
           {
-           "id": "95d6cca",
+           "id": "bfba516",
            "elType": "widget",
            "settings": {
             "selected_icon": {
@@ -9413,7 +9600,7 @@
          "isInner": true
         },
         {
-         "id": "ec7ff2d",
+         "id": "412b3f0",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -9454,7 +9641,7 @@
          },
          "elements": [
           {
-           "id": "0fb9f8b",
+           "id": "ec7ff2d",
            "elType": "widget",
            "settings": {
             "selected_icon": {
@@ -9523,7 +9710,7 @@
        "isInner": true
       },
       {
-       "id": "50c73a5",
+       "id": "06023c1",
        "elType": "container",
        "settings": {
         "content_width": "full",
@@ -9565,7 +9752,7 @@
        },
        "elements": [
         {
-         "id": "325e990",
+         "id": "749848b",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -9589,7 +9776,7 @@
          },
          "elements": [
           {
-           "id": "0daba23",
+           "id": "e64dfc3",
            "elType": "widget",
            "settings": {
             "image": {
@@ -9611,7 +9798,7 @@
            "widgetType": "image"
           },
           {
-           "id": "e64dfc3",
+           "id": "325e990",
            "elType": "widget",
            "settings": {
             "image": {
@@ -9636,7 +9823,7 @@
          "isInner": true
         },
         {
-         "id": "4df79c8",
+         "id": "50c73a5",
          "elType": "container",
          "settings": {
           "content_width": "full",
@@ -9659,7 +9846,7 @@
          },
          "elements": [
           {
-           "id": "749848b",
+           "id": "fc2339d",
            "elType": "widget",
            "settings": {
             "title": "Wael Makram & Berk Çetiner",
@@ -9683,7 +9870,7 @@
            "widgetType": "heading"
           },
           {
-           "id": "fc2339d",
+           "id": "4df79c8",
            "elType": "widget",
            "settings": {
             "editor": "<p>Your contacts at Booth 2F27</p>",
@@ -9715,7 +9902,7 @@
      "isInner": true
     },
     {
-     "id": "08487d0",
+     "id": "b52463f",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -9767,13 +9954,13 @@
      },
      "elements": [
       {
-       "id": "77ff3d1",
+       "id": "091ef18",
        "elType": "widget",
        "settings": {
         "form_name": "tcworld 2026 meeting request (EN)",
         "form_fields": [
          {
-          "_id": "3fde98b",
+          "_id": "d1c1e6f",
           "field_type": "text",
           "field_label": "Full name",
           "custom_id": "full_name",
@@ -9782,7 +9969,7 @@
           "placeholder": ""
          },
          {
-          "_id": "d1c1e6f",
+          "_id": "2a95021",
           "field_type": "email",
           "field_label": "Work email",
           "custom_id": "work_email",
@@ -9791,7 +9978,7 @@
           "placeholder": ""
          },
          {
-          "_id": "2a95021",
+          "_id": "0780f14",
           "field_type": "text",
           "field_label": "Company name",
           "custom_id": "company",
@@ -9800,7 +9987,7 @@
           "placeholder": ""
          },
          {
-          "_id": "0780f14",
+          "_id": "456bbfd",
           "field_type": "text",
           "field_label": "Job title",
           "custom_id": "job_title",
@@ -9809,7 +9996,7 @@
           "placeholder": ""
          },
          {
-          "_id": "456bbfd",
+          "_id": "0855d0a",
           "field_type": "tel",
           "field_label": "Phone number (optional)",
           "custom_id": "phone",
@@ -9818,7 +10005,7 @@
           "placeholder": ""
          },
          {
-          "_id": "0855d0a",
+          "_id": "54d8151",
           "field_type": "select",
           "field_label": "Country",
           "custom_id": "country",
@@ -9828,7 +10015,7 @@
           "field_options": "Select your country|\nGermany\nAustria\nSwitzerland\nUnited Kingdom\nFrance\nNetherlands\nBelgium\nItaly\nSpain\nPoland\nSweden\nDenmark\nUnited States\nCanada\nSaudi Arabia\nUnited Arab Emirates\nEgypt\nOther"
          },
          {
-          "_id": "54d8151",
+          "_id": "b7b8a30",
           "field_type": "checkbox",
           "field_label": "What would you like to discuss?",
           "custom_id": "topics",
@@ -9839,7 +10026,7 @@
           "inline_list": "elementor-subgroup-inline"
          },
          {
-          "_id": "b7b8a30",
+          "_id": "38df881",
           "field_type": "radio",
           "field_label": "Preferred meeting timing",
           "custom_id": "timing",
@@ -9851,7 +10038,7 @@
           "field_value": "During the event"
          },
          {
-          "_id": "38df881",
+          "_id": "552fe76",
           "field_type": "textarea",
           "field_label": "Message / notes (optional)",
           "custom_id": "message",
@@ -9861,7 +10048,7 @@
           "rows": 4
          },
          {
-          "_id": "552fe76",
+          "_id": "77ff3d1",
           "field_type": "hidden",
           "field_label": "page_language",
           "custom_id": "page_language",
@@ -9991,7 +10178,7 @@
        "widgetType": "form"
       },
       {
-       "id": "0b55293",
+       "id": "08487d0",
        "elType": "widget",
        "settings": {
         "editor": "<p>🔒 We’ll only use your details to respond to your request and coordinate a relevant follow-up.</p>",
@@ -10029,7 +10216,7 @@
    "isInner": false
   },
   {
-   "id": "e79e3ca",
+   "id": "87e8879",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -10069,7 +10256,7 @@
    },
    "elements": [
     {
-     "id": "9ba859b",
+     "id": "4fed07c",
      "elType": "widget",
      "settings": {
       "title": "Let’s Connect at <span>tekom 2026</span>",
@@ -10105,7 +10292,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "4fed07c",
+     "id": "a25b017",
      "elType": "widget",
      "settings": {
       "editor": "<p>Meet Laoret at Booth 2F27, ICS Stuttgart, 10–12 November 2026.</p>",
@@ -10137,7 +10324,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "ecf260b",
+     "id": "e79e3ca",
      "elType": "container",
      "settings": {
       "content_width": "full",
@@ -10162,7 +10349,7 @@
      },
      "elements": [
       {
-       "id": "a25b017",
+       "id": "a591b61",
        "elType": "widget",
        "settings": {
         "text": "Connect with Laoret",
@@ -10207,7 +10394,7 @@
        "widgetType": "button"
       },
       {
-       "id": "a591b61",
+       "id": "ecf260b",
        "elType": "widget",
        "settings": {
         "text": "Explore laoret.com",
@@ -10269,7 +10456,7 @@
    "isInner": false
   },
   {
-   "id": "c932ffc",
+   "id": "7c8767b",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -10320,7 +10507,7 @@
    },
    "elements": [
     {
-     "id": "87e8879",
+     "id": "734d5da",
      "elType": "widget",
      "settings": {
       "image": {
@@ -10341,7 +10528,7 @@
      "widgetType": "image"
     },
     {
-     "id": "734d5da",
+     "id": "4234972",
      "elType": "widget",
      "settings": {
       "editor": "<p><a href=\"tel:+18572087276\">+1 857-208-7276</a> · Mon–Fri, 9 am – 6 pm · <a href=\"https://laoret.com/contact/\">Contact us</a></p>",
@@ -10365,7 +10552,7 @@
      "widgetType": "text-editor"
     },
     {
-     "id": "4234972",
+     "id": "c932ffc",
      "elType": "widget",
      "settings": {
       "editor": "<p>© 2026 Laoret. All rights reserved.</p>",
@@ -10391,7 +10578,7 @@
    "isInner": false
   },
   {
-   "id": "bb7dace",
+   "id": "151fd08",
    "elType": "container",
    "settings": {
     "content_width": "boxed",
@@ -10456,7 +10643,7 @@
    },
    "elements": [
     {
-     "id": "7c8767b",
+     "id": "183d3bb",
      "elType": "widget",
      "settings": {
       "title": "Meet us at tcworld",
@@ -10475,7 +10662,7 @@
      "widgetType": "heading"
     },
     {
-     "id": "183d3bb",
+     "id": "bb7dace",
      "elType": "widget",
      "settings": {
       "text": "Book a Meeting",

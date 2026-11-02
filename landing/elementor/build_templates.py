@@ -171,6 +171,12 @@ def extract(path):
     c['hero_btns'] = [a.get_text(' ', strip=True) for a in soup.select('.hero .cta-row a')]
     c['nav_btn'] = soup.select_one('.nav-actions .btn').get_text(strip=True)
     h1 = soup.select_one('#hero-title'); c['h1'] = inner(h1)
+    res = soup.select_one('#resources')
+    if res:
+        c['res_k'] = T('#resources .sec-head .eyebrow'); c['res_h'] = T('#resources-title'); c['res_p'] = T('#resources .sec-head > p:not(.eyebrow)')
+        parts = [str(res.find('style')), str(res.select_one('.lt-res-grid')), str(res.select_one('dialog')), str(res.find('script'))]
+        # gated cards + modal + logic run inside one HTML widget; the wrapper id keeps the section CSS/JS scoped
+        c['res_html'] = '<div id="resources">' + '\n'.join(parts).replace(' reveal', '') + '</div>'
     c['lead'] = T('.hero .lead')
     kb = soup.select_one('.kv-badge')
     c['badge'] = (kb.strong.get_text(strip=True), kb.select('span')[-1].get_text(' ', strip=True))
@@ -554,7 +560,17 @@ def build(c, css):
         hide_desktop='hidden-desktop', hide_tablet='hidden-tablet', sticky='bottom', sticky_on=['mobile'], sticky_offset=12, z_index=60,
         box_shadow_box_shadow_type='yes', box_shadow_box_shadow=shadow(0, 24, 60, 0, 'rgba(11,35,63,0.25)'))
 
-    content = [header, hero, proof, foryou, who, services, why, trust, wael, book, closing, footer, mobile_cta]
+    # ---- resources (gated downloads)
+    resources = []
+    if c.get('res_html'):
+        resources = [b.con([
+            b.heading(c['res_k'], 'div', BRAND, typo('', OPEN, 12, 700, ls=0.2, transform='uppercase'), align='center', **anim()),
+            b.heading(c['res_h'], 'h2', NAVY, H2(), align='center', _margin=box(14, 0, 0, 0), **anim()),
+            b.text(c['res_p'], NAVY, INTRO(), align='center', _css_classes='lt-maxw-720', _margin=box(14, 0, 56, 0), **anim()),
+            b.html(c['res_html']),
+        ], top=True, padding=box(96, 24), padding_mobile=box(72, 18), flex_gap=gap(0), _element_id='resources-section')]
+
+    content = [header, hero, proof, foryou, who, services, why, trust, *resources, wael, book, closing, footer, mobile_cta]
     return {
         'content': content,
         'page_settings': {'template': 'elementor_canvas', 'hide_title': 'yes', 'custom_css': css,
